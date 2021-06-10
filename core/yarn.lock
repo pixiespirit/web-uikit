@@ -221,10 +221,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pixiepkg/icon@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@pixiepkg/icon/-/icon-0.0.3.tgz#2e04365d1a2af56756487bbfd4059b60b3e18de1"
-  integrity sha512-eImEJ6bvQvyEB/drOnUldjHM1Tdb8Z/N3dqczfAyyuJL7Z849C50xQIoMtWIcgE6DTYWieoTDeS4CMlxPhTJhA==
+"@pixiepkg/icon@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@pixiepkg/icon/-/icon-0.0.4.tgz#bad9ef38f3c2753d32dad4fb4d4e435410f165e1"
+  integrity sha512-HvvniRtNtn7yWr6GCHUT5C+c6O0FWCQQoW51RzoSAhndNntJfsO6K+B8I5Hyysq3LB86z67sGYC9wbQcb50y2A==
 
 "@rollup/pluginutils@^4.1.0":
   version "4.1.0"
