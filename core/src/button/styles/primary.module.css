@@ -1,0 +1,15 @@
+.root {
+  border-radius: 34px;
+  color: var(--color-white);
+  border: solid 1px transparent;
+  background-color: var(--color-primary);
+}
+
+.root:hover,
+.root:active {
+  background-color: var(--color-brand-01);
+}
+
+.root:disabled {
+  background-color: var(--color-brand-04);
+}

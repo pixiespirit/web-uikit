@@ -1,0 +1,11 @@
+.medium {
+  height: 48px;
+  font-size: 16px;
+  padding: 16px 28px;
+}
+
+.small {
+  height: 28px;
+  font-size: 12px;
+  padding: 8px 16px;
+}

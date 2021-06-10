@@ -1,0 +1,11 @@
+.icon > svg {
+    display: block;
+}
+
+.block {
+    display: block;
+}
+
+.inlineBlock {
+    display: inline-block;
+}

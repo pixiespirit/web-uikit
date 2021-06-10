@@ -1,0 +1,22 @@
+.root {
+  border-radius: 34px;
+  color: var(--color-info);
+  border: solid 1px transparent;
+  background-color: transparent;
+
+  /**
+    Text only looks ugly if padding left-right
+    are too wide
+     */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.root:hover,
+.root:active {
+  text-decoration: underline;
+}
+
+.root:disabled {
+  color: #b4daff;
+}

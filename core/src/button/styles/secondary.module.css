@@ -1,0 +1,18 @@
+.root {
+  border-radius: 34px;
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-primary);
+}
+
+.root:hover,
+.root:active {
+  background-color: var(--color-brand-06);
+  border-color: var(--color-brand-01);
+}
+
+.root:disabled {
+  color: var(--color-brand-04);
+  border-color: var(--color-brand-04);
+  background-color: var(--color-white);
+}

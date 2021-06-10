@@ -1,0 +1,24 @@
+.avatar {
+  border-radius: 5px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/**
+SIZES
+ */
+.medium {
+  width: 88px;
+  height: 88px;
+}
+
+.small {
+  width: 48px;
+  height: 48px;
+}

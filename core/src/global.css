@@ -1,0 +1,67 @@
+@import 'font/font.css';
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #333c44;
+
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f6f7f8;
+  --color-gray-200: #eef1f3;
+  --color-gray-300: #d0d6db;
+  --color-gray-400: #a8aeb4;
+  --color-gray-500: #596168;
+  --color-gray-600: #333c44;
+  --color-gray-700: #151a1f;
+
+  --color-brand-01: #4144d9;
+  --color-brand-02: #5960ff;
+  --color-brand-03: #828cff;
+  --color-brand-04: #abb5ff;
+  --color-brand-05: #d4daff;
+  --color-brand-06: #f0f3ff;
+
+  --color-primary: var(--color-brand-02);
+
+  --color-info: #1890ff;
+  --color-error: #fb7787;
+  --color-success: #55b685;
+  --color-warning: #ffd177;
+
+  --shadow-1: 0px 2px 4px rgba(36, 38, 40, 0.2);
+  --shadow-2: 0px 8px 16px rgba(36, 38, 40, 0.1);
+  --shadow-3: 0px 16px 32px rgba(36, 38, 40, 0.15);
+
+  --font-sans: Gilroy, system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-white);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  color: var(--color-black);
+  line-height: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font: inherit;
+}

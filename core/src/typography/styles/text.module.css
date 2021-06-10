@@ -1,0 +1,22 @@
+.bold {
+  font-weight: bold !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.ellipsis {
+  /*
+    text-overflow only works with overflow and white-space
+    https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+    TODO: do another solution for ellipsis a paragraph
+   */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+}

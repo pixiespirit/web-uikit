@@ -1,0 +1,39 @@
+.label1,
+.label2,
+.label3,
+.label4,
+.label5,
+.label6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.label1 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.label2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.label3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.label4 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.label5 {
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.label6 {
+  font-size: 10px;
+  line-height: 16px;
+}
