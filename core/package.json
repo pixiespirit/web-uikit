@@ -1,6 +1,6 @@
 {
   "name": "@pixiepkg/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Pixie web core UI components",
   "main": "cjs.js",
   "module": "esm.js",
