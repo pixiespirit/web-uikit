@@ -11,7 +11,7 @@ fi
 version=$(npm version $1)
 
 # commit new version
-git add ./package.json ./package-lock.json
+git add ./package.json ./yarn.lock
 git commit -m "Build(icon): @pixiepkg/icon $version"
 
 yarn build
