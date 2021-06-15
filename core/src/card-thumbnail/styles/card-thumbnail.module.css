@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow-1);
+}
+
+.thumbnailWrapper {
+    height: 120px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+.body {
+    padding: .5rem;
+    flex-grow: 1;
+}

@@ -4,6 +4,7 @@ export * from '@/avatar';
 export * from '@/button';
 export * from '@/calendar';
 export * from '@/card';
+export * from '@/card-thumbnail';
 export * from '@/checkbox';
 export * from '@/div';
 export * from '@/input';
