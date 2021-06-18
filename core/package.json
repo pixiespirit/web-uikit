@@ -9,10 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn rollup",
-    "rollup": "rollup --config",
-    "icon": "yarn icon:clean && yarn icon:build",
-    "icon:build": "svgr --out-dir ./src/icons/components ./src/icons/svg",
-    "icon:clean": "rm ./src/icons/components/*"
+    "rollup": "rollup --config"
   },
   "peerDependencies": {
     "react": ">=16",
