@@ -33,7 +33,7 @@ export const DotIcon: React.FC = () => {
   );
 };
 
-export const Index: React.FC<RadioProps> = (props) => {
+export const Radio: React.FC<RadioProps> = (props) => {
   return (
     <label className={s.container}>
       <input
