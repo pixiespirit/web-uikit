@@ -2,3 +2,4 @@ node_modules/
 dist/
 svg-transformed/
 .DS_Store
+src/icons/
