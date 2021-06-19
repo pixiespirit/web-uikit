@@ -2,6 +2,7 @@ import React, { CSSProperties } from 'react';
 import { KindTag } from '@/tag/types';
 import s from '@/tag/styles/tag.module.css';
 import primary from '@/tag/styles/primary.module.css';
+import warning from '@/tag/styles/warning.module.css';
 import { Body3 } from '@/typography/body';
 
 export interface TagProps {
@@ -20,6 +21,10 @@ const getClass = (props: TagProps): string => {
    * Default: primary
    */
   switch (props.kind) {
+    case KindTag.WARNING:
+      classes.push(warning.root);
+      break;
+
     case KindTag.PRIMARY:
     default:
       classes.push(primary.root);
