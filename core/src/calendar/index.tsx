@@ -24,6 +24,7 @@ export interface CalendarProps {
   setDate?: (value: Date) => void;
 
   collapse?: boolean;
+  showCollapseButton?: boolean;
   highlightDates?: Array<Date>;
   disablePastDates?: boolean;
 
@@ -165,15 +166,17 @@ export const Calendar: React.FC<CalendarProps> = (props) => {
         })}
       </div>
 
-      <div className={s.collapseContainer}>
-        <div
-          className={s.collapseButton}
-          onClick={() => setCollapse(!collapse)}
-        >
-          {collapse && <ArrowDownOutline />}
-          {!collapse && <ArrowUpOutline />}
+      {props.showCollapseButton && (
+        <div className={s.collapseContainer}>
+          <div
+            className={s.collapseButton}
+            onClick={() => setCollapse(!collapse)}
+          >
+            {collapse && <ArrowDownOutline />}
+            {!collapse && <ArrowUpOutline />}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
