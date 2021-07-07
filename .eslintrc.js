@@ -45,7 +45,7 @@ module.exports = {
     // Warning: React version not specified in eslint-plugin-react settings
     // https://github.com/yannickcr/eslint-plugin-react/issues/1955
     react: {
-      version: 'detect'
+      version: '17'
     }
   },
   globals: {
