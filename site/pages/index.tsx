@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import React, { CSSProperties } from 'react';
-import { GalleryButton } from './components/button';
-import { GalleryCheckbox } from './components/check-box';
-import { GalleryInput } from './components/input';
-import { GalleryRadio } from './components/radio';
-import { GalleryTag } from './components/tag';
-import { GalleryToggle } from './components/toggle';
+import { GalleryButton } from '../components/button';
+import { GalleryCheckbox } from '../components/check-box';
+import { GalleryInput } from '../components/input';
+import { GalleryRadio } from '../components/radio';
+import { GalleryTag } from '../components/tag';
+import { GalleryToggle } from '../components/toggle';
 
 const style: CSSProperties = {
   display: 'flex',
