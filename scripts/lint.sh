@@ -12,6 +12,3 @@ yarn eslint ./icon/src \
     --max-warnings=0 \
     --ext=.jsx,.js,.ts,.tsx \
     --ignore-path=./icon/.gitignore
-
-# lint check site
-cd site && yarn lint
