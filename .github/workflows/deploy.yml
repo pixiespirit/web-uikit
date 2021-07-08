@@ -15,9 +15,6 @@ jobs:
       - name: Checkout SCM
         uses: actions/checkout@v2
 
-      # deploy preview for site
-      - run: cd site
-
       - name: Use node v14.x
         uses: actions/setup-node@v2
         with:
@@ -31,6 +28,7 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
+          cd site
           DEPLOYMENT_URL=$(vercel --token $VERCEL_TOKEN --confirm --no-clipboard --prod)
           echo "::set-output name=deployment_url::$DEPLOYMENT_URL"
 
@@ -40,6 +38,7 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
+          cd site
           DEPLOYMENT_URL=$(vercel --token $VERCEL_TOKEN --confirm --no-clipboard)
           echo "::set-output name=deployment_url::$DEPLOYMENT_URL"
 
