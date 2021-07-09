@@ -3,16 +3,14 @@
   font-family: Gilroy;
   font-weight: 100;
   font-style: normal;
-  src: url('./Gilroy/Thin.otf')
-  format('opentype');
+  src: url('./gilroy/thin.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 100;
   font-style: italic;
-  src: url('./Gilroy/ThinItalic.otf')
-  format('opentype');
+  src: url('./gilroy/thinitalic.otf') format('opentype');
 }
 
 /* XLight (200) */
@@ -20,16 +18,14 @@
   font-family: Gilroy;
   font-weight: 200;
   font-style: normal;
-  src: url('./Gilroy/XLight.otf')
-  format('opentype');
+  src: url('./gilroy/xlight.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 200;
   font-style: italic;
-  src: url('./Gilroy/XLightItalic.otf')
-  format('opentype');
+  src: url('./gilroy/xlightitalic.otf') format('opentype');
 }
 
 /* Light (300) */
@@ -37,16 +33,14 @@
   font-family: Gilroy;
   font-weight: 300;
   font-style: normal;
-  src: url('./Gilroy/Light.otf')
-  format('opentype');
+  src: url('./gilroy/light.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 300;
   font-style: italic;
-  src: url('./Gilroy/LightItalic.otf')
-  format('opentype');
+  src: url('./gilroy/lightitalic.otf') format('opentype');
 }
 
 /* Normal (400) */
@@ -54,16 +48,14 @@
   font-family: Gilroy;
   font-weight: 400;
   font-style: normal;
-  src: url('./Gilroy/Regular.otf')
-  format('opentype');
+  src: url('./gilroy/regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 400;
   font-style: italic;
-  src: url('./Gilroy/RegularItalic.otf')
-  format('opentype');
+  src: url('./gilroy/regularitalic.otf') format('opentype');
 }
 
 /* Medium (500) */
@@ -71,16 +63,14 @@
   font-family: Gilroy;
   font-weight: 500;
   font-style: normal;
-  src: url('./Gilroy/Medium.otf')
-  format('opentype');
+  src: url('./gilroy/medium.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 500;
   font-style: italic;
-  src: url('./Gilroy/MediumItalic.otf')
-  format('opentype');
+  src: url('./gilroy/mediumitalic.otf') format('opentype');
 }
 
 /* SemiBold (600) */
@@ -88,16 +78,14 @@
   font-family: Gilroy;
   font-weight: 600;
   font-style: normal;
-  src: url('./Gilroy/SemiBold.otf')
-  format('opentype');
+  src: url('./gilroy/semibold.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 600;
   font-style: italic;
-  src: url('./Gilroy/SemiBoldItalic.otf')
-  format('opentype');
+  src: url('./gilroy/semibolditalic.otf') format('opentype');
 }
 
 /* Bold (700) */
@@ -105,16 +93,14 @@
   font-family: Gilroy;
   font-weight: 700;
   font-style: normal;
-  src: url('./Gilroy/Bold.otf')
-  format('opentype');
+  src: url('./gilroy/bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 700;
   font-style: italic;
-  src: url('./Gilroy/BoldItalic.otf')
-  format('opentype');
+  src: url('./gilroy/bolditalic.otf') format('opentype');
 }
 
 /* XBold (800) */
@@ -122,16 +108,14 @@
   font-family: Gilroy;
   font-weight: 800;
   font-style: normal;
-  src: url('./Gilroy/XBold.otf')
-  format('opentype');
+  src: url('./gilroy/xbold.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 800;
   font-style: italic;
-  src: url('./Gilroy/XBoldItalic.otf')
-  format('opentype');
+  src: url('./gilroy/xbolditalic.otf') format('opentype');
 }
 
 /* Heavy (900) */
@@ -139,16 +123,14 @@
   font-family: Gilroy;
   font-weight: 900;
   font-style: normal;
-  src: url('./Gilroy/Heavy.otf')
-  format('opentype');
+  src: url('./gilroy/heavy.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 900;
   font-style: italic;
-  src: url('./Gilroy/HeavyItalic.otf')
-  format('opentype');
+  src: url('./gilroy/heavyitalic.otf') format('opentype');
 }
 
 /* Black (950) */
@@ -156,14 +138,12 @@
   font-family: Gilroy;
   font-weight: 950;
   font-style: normal;
-  src: url('./Gilroy/Black.otf')
-  format('opentype');
+  src: url('./gilroy/black.otf') format('opentype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 950;
   font-style: italic;
-  src: url('./Gilroy/BlackItalic.otf')
-  format('opentype');
+  src: url('./gilroy/blackitalic.otf') format('opentype');
 }
