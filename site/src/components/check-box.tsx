@@ -1,4 +1,4 @@
-import { Checkbox, H3 } from '@pixiepkg/core';
+import { Checkbox, H3 } from '../../../core/src';
 import React from 'react';
 import { container, row } from './_shared-styles';
 

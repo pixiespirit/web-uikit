@@ -1,4 +1,4 @@
-import { H3, Input } from '@pixiepkg/core';
+import { H3, Input } from '../../../core/src';
 import React from 'react';
 import { container, row } from './_shared-styles';
 
