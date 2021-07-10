@@ -3,4 +3,4 @@ set -e
 
 yarn prettier --check ./core/src
 yarn prettier --check ./icon/src
-yarn prettier --check ./site/pages
+yarn prettier --check ./site/src
