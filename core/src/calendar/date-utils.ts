@@ -1,5 +1,5 @@
-import { validateMonth } from '@/calendar/date-tests';
-import { MonthString } from '@/calendar/constants';
+import { MonthString } from './constants';
+import { validateMonth } from './date-tests';
 
 export const toMonthString = (month: number) => {
   validateMonth(month);

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from '@/card-thumbnail/styles/card-thumbnail.module.css';
+import s from './styles/card-thumbnail.module.css';
 
 export interface CardThumbnailProps {
   thumbnail: string;

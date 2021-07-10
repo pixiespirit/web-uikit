@@ -1,6 +1,6 @@
 import React from 'react';
-import s from '@/avatar/styles/avatar.module.css';
-import { SizeAvatar } from '@/avatar/types';
+import s from './styles/avatar.module.css';
+import { SizeAvatar } from './types';
 
 export interface AvatarProps {
   src: string;
@@ -51,4 +51,4 @@ export const Avatar: React.FC<AvatarProps> = (props) => {
   );
 };
 
-export * from '@/avatar/types';
+export * from './types';

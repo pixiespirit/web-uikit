@@ -1,6 +1,6 @@
 import React from 'react';
-import s from '@/typography/styles/body.module.css';
-import { Text, TextProps } from '@/typography';
+import s from './styles/body.module.css';
+import { Text, TextProps } from '.';
 
 export const Body1: React.FC<TextProps> = ({ className, as, ...props }) => {
   return (

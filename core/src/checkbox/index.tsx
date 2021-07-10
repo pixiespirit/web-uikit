@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
-import s from '@/checkbox/styles/checkbox.module.css';
-import { Body1 } from '@/typography/body';
+import s from './styles/checkbox.module.css';
+import { Body1 } from '../typography/body';
 
 export interface CheckboxProps {
   checked?: boolean;

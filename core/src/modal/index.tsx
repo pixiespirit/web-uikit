@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import s from '@/modal/styles/modal.module.css';
+import s from './styles/modal.module.css';
 
 export interface ModalProps {
   show?: boolean;

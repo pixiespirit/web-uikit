@@ -1,6 +1,6 @@
 import React, { ForwardedRef, ReactNode } from 'react';
-import s from '@/radio/styles/styles.module.css';
-import { Body1 } from '@/typography/body';
+import s from './styles/styles.module.css';
+import { Body1 } from '../typography/body';
 
 export interface RadioProps {
   name: string;

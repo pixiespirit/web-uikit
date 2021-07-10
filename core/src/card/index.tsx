@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
-import { Label1 } from '@/typography/label';
-import s from '@/card/styles/card.module.css';
+import { Label1 } from '../typography/label';
+import s from './styles/card.module.css';
 
 export interface CardProps {
   children: React.ReactNode;

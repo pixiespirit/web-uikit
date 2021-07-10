@@ -1,9 +1,9 @@
 import React, { CSSProperties } from 'react';
-import { KindTag } from '@/tag/types';
-import s from '@/tag/styles/tag.module.css';
-import primary from '@/tag/styles/primary.module.css';
-import warning from '@/tag/styles/warning.module.css';
-import { Body3 } from '@/typography/body';
+import { KindTag } from './types';
+import s from './styles/tag.module.css';
+import primary from './styles/primary.module.css';
+import warning from './styles/warning.module.css';
+import { Body3 } from '../typography/body';
 
 export interface TagProps {
   children: React.ReactNode;
@@ -53,4 +53,4 @@ export const Tag: React.FC<TagProps> = (props) => {
   );
 };
 
-export * from '@/tag/types';
+export * from './types';

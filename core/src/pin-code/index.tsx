@@ -1,6 +1,6 @@
 import React, { CSSProperties, KeyboardEvent, useEffect } from 'react';
-import s from '@/pin-code/styles/pincode.module.css';
-import { KeyCodeEnum, SizePinCode } from '@/pin-code/types';
+import s from './styles/pincode.module.css';
+import { KeyCodeEnum, SizePinCode } from './types';
 import classnames from 'classnames';
 import MultiRef from 'react-multi-ref';
 
@@ -148,4 +148,4 @@ export const PinCode: React.FC<PinCodeProps> = (props) => {
   );
 };
 
-export * from '@/pin-code/types';
+export * from './types';

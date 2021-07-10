@@ -1,11 +1,11 @@
 import React, { CSSProperties } from 'react';
-import { KindButton, SizeButton, SizeButtonType } from '@/button/types';
-import s from '@/button/styles/button.module.css';
-import primary from '@/button/styles/primary.module.css';
-import secondary from '@/button/styles/secondary.module.css';
-import tertiary from '@/button/styles/tertiary.module.css';
-import textOnly from '@/button/styles/text-only.module.css';
-import { DivPx } from '@/div';
+import { KindButton, SizeButton, SizeButtonType } from './types';
+import s from './styles/button.module.css';
+import primary from './styles/primary.module.css';
+import secondary from './styles/secondary.module.css';
+import tertiary from './styles/tertiary.module.css';
+import textOnly from './styles/text-only.module.css';
+import { DivPx } from '../div';
 import classNames from 'classnames';
 
 export interface ButtonProps {
@@ -105,4 +105,4 @@ export const Button: React.FC<ButtonProps> = (props) => {
   );
 };
 
-export * from '@/button/types';
+export * from './types';

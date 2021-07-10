@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
-import input from '@/input/styles/index.module.css';
-import s from '@/textarea/styles/index.module.css';
+import input from '../input/styles/index.module.css';
+import s from './styles/index.module.css';
 
 export interface TextareaProps {
   defaultValue?: string | number;

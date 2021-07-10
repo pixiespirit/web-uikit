@@ -1,6 +1,6 @@
 import React from 'react';
-import s from '@/typography/styles/heading.module.css';
-import { Text, TextProps } from '@/typography';
+import s from './styles/heading.module.css';
+import { Text, TextProps } from '.';
 
 export const H1: React.FC<TextProps> = ({ className, as, ...props }) => {
   return (

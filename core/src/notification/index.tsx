@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
-import s from '@/notification/styles/notification.module.css';
-import { KindNotification } from '@/notification/types';
+import s from './styles/notification.module.css';
+import { KindNotification } from './types';
 
 export interface NotificationProps {
   kind?: KindNotification;
@@ -37,4 +37,4 @@ export const Notification: React.FC<NotificationProps> = (props) => {
   return <div className={getClass(props)} children={props.children} />;
 };
 
-export * from '@/notification/types';
+export * from './types';

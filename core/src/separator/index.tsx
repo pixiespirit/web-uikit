@@ -1,5 +1,5 @@
 import React from 'react';
-import s from '@/separator/styles/separator.module.css';
+import s from './styles/separator.module.css';
 
 export interface SeparatorProps {
   label?: string;

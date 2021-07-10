@@ -1,5 +1,5 @@
 import React, { CSSProperties, useMemo } from 'react';
-import s from '@/input/styles/index.module.css';
+import s from './styles/index.module.css';
 
 export interface InputOverrides {
   input?: string;

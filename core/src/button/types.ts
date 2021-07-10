@@ -1,5 +1,5 @@
-import size from '@/button/styles/size.module.css';
-import { DivSize } from '@/div';
+import { DivSize } from '../div';
+import size from './styles/size.module.css';
 
 export interface SizeButtonType {
   root: string;

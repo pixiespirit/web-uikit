@@ -1,5 +1,5 @@
 import chunks from 'lodash.chunk';
-import { isSameDate, toDateMonthYear } from '@/calendar/date-utils';
+import { isSameDate, toDateMonthYear } from './date-utils';
 
 export const getAllDateOfMonth = (date: Date): Array<Date> => {
   const [, month, year] = toDateMonthYear(date);

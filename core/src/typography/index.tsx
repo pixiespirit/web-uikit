@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import s from '@/typography/styles/text.module.css';
+import s from './styles/text.module.css';
 
 export interface TextProps {
   // font's style

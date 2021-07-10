@@ -1,6 +1,5 @@
 import classnames from 'classnames';
-import React from 'react';
-import s from '@/toggle/styles/toggle.module.css';
+import s from './styles/toggle.module.css';
 
 export interface ToggleProps {
   name?: string;
@@ -22,7 +21,7 @@ const getColorClass = (props: ToggleProps) => {
   }
 };
 
-export const Toggle = (props: ToggleProps) => {
+export const Toggle = (props: ToggleProps): JSX.Element => {
   return (
     <label className={classnames(s.switch, getColorClass(props))}>
       <input

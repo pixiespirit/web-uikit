@@ -1,18 +1,14 @@
 import React, { useMemo, useState } from 'react';
-import s from '@/calendar/styles/calendar.module.css';
-import { Label1 } from '@/typography/label';
-import {
-  getAllDateOfMonth,
-  includesDate,
-  toCalendarMatrix
-} from '@/calendar/utils';
+import s from './styles/calendar.module.css';
+import { Label1 } from '../typography/label';
+import { getAllDateOfMonth, includesDate, toCalendarMatrix } from './utils';
 import {
   ArrowUpOutline,
   ArrowDownOutline,
   ArrowLeftOutline,
   ArrowRightOutline
 } from '@pixiepkg/icon';
-import { isBefore, isSameDate, toMonthString } from '@/calendar/date-utils';
+import { isBefore, isSameDate, toMonthString } from './date-utils';
 
 export interface CalendarOverrides {
   container?: string;
