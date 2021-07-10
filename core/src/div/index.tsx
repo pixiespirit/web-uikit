@@ -1,3 +1,4 @@
+import React from 'react';
 import s from './styles/div.module.css';
 
 export type DivSize = 4 | 8 | 12 | 16 | 20 | 24 | 32 | 48 | 64 | 96;
