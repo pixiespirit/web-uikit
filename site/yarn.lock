@@ -161,16 +161,21 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pixiepkg/core@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@pixiepkg/core/-/core-0.0.8.tgz#629c28f9ac491af3400a66a8f14a0d404052f7c7"
-  integrity sha512-wkO76qDvM7FNyfSOnkIeYfpTqXgtZHV2eGa3BaMWFKzO+XxWsgwox/jgUm/xyNAppzEXijRdJJACkD+RU9vwng==
+"@pixiepkg/core@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@pixiepkg/core/-/core-0.0.9.tgz#160457489f406ec998d208418c8c8ecc3458bd64"
+  integrity sha512-v+tTjbVyr+pxAm5I3h+8FMfWgs+Ih1pahX5CrD45i00VXRLq3cRH8X6bImZvq0w68EcjZwkFzmx8RhrE+LRKTQ==
   dependencies:
     "@pixiepkg/icon" "^0.0.4"
     "@types/lodash.chunk" "^4.2.6"
     classnames "^2.3.1"
     lodash.chunk "^4.2.0"
     react-multi-ref "^1.0.0"
+
+"@pixiepkg/icon@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@pixiepkg/icon/-/icon-0.0.12.tgz#30bb31d27df288bdba4a318cce1897f658208fa6"
+  integrity sha512-iw2/VnnPVUYaejhAu0SxpIAVaRGMLGDI1+B2G4t8fLN5/5HLKDs5p/i2ZTEDljoG/OmW/61VAk2P12aEI7uO9g==
 
 "@pixiepkg/icon@^0.0.4":
   version "0.0.4"
