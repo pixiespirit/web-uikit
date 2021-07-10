@@ -6,7 +6,7 @@ import warning from '@/tag/styles/warning.module.css';
 import { Body3 } from '@/typography/body';
 
 export interface TagProps {
-  children: string;
+  children: React.ReactNode;
   className?: string;
   style?: CSSProperties;
 
@@ -36,16 +36,19 @@ const getClass = (props: TagProps): string => {
   return classes.join(' ');
 };
 
-const TagChildren: React.FC<TagProps> = (props) => {
-  return <Body3 children={props.children} />;
-};
-
 export const Tag: React.FC<TagProps> = (props) => {
+  const tagChildren =
+    typeof props.children === 'string' ? (
+      <Body3 children={props.children} />
+    ) : (
+      props.children
+    );
+
   return (
     <span
       style={props.style}
       className={getClass(props)}
-      children={<TagChildren children={props.children} />}
+      children={tagChildren}
     />
   );
 };
