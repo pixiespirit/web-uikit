@@ -23,22 +23,56 @@ jobs:
       - name: Install vercel
         run: npm install -g vercel
 
+      - name: Install core dependencies
+        working-directory: ./core
+        run: yarn install
+
+      - name: Build core distribution
+        working-directory: ./core
+        run: yarn build
+
+      - name: Link the core
+        working-directory: ./core/dist
+        run: yarn link
+
+      - name: Link react
+        working-directory: ./core/node_modules/react
+        run: yarn link
+
+      - name: Install site dependencies
+        working-directory: ./site
+        run: yarn install
+
+      - name: Yarn link dependencies
+        working-directory: ./site
+        run: |
+          yarn link @pixiepkg/core
+          yarn link react
+
+      - name: Build site
+        working-directory: ./site
+        run: yarn build
+
+      - name: Export distribution
+        working-directory: ./site
+        run: yarn next export -o site
+
       - name: Deploy production
         if: ${{ github.ref == 'refs/heads/master' }}
+        working-directory: ./site/site
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          cd site
           DEPLOYMENT_URL=$(vercel --token $VERCEL_TOKEN --confirm --no-clipboard --prod)
           echo "::set-output name=deployment_url::$DEPLOYMENT_URL"
 
       - name: Deploy preview
         if: ${{ github.ref != 'refs/heads/master' }}
+        working-directory: ./site/site
         id: deploy
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          cd site
           DEPLOYMENT_URL=$(vercel --token $VERCEL_TOKEN --confirm --no-clipboard)
           echo "::set-output name=deployment_url::$DEPLOYMENT_URL"
 
