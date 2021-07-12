@@ -1,4 +1,4 @@
-import { Button, H3, KindButton, SizeButton } from '../../../core/src';
+import { Button, H3, KindButton, SizeButton } from '@pixiepkg/core';
 import React from 'react';
 import { container, row } from './_shared-styles';
 

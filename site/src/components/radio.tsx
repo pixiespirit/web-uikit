@@ -1,4 +1,4 @@
-import { H3, Radio, RadioProps } from '../../../core/src';
+import { H3, Radio, RadioProps } from '@pixiepkg/core';
 import React from 'react';
 import { container, row } from './_shared-styles';
 

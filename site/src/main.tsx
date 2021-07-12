@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import '../../core/src/global.css';
-import '../../core/font/font.css';
+import '@pixiepkg/core/bundle.css';
+import '@pixiepkg/core/font/font.css';
 
 ReactDOM.render(
   <React.StrictMode>

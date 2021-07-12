@@ -1,4 +1,4 @@
-import { H3, Toggle } from '../../../core/src';
+import { H3, Toggle } from '@pixiepkg/core';
 import React, { useState } from 'react';
 import { container, row } from './_shared-styles';
 
