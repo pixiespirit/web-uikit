@@ -45,7 +45,6 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          cd dist
           DEPLOYMENT_URL=$(vercel --token $VERCEL_TOKEN --confirm --no-clipboard --prod)
           echo "::set-output name=deployment_url::$DEPLOYMENT_URL"
 
@@ -56,7 +55,6 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          cd dist
           DEPLOYMENT_URL=$(vercel --token $VERCEL_TOKEN --confirm --no-clipboard)
           echo "::set-output name=deployment_url::$DEPLOYMENT_URL"
 
