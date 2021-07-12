@@ -23,14 +23,17 @@ jobs:
       - name: Install vercel
         run: npm install -g vercel
 
-      - name: Change dir to site
-        run: cd site
+      - name: Install dependencies
+        working-directory: ./site
+        run: yarn install
 
       - name: Build distribution
+        working-directory: ./site
         run: yarn build
 
       - name: Deploy production
         if: ${{ github.ref == 'refs/heads/master' }}
+        working-directory: ./site
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
@@ -40,6 +43,7 @@ jobs:
 
       - name: Deploy preview
         if: ${{ github.ref != 'refs/heads/master' }}
+        working-directory: ./site
         id: deploy
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
