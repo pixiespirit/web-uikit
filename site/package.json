@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@pixiepkg/core": "^0.0.9",
+    "@pixiepkg/core": "*",
     "@pixiepkg/icon": "^0.0.12",
     "next": "11.0.1",
     "react": "17.0.2",

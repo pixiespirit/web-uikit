@@ -161,10 +161,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pixiepkg/core@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@pixiepkg/core/-/core-0.0.9.tgz#160457489f406ec998d208418c8c8ecc3458bd64"
-  integrity sha512-v+tTjbVyr+pxAm5I3h+8FMfWgs+Ih1pahX5CrD45i00VXRLq3cRH8X6bImZvq0w68EcjZwkFzmx8RhrE+LRKTQ==
+"@pixiepkg/core@*":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@pixiepkg/core/-/core-0.0.10.tgz#4f7cd6bb76b3fd716c898dea60d7bf57f3c20702"
+  integrity sha512-Fq8XzpUov4fz6KzIcwEag5JiwcybJgLeZiO2ZYY1smfJCdmu2OkKlnv2yMyTpqbGVQfIrJO4VRh7tEsUWZE02w==
   dependencies:
     "@pixiepkg/icon" "^0.0.4"
     "@types/lodash.chunk" "^4.2.6"
