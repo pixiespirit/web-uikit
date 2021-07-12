@@ -16,36 +16,37 @@ export interface AvatarProps {
   fullWidth?: boolean;
 }
 
+interface Size {
+  width: number;
+  height: number;
+}
+
+const sizes: Record<SizeAvatar, Size> = {
+  [SizeAvatar.SMALL]: { width: 48, height: 48 },
+  [SizeAvatar.MEDIUM]: { width: 88, height: 88 }
+};
+
 const getClass = (props: AvatarProps): string => {
   const classes: Array<string> = [s.avatar];
-
-  /**
-   * Avatar size style
-   * Default: medium
-   */
-  switch (props.size) {
-    case SizeAvatar.MEDIUM:
-    default:
-      classes.push(s.medium);
-      break;
-
-    case SizeAvatar.SMALL:
-      classes.push(s.small);
-      break;
-  }
-
   if (props.circle) classes.push(s.circle);
   if (props.fullWidth) classes.push(s.fullWidth);
   return classes.join(' ');
 };
 
 export const Avatar: React.FC<AvatarProps> = (props) => {
+  const size: Size = props.size
+    ? sizes[props.size]
+    : {
+        width: props.width ?? sizes[SizeAvatar.MEDIUM].width,
+        height: props.height ?? sizes[SizeAvatar.MEDIUM].height
+      };
+
   return (
     <img
       src={props.src}
       alt={props.alt}
-      width={props.width}
-      height={props.height}
+      width={size.width}
+      height={size.height}
       className={getClass(props)}
     />
   );
