@@ -23,11 +23,19 @@ jobs:
       - name: Install vercel
         run: npm install -g vercel
 
-      - name: Install dependencies
+      - name: Install core dependencies
+        working-directory: ./core
+        run: yarn install
+
+      - name: Build core distribution
+        working-directory: ./core
+        run: yarn build
+
+      - name: Install site dependencies
         working-directory: ./site
         run: yarn install
 
-      - name: Build distribution
+      - name: Build site distribution
         working-directory: ./site
         run: yarn build
 
