@@ -1,4 +1,4 @@
 export enum SizeAvatar {
-  SMALL,
-  MEDIUM
+  SMALL = 'sm',
+  MEDIUM = 'md'
 }

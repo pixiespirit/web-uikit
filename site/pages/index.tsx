@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React, { CSSProperties } from 'react';
+import { GalleryAvatar } from '../components/avatar';
 import { GalleryButton } from '../components/button';
 import { GalleryCheckbox } from '../components/check-box';
 import { GalleryInput } from '../components/input';
@@ -33,6 +34,7 @@ export default function Home() {
         <GalleryRadio />
         <GalleryToggle />
         <GalleryInput />
+        <GalleryAvatar />
       </main>
     </div>
   );
