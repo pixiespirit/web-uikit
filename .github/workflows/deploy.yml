@@ -35,13 +35,19 @@ jobs:
         working-directory: ./core/dist
         run: yarn link
 
+      - name: Link react
+        working-directory: ./core/node_modules/react
+        run: yarn link
+
       - name: Install site dependencies
         working-directory: ./site
         run: yarn install
 
-      - name: Yarn link @pixiepkg/core
+      - name: Yarn link dependencies
         working-directory: ./site
-        run: yarn link @pixiepkg/core
+        run: |
+          yarn link @pixiepkg/core
+          yarn link react
 
       - name: Build site
         working-directory: ./site
