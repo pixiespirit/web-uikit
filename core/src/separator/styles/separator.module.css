@@ -1,6 +1,5 @@
 .separator {
   display: flex;
-  margin-top: 20px;
   text-align: center;
   align-items: center;
   color: var(--color-gray-300);

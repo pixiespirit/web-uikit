@@ -5,6 +5,7 @@ import { GalleryButton } from '../components/button';
 import { GalleryCheckbox } from '../components/check-box';
 import { GalleryInput } from '../components/input';
 import { GalleryRadio } from '../components/radio';
+import { GallerySeparator } from '../components/separator';
 import { GalleryTag } from '../components/tag';
 import { GalleryToggle } from '../components/toggle';
 
@@ -35,6 +36,7 @@ export default function Home() {
         <GalleryToggle />
         <GalleryInput />
         <GalleryAvatar />
+        <GallerySeparator />
       </main>
     </div>
   );
