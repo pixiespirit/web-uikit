@@ -1,6 +1,5 @@
 .separator {
   display: flex;
-  margin-top: 20px;
   text-align: center;
   align-items: center;
   color: var(--color-gray-300);
@@ -20,4 +19,8 @@
 
 .separator:not(:empty)::after {
   margin-left: 8px;
+}
+
+.defaultMargin {
+  margin-top: 20px;
 }
