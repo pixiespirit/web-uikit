@@ -7,9 +7,7 @@ export interface SeparatorProps {
 }
 
 export const Separator: React.FC<SeparatorProps> = (props) => {
-  return (
-    <div className={[s.separator, props.className ?? ''].join(' ')}>
-      {props.label}
-    </div>
-  );
+  const classNames = [s.separator, s.defaultMargin];
+  if (props.className) classNames.push(props.className);
+  return <div className={classNames.join(' ')}>{props.label}</div>;
 };

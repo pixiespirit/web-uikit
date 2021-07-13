@@ -20,3 +20,7 @@
 .separator:not(:empty)::after {
   margin-left: 8px;
 }
+
+.defaultMargin {
+  margin-top: 20px;
+}
