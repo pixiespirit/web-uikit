@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
 import s from '@/checkbox/styles/checkbox.module.css';
-import { Body1 } from '@/typography/body';
+import { Label3 } from '@/typography/label';
 
 export interface CheckboxProps {
   checked?: boolean;
@@ -46,7 +46,9 @@ export const Checkbox: React.FC<CheckboxProps> = (props) => {
       <span className={s.checkboxCheck}>
         <CheckIcon />
       </span>
-      <Body1 className={s.label}>{props.children}</Body1>
+      <Label3 medium className={s.label}>
+        {props.children}
+      </Label3>
     </label>
   );
 };

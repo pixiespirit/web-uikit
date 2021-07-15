@@ -20,7 +20,7 @@ export const Card: React.FC<CardProps> = (props) => {
     <div style={props.style} className={getClass(props)}>
       {s.title && (
         <div className={s.title}>
-          <Label1>{props.title}</Label1>
+          <Label1 semiBold>{props.title}</Label1>
         </div>
       )}
       <div className={s.body}>{props.children}</div>

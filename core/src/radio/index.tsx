@@ -1,6 +1,6 @@
 import React, { ForwardedRef, ReactNode } from 'react';
 import s from '@/radio/styles/styles.module.css';
-import { Body1 } from '@/typography/body';
+import { Label3 } from '@/typography/label';
 
 export interface RadioProps {
   name: string;
@@ -52,7 +52,9 @@ export const Radio: React.FC<RadioProps> = (props) => {
       <span className={s.checkboxDot}>
         <DotIcon />
       </span>
-      <Body1 className={s.label}>{props.children}</Body1>
+      <Label3 medium className={s.label}>
+        {props.children}
+      </Label3>
     </label>
   );
 };
