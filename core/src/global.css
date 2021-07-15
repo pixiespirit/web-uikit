@@ -4,7 +4,8 @@
   --color-white: #ffffff;
   --color-black: #333c44;
 
-  /* Deprecated start-block */
+  /* These colors are deprecated since 0.0.12 and will be deleted in 0.1.0 */
+  /* start-block */
   --color-gray-50: #fafafa;
   --color-gray-100: #f6f7f8;
   --color-gray-200: #eef1f3;
@@ -20,7 +21,7 @@
   --color-brand-04: #abb5ff;
   --color-brand-05: #d4daff;
   --color-brand-06: #f0f3ff;
-  /* Deprecated end-block */
+  /* end-block */
 
   /* It will be replaced by var(--color-primary-main) */
   --color-primary: var(--color-brand-02);

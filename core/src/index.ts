@@ -18,5 +18,6 @@ export * from '@/textarea';
 export * from '@/toggle';
 export * from '@/typography';
 export * from '@/typography/body';
-export * from '@/typography/label';
+export * from '@/typography/display';
 export * from '@/typography/heading';
+export * from '@/typography/label';

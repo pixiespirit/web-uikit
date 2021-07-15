@@ -11,7 +11,7 @@ const options: RadioProps[] = [
 export const GalleryRadio = (): JSX.Element => {
   return (
     <div style={container}>
-      <H3>Radios</H3>
+      <H3 bold>Radios</H3>
       <div style={row}>
         {options.map((props, index: number) => (
           <Radio key={`radio-options-${index}`} {...props} />

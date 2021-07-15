@@ -4,7 +4,12 @@ import s from '@/typography/styles/text.module.css';
 export interface TextProps {
   // font's style
   color?: string;
+
+  medium?: boolean;
   bold?: boolean;
+  semiBold?: boolean;
+  extraBold?: boolean;
+
   italic?: boolean;
   underline?: boolean;
 
@@ -22,7 +27,10 @@ export interface TextProps {
 
 const getClass = (props: TextProps): string => {
   const classes = [];
+  if (props.medium) classes.push(s.medium);
+  if (props.semiBold) classes.push(s.semiBold);
   if (props.bold) classes.push(s.bold);
+  if (props.extraBold) classes.push(s.extraBold);
   if (props.italic) classes.push(s.italic);
   if (props.underline) classes.push(s.underline);
   if (props.ellipsis) classes.push(s.ellipsis);

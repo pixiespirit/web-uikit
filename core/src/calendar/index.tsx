@@ -120,7 +120,7 @@ export const Calendar: React.FC<CalendarProps> = (props) => {
           </div>
         )}
         <div className="w-2/3 text-center">
-          <Label1>
+          <Label1 semiBold>
             {toMonthString(timeController.getMonth())}{' '}
             {timeController.getFullYear()}
           </Label1>

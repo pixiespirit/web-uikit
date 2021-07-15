@@ -5,7 +5,7 @@ import { container, row } from './_shared-styles';
 export const GalleryCheckbox = (): JSX.Element => {
   return (
     <div style={container}>
-      <H3>Checkboxs</H3>
+      <H3 bold>Checkboxs</H3>
       <div style={row}>
         <Checkbox />
         <Checkbox checked />

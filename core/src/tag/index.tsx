@@ -3,7 +3,7 @@ import { KindTag } from '@/tag/types';
 import s from '@/tag/styles/tag.module.css';
 import primary from '@/tag/styles/primary.module.css';
 import warning from '@/tag/styles/warning.module.css';
-import { Body3 } from '@/typography/body';
+import { Label4 } from '@/typography/label';
 
 export interface TagProps {
   children: React.ReactNode;
@@ -39,7 +39,7 @@ const getClass = (props: TagProps): string => {
 export const Tag: React.FC<TagProps> = (props) => {
   const tagChildren =
     typeof props.children === 'string' ? (
-      <Body3 children={props.children} />
+      <Label4 medium children={props.children} />
     ) : (
       props.children
     );
