@@ -46,9 +46,7 @@ export const Checkbox: React.FC<CheckboxProps> = (props) => {
       <span className={s.checkboxCheck}>
         <CheckIcon />
       </span>
-      <Label3 medium className={s.label}>
-        {props.children}
-      </Label3>
+      <Label3 className={s.label}>{props.children}</Label3>
     </label>
   );
 };

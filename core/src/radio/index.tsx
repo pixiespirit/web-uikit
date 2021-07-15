@@ -52,9 +52,7 @@ export const Radio: React.FC<RadioProps> = (props) => {
       <span className={s.checkboxDot}>
         <DotIcon />
       </span>
-      <Label3 medium className={s.label}>
-        {props.children}
-      </Label3>
+      <Label3 className={s.label}>{props.children}</Label3>
     </label>
   );
 };
