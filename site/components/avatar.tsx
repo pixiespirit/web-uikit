@@ -7,7 +7,7 @@ const avatarUrl = 'https://www.tinygraphs.com/squares/pixie?theme=sugarsweets';
 export const GalleryAvatar = (): JSX.Element => {
   return (
     <div style={container}>
-      <H3>Avatars</H3>
+      <H3 bold>Avatars</H3>
       <div style={row}>
         <Avatar src={avatarUrl} />
         <Avatar src={avatarUrl} circle />

@@ -55,7 +55,7 @@ export const RowButtonDisabled = (): JSX.Element => {
 export const GalleryButton = (): JSX.Element => {
   return (
     <div style={container}>
-      <H3>Buttons</H3>
+      <H3 bold>Buttons</H3>
       <RowButton />
       <RowButtonDisabled />
     </div>

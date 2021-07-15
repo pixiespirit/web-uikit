@@ -16,7 +16,7 @@ const tagCustomChildren: CSSProperties = {
 export const GalleryTag = (): JSX.Element => {
   return (
     <div style={container}>
-      <H3>Tags</H3>
+      <H3 bold>Tags</H3>
       <div style={row}>
         <Tag kind={KindTag.PRIMARY}>P2P call</Tag>
         <Tag kind={KindTag.PRIMARY}>Group call</Tag>

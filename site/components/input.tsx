@@ -5,7 +5,7 @@ import { container, row } from './_shared-styles';
 export const GalleryInput = (): JSX.Element => {
   return (
     <div style={{ ...container, width: 800 }}>
-      <H3>Inputs</H3>
+      <H3 bold>Inputs</H3>
       <div style={row}>
         <Input label="First name" />
         <Input label="First name" value="John Doe" disabled />

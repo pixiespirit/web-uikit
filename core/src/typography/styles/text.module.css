@@ -1,5 +1,17 @@
+.medium {
+  font-weight: 500 !important;
+}
+
+.semiBold {
+  font-weight: 600 !important;
+}
+
 .bold {
-  font-weight: bold !important;
+  font-weight: 700 !important;
+}
+
+.extraBold {
+  font-weight: 800 !important;
 }
 
 .italic {

@@ -7,7 +7,7 @@ export const GalleryToggle = (): JSX.Element => {
   const [checkex, setCheckex] = useState<boolean>(false);
   return (
     <div style={container}>
-      <H3>Toggles</H3>
+      <H3 bold>Toggles</H3>
       <div style={row}>
         <Toggle checked={checked} setChecked={setChecked} />
         <Toggle checked={checkex} setChecked={setCheckex} disabled />

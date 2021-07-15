@@ -5,12 +5,12 @@
 .label5,
 .label6 {
   font-family: var(--font-sans);
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .label1 {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 .label2 {
@@ -28,11 +28,13 @@
   line-height: 18px;
 }
 
+/* Label5 is deprecated since version 0.0.12 and will be deleted in 0.1.0 */
 .label5 {
   font-size: 11px;
   line-height: 16px;
 }
 
+/* Label6 is deprecated since version 0.0.12 and will be deleted in 0.1.0 */
 .label6 {
   font-size: 10px;
   line-height: 16px;

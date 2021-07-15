@@ -8,6 +8,7 @@ import { GalleryRadio } from '../components/radio';
 import { GallerySeparator } from '../components/separator';
 import { GalleryTag } from '../components/tag';
 import { GalleryToggle } from '../components/toggle';
+import { GalleryTypographyIntro } from '../components/typography';
 
 const style: CSSProperties = {
   display: 'flex',
@@ -29,6 +30,7 @@ export default function Home() {
       </Head>
 
       <main style={style}>
+        <GalleryTypographyIntro />
         <GalleryButton />
         <GalleryTag />
         <GalleryCheckbox />

@@ -34,6 +34,10 @@ export const Label4: React.FC<TextProps> = ({ className, as, ...props }) => {
   );
 };
 
+/**
+ *
+ * @deprecated Since version 0.0.12 and will be deleted in version 0.1.0
+ */
 export const Label5: React.FC<TextProps> = ({ className, as, ...props }) => {
   return (
     <Text as={as || 'p'} className={[s.label5, className].join(' ')} {...props}>
@@ -42,6 +46,10 @@ export const Label5: React.FC<TextProps> = ({ className, as, ...props }) => {
   );
 };
 
+/**
+ *
+ * @deprecated Since version 0.0.12 and will be deleted in version 0.1.0
+ */
 export const Label6: React.FC<TextProps> = ({ className, as, ...props }) => {
   return (
     <Text as={as || 'p'} className={[s.label6, className].join(' ')} {...props}>
