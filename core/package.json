@@ -10,7 +10,8 @@
   "scripts": {
     "build": "yarn rollup",
     "rollup": "rollup --config",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'"
   },
   "watch": {
     "build": {
@@ -37,6 +38,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-unused-imports": "^1.1.4",
+    "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "npm-watch": "^0.11.0",
     "postcss": "^8.3.0",
@@ -58,5 +60,15 @@
     "classnames": "^2.3.1",
     "lodash.chunk": "^4.2.0",
     "react-multi-ref": "^1.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint -- --quiet --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
