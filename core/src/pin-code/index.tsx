@@ -65,7 +65,7 @@ export const PinCode: React.FC<PinCodeProps> = (props) => {
     e: KeyboardEvent<HTMLInputElement>,
     inputIndex: number
   ) => {
-    let keyCode = e.code;
+    const keyCode = e.code;
     if (keyCode === KeyCodeEnum.BACKSPACE) {
       if (values[inputIndex] === '') {
         setInputValue('', inputIndex - 1);

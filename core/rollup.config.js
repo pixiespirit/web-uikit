@@ -30,12 +30,14 @@ const bundleMain = {
   plugins: [
     del({ targets: 'dist' }),
     copy({ targets: [{ src: 'font', dest: 'dist' }] }),
+    copy({ targets: [{ src: 'src/theme', dest: 'dist' }] }),
     postcss(postcssOptions),
     typescript({
       typescript: require('ttypescript'),
       useTsconfigDeclarationDir: true
     }),
-    copy({ targets: [{ src: 'package.json', dest: 'dist' }] })
+    copy({ targets: [{ src: 'package.json', dest: 'dist' }] }),
+
   ]
 };
 

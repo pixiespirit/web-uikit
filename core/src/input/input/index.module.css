@@ -1,30 +1,51 @@
 .inputWrapper {
   width: 100%;
   position: relative;
+  cursor: text;
+
 }
 
 .input {
   display: inline-block;
+  padding: 0.5rem 1rem;
   width: 100%;
-  padding: 13px 16px;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 24px;
   font-family: var(--font-sans);
-  border-radius: 8px;
-  border: 1px solid var(--color-gray-500);
+  color: var(--color-gray-700);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-gray-400);
   background-color: var(--color-white);
-  /* ignore top box shadow on safari mobile */
-  -webkit-appearance: none;
+  transition: all .2s ease;
+  font-weight: 500;
+}
+
+.input.sm {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.input.lg {
+  padding: 0.625rem 1rem;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .input:hover {
-  cursor: pointer;
+  cursor: text;
+  border-color: var(--color-gray-500);
 }
 
 .input:focus {
   outline: none;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-gray-700);
+  border-color: var(--color-blue-500);
+  box-shadow: 0 0 0 3px rgba(117, 200, 255, 0.5);
+}
+
+.input:invalid{
+  border-color: var(--color-red-500);
+  box-shadow: none
 }
 
 .input:disabled {

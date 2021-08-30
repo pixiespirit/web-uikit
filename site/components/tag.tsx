@@ -1,4 +1,4 @@
-import { Body3, H3, KindTag, Tag, DivPx } from '@pixiepkg/core';
+import { Body3, H3, KindTag, Tag, DivPx } from '../../core/dist';
 import React, { CSSProperties } from 'react';
 import { container, row } from './_shared-styles';
 import { SuitcaseSolid, GroupUserSolid } from '@pixiepkg/icon';

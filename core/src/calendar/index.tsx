@@ -84,7 +84,7 @@ export const Calendar: React.FC<CalendarProps> = (props) => {
 
     // TODO: Remove below code when the above feature was implemented
     if (collapse) {
-      let selectedDateRowId = calendarMatrix.findIndex((row) => {
+      const selectedDateRowId = calendarMatrix.findIndex((row) => {
         return row.some((date) => date && isSameDate(selectedDate, date));
       });
       // selectDateRowId will be -1 if can not found selected date in the
