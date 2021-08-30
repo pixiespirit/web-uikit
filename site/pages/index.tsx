@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React, { CSSProperties } from 'react';
-import {Input} from "../../core/dist";
+import {Input, InputGroup, InputLeftIcon, InputRightIcon} from "../../core/dist";
+import {ImagePicture2Outline} from "@pixiepkg/icon";
 
 
 const style: CSSProperties = {
@@ -10,6 +11,8 @@ const style: CSSProperties = {
   flexDirection: 'column',
   gap: 20
 };
+
+
 
 export default function Home() {
   return (
@@ -27,18 +30,33 @@ export default function Home() {
         <div className="wrapper">
           <h2 className={"title"}>Input</h2>
           <div className="mb-4">
-            <Input placeholder={"placeholder ne haha"} />
+            <Input placeholder={"Sizes prop sm"} sizes={"sm"}/>
           </div>
           <div className="mb-4">
-            <Input placeholder={"Invalid"} />
+            <Input placeholder={"Sizes prop md as default"} />
           </div>
-          {/*<div className="mb-4">*/}
-          {/*  <InputGroup>*/}
-          {/*    /!*<InputRightIcon children={<span>haha</span>}/>*!/*/}
-          {/*    <Input placeholder={"Invalid"} />*/}
-          {/*    <InputLeftIcon children={<ImagePicture2Outline size={24} display={"block"} />}/>*/}
-          {/*  </InputGroup>*/}
-          {/*</div>*/}
+          <div className="mb-4">
+            <Input placeholder={"sizes props lg"} sizes={"lg"}/>
+          </div>
+
+          <div className="mb-4">
+            <Input placeholder={"Invalid input"} required/>
+          </div>
+
+          <div className="mb-4">
+            <InputGroup>
+              {/*<InputRightIcon children={<span>haha</span>}/>*/}
+              <Input placeholder={"Left icon with action onClick"} />
+              <InputLeftIcon onClick={() => alert("ok")}><ImagePicture2Outline size={24} display={"block"} /></InputLeftIcon>
+            </InputGroup>
+          </div>
+       <div className="mb-4">
+          <InputGroup>
+           <Input placeholder={"Right icon"} />
+            <InputRightIcon ><ImagePicture2Outline size={24} display={"block"} /></InputRightIcon>
+          </InputGroup>
+          </div>
+
 
         </div>
         {/*<GalleryTypographyIntro />*/}

@@ -1,6 +1,8 @@
 .inputWrapper {
   width: 100%;
   position: relative;
+  cursor: text;
+
 }
 
 .input {
@@ -31,7 +33,7 @@
 }
 
 .input:hover {
-  cursor: pointer;
+  cursor: text;
   border-color: var(--color-gray-500);
 }
 
