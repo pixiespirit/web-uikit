@@ -6,16 +6,24 @@ export interface SizeButtonType {
   iconMargin: DivSize;
 }
 
-export type SizeButtonKey = 'MEDIUM' | 'SMALL';
+export type SizeButtonKey = 'SMALL' | 'MEDIUM' | 'LARGE' | 'XLARGE';
 
 export const SizeButton: Record<SizeButtonKey, SizeButtonType> = {
+  SMALL: {
+    root: size.small,
+    iconMargin: 4
+  },
   MEDIUM: {
     root: size.medium,
     iconMargin: 8
   },
-  SMALL: {
-    root: size.small,
-    iconMargin: 4
+  LARGE: {
+    root: size.large,
+    iconMargin: 8
+  },
+  XLARGE: {
+    root: size.xlarge,
+    iconMargin: 8
   }
 };
 
@@ -23,5 +31,6 @@ export enum KindButton {
   PRIMARY,
   SECONDARY,
   TERTIARY,
-  TEXT_ONLY
+  TEXT_ONLY,
+  GHOST
 }

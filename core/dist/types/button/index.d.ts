@@ -9,9 +9,11 @@ export interface ButtonProps {
     onFocus?: React.FocusEventHandler;
     onBlur?: React.FocusEventHandler;
     autoFocus?: boolean;
-    icon?: React.ReactNode;
+    leftIcon?: React.ReactNode;
+    rightIcon?: React.ReactNode;
     stickIconAtPrefix?: boolean;
     kind?: KindButton;
+    rounded?: boolean;
     size?: SizeButtonType;
     inline?: boolean;
     fullWidth?: boolean;

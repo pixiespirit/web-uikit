@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  border-radius: 10px;
 
   /* Enforce width in case of link */
   width: fit-content;
@@ -41,4 +42,8 @@
 /* force the icon display be block to align vertically */
 .icon > * {
   display: block !important;
+}
+
+.rounded {
+  border-radius: 9999px;
 }

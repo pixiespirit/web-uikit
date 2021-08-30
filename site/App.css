@@ -1,12 +1,22 @@
 .title {
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .wrapper {
-    margin-bottom: 60px;
+  margin-bottom: 1rem;
 }
 
 .mb-4 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }

@@ -1,8 +1,13 @@
 import Head from 'next/head';
 import React, { CSSProperties } from 'react';
-import {Input, InputGroup, InputLeftIcon, InputRightIcon} from "../../core/dist";
-import {ImagePicture2Outline} from "@pixiepkg/icon";
-
+import {
+  Input,
+  InputGroup,
+  InputLeftIcon,
+  InputRightIcon
+} from '../../core/dist';
+import { ImagePicture2Outline } from '@pixiepkg/icon';
+import { ButtonDemo } from '../components/button-demo';
 
 const style: CSSProperties = {
   maxWidth: 1170,
@@ -11,8 +16,6 @@ const style: CSSProperties = {
   flexDirection: 'column',
   gap: 20
 };
-
-
 
 export default function Home() {
   return (
@@ -28,37 +31,41 @@ export default function Home() {
 
       <main style={style}>
         <div className="wrapper">
-          <h2 className={"title"}>Input</h2>
+          <h2 className="title">Input</h2>
           <div className="mb-4">
-            <Input placeholder={"Sizes prop sm"} sizes={"sm"}/>
+            <Input placeholder={'Sizes prop sm'} sizes={'sm'} />
           </div>
           <div className="mb-4">
-            <Input placeholder={"Sizes prop md as default"} />
+            <Input placeholder={'Sizes prop md as default'} />
           </div>
           <div className="mb-4">
-            <Input placeholder={"sizes props lg"} sizes={"lg"}/>
+            <Input placeholder={'sizes props lg'} sizes={'lg'} />
           </div>
 
           <div className="mb-4">
-            <Input placeholder={"Invalid input"} required/>
+            <Input placeholder={'Invalid input'} required />
           </div>
 
           <div className="mb-4">
             <InputGroup>
               {/*<InputRightIcon children={<span>haha</span>}/>*/}
-              <Input placeholder={"Left icon with action onClick"} />
-              <InputLeftIcon onClick={() => alert("ok")}><ImagePicture2Outline size={24} display={"block"} /></InputLeftIcon>
+              <Input placeholder={'Left icon with action onClick'} />
+              <InputLeftIcon onClick={() => alert('ok')}>
+                <ImagePicture2Outline size={24} display={'block'} />
+              </InputLeftIcon>
             </InputGroup>
           </div>
-       <div className="mb-4">
-          <InputGroup>
-           <Input placeholder={"Right icon"} />
-            <InputRightIcon ><ImagePicture2Outline size={24} display={"block"} /></InputRightIcon>
-          </InputGroup>
+          <div className="mb-4">
+            <InputGroup>
+              <Input placeholder={'Right icon'} />
+              <InputRightIcon>
+                <ImagePicture2Outline size={24} display={'block'} />
+              </InputRightIcon>
+            </InputGroup>
           </div>
-
-
         </div>
+
+        <ButtonDemo />
         {/*<GalleryTypographyIntro />*/}
         {/*<GalleryButton />*/}
         {/*<GalleryTag />*/}

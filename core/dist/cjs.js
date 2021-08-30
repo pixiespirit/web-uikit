@@ -47,16 +47,24 @@ const Avatar = (props) => {
     return (jsxRuntime.jsx("img", { src: props.src, alt: props.alt, width: size.width, height: size.height, className: getClass$6(props) }, void 0));
 };
 
-var size = {"medium":"size-module_medium__mDAQ6","small":"size-module_small__2GPk0"};
+var size = {"small":"size-module_small__2GPk0","medium":"size-module_medium__mDAQ6","large":"size-module_large__2p056","xlarge":"size-module_xlarge__2i7wT"};
 
 const SizeButton = {
+    SMALL: {
+        root: size.small,
+        iconMargin: 4
+    },
     MEDIUM: {
         root: size.medium,
         iconMargin: 8
     },
-    SMALL: {
-        root: size.small,
-        iconMargin: 4
+    LARGE: {
+        root: size.large,
+        iconMargin: 8
+    },
+    XLARGE: {
+        root: size.xlarge,
+        iconMargin: 8
     }
 };
 exports.KindButton = void 0;
@@ -65,9 +73,10 @@ exports.KindButton = void 0;
     KindButton[KindButton["SECONDARY"] = 1] = "SECONDARY";
     KindButton[KindButton["TERTIARY"] = 2] = "TERTIARY";
     KindButton[KindButton["TEXT_ONLY"] = 3] = "TEXT_ONLY";
+    KindButton[KindButton["GHOST"] = 4] = "GHOST";
 })(exports.KindButton || (exports.KindButton = {}));
 
-var s$k = {"button":"button-module_button__2jxPE","inline":"button-module_inline__1oO8m","text":"button-module_text__1w9dx","textGrow":"button-module_textGrow__35Fjt","fullWidth":"button-module_fullWidth__2l01R","icon":"button-module_icon__1dp83"};
+var s$k = {"button":"button-module_button__2jxPE","inline":"button-module_inline__1oO8m","text":"button-module_text__1w9dx","textGrow":"button-module_textGrow__35Fjt","fullWidth":"button-module_fullWidth__2l01R","icon":"button-module_icon__1dp83","rounded":"button-module_rounded__3TFQm"};
 
 var primary$1 = {"root":"primary-module_root__3YAse"};
 
@@ -76,6 +85,8 @@ var secondary = {"root":"secondary-module_root__17LoW"};
 var tertiary = {"root":"tertiary-module_root__1C2yS"};
 
 var textOnly = {"root":"text-only-module_root__1-CcK"};
+
+var ghost = {"root":"ghost-module_root__NtMkj"};
 
 var s$j = {"px":"div-module_px___1W_8","grow":"div-module_grow__3F4-W"};
 
@@ -95,10 +106,6 @@ const getClass$5 = (props) => {
      * Default: primary
      */
     switch (props.kind) {
-        case exports.KindButton.PRIMARY:
-        default:
-            classes.push(primary$1.root);
-            break;
         case exports.KindButton.SECONDARY:
             classes.push(secondary.root);
             break;
@@ -108,11 +115,20 @@ const getClass$5 = (props) => {
         case exports.KindButton.TERTIARY:
             classes.push(tertiary.root);
             break;
+        case exports.KindButton.GHOST:
+            classes.push(ghost.root);
+            break;
+        case exports.KindButton.PRIMARY:
+        default:
+            classes.push(primary$1.root);
+            break;
     }
     if (props.inline)
         classes.push(s$k.inline);
     if (props.fullWidth)
         classes.push(s$k.fullWidth);
+    if (props.rounded)
+        classes.push(s$k.rounded);
     if (props.className)
         classes.push(props.className);
     return classes.join(' ');
@@ -120,9 +136,11 @@ const getClass$5 = (props) => {
 const ButtonChildren = (props) => {
     var _a;
     const btnSize = (_a = props.size) !== null && _a !== void 0 ? _a : SizeButton.MEDIUM;
-    return (jsxRuntime.jsxs(React__default['default'].Fragment, { children: [props.icon && jsxRuntime.jsx("span", Object.assign({ className: s$k.icon }, { children: props.icon }), void 0),
-            props.icon && !props.stickIconAtPrefix && props.children && (jsxRuntime.jsx(DivPx, { size: btnSize.iconMargin }, void 0)),
-            props.children && (jsxRuntime.jsx("span", Object.assign({ className: classnames__default['default'](s$k.text, props.stickIconAtPrefix && s$k.textGrow) }, { children: props.children }), void 0))] }, void 0));
+    return (jsxRuntime.jsxs(React__default['default'].Fragment, { children: [props.leftIcon && jsxRuntime.jsx("span", Object.assign({ className: s$k.icon }, { children: props.leftIcon }), void 0),
+            props.leftIcon && !props.stickIconAtPrefix && props.children && (jsxRuntime.jsx(DivPx, { size: btnSize.iconMargin }, void 0)),
+            props.children && (jsxRuntime.jsx("span", Object.assign({ className: classnames__default['default'](s$k.text, props.stickIconAtPrefix && s$k.textGrow) }, { children: props.children }), void 0)),
+            props.rightIcon && !props.stickIconAtPrefix && props.children && (jsxRuntime.jsx(DivPx, { size: btnSize.iconMargin }, void 0)),
+            props.rightIcon && jsxRuntime.jsx("span", Object.assign({ className: s$k.icon }, { children: props.rightIcon }), void 0)] }, void 0));
 };
 const Button = (props) => {
     var _a;

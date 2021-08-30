@@ -5,6 +5,7 @@ import primary from '@/button/styles/primary.module.css';
 import secondary from '@/button/styles/secondary.module.css';
 import tertiary from '@/button/styles/tertiary.module.css';
 import textOnly from '@/button/styles/text-only.module.css';
+import ghost from '@/button/styles/ghost.module.css';
 import { DivPx } from '@/div';
 import classNames from 'classnames';
 
@@ -19,9 +20,11 @@ export interface ButtonProps {
   onBlur?: React.FocusEventHandler;
   autoFocus?: boolean;
 
-  icon?: React.ReactNode;
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
   stickIconAtPrefix?: boolean;
   kind?: KindButton;
+  rounded?: boolean;
   size?: SizeButtonType;
   inline?: boolean;
   fullWidth?: boolean;
@@ -44,10 +47,6 @@ const getClass = (props: ButtonProps): string => {
    * Default: primary
    */
   switch (props.kind) {
-    case KindButton.PRIMARY:
-    default:
-      classes.push(primary.root);
-      break;
     case KindButton.SECONDARY:
       classes.push(secondary.root);
       break;
@@ -57,10 +56,18 @@ const getClass = (props: ButtonProps): string => {
     case KindButton.TERTIARY:
       classes.push(tertiary.root);
       break;
+    case KindButton.GHOST:
+      classes.push(ghost.root);
+      break;
+    case KindButton.PRIMARY:
+    default:
+      classes.push(primary.root);
+      break;
   }
 
   if (props.inline) classes.push(s.inline);
   if (props.fullWidth) classes.push(s.fullWidth);
+  if (props.rounded) classes.push(s.rounded);
   if (props.className) classes.push(props.className);
 
   return classes.join(' ');
@@ -70,8 +77,8 @@ const ButtonChildren: React.FC<ButtonProps> = (props) => {
   const btnSize = props.size ?? SizeButton.MEDIUM;
   return (
     <React.Fragment>
-      {props.icon && <span className={s.icon}>{props.icon}</span>}
-      {props.icon && !props.stickIconAtPrefix && props.children && (
+      {props.leftIcon && <span className={s.icon}>{props.leftIcon}</span>}
+      {props.leftIcon && !props.stickIconAtPrefix && props.children && (
         <DivPx size={btnSize.iconMargin} />
       )}
       {props.children && (
@@ -81,6 +88,10 @@ const ButtonChildren: React.FC<ButtonProps> = (props) => {
           {props.children}
         </span>
       )}
+      {props.rightIcon && !props.stickIconAtPrefix && props.children && (
+        <DivPx size={btnSize.iconMargin} />
+      )}
+      {props.rightIcon && <span className={s.icon}>{props.rightIcon}</span>}
     </React.Fragment>
   );
 };
