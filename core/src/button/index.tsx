@@ -3,8 +3,6 @@ import { KindButton, SizeButton, SizeButtonType } from '@/button/types';
 import s from '@/button/styles/button.module.css';
 import primary from '@/button/styles/primary.module.css';
 import secondary from '@/button/styles/secondary.module.css';
-import tertiary from '@/button/styles/tertiary.module.css';
-import textOnly from '@/button/styles/text-only.module.css';
 import ghost from '@/button/styles/ghost.module.css';
 import { DivPx } from '@/div';
 import classNames from 'classnames';
@@ -49,12 +47,6 @@ const getClass = (props: ButtonProps): string => {
   switch (props.kind) {
     case KindButton.SECONDARY:
       classes.push(secondary.root);
-      break;
-    case KindButton.TEXT_ONLY:
-      classes.push(textOnly.root);
-      break;
-    case KindButton.TERTIARY:
-      classes.push(tertiary.root);
       break;
     case KindButton.GHOST:
       classes.push(ghost.root);

@@ -71,9 +71,7 @@ exports.KindButton = void 0;
 (function (KindButton) {
     KindButton[KindButton["PRIMARY"] = 0] = "PRIMARY";
     KindButton[KindButton["SECONDARY"] = 1] = "SECONDARY";
-    KindButton[KindButton["TERTIARY"] = 2] = "TERTIARY";
-    KindButton[KindButton["TEXT_ONLY"] = 3] = "TEXT_ONLY";
-    KindButton[KindButton["GHOST"] = 4] = "GHOST";
+    KindButton[KindButton["GHOST"] = 2] = "GHOST";
 })(exports.KindButton || (exports.KindButton = {}));
 
 var s$k = {"button":"button-module_button__2jxPE","inline":"button-module_inline__1oO8m","text":"button-module_text__1w9dx","textGrow":"button-module_textGrow__35Fjt","fullWidth":"button-module_fullWidth__2l01R","icon":"button-module_icon__1dp83","rounded":"button-module_rounded__3TFQm"};
@@ -81,10 +79,6 @@ var s$k = {"button":"button-module_button__2jxPE","inline":"button-module_inline
 var primary$1 = {"root":"primary-module_root__3YAse"};
 
 var secondary = {"root":"secondary-module_root__17LoW"};
-
-var tertiary = {"root":"tertiary-module_root__1C2yS"};
-
-var textOnly = {"root":"text-only-module_root__1-CcK"};
 
 var ghost = {"root":"ghost-module_root__NtMkj"};
 
@@ -108,12 +102,6 @@ const getClass$5 = (props) => {
     switch (props.kind) {
         case exports.KindButton.SECONDARY:
             classes.push(secondary.root);
-            break;
-        case exports.KindButton.TEXT_ONLY:
-            classes.push(textOnly.root);
-            break;
-        case exports.KindButton.TERTIARY:
-            classes.push(tertiary.root);
             break;
         case exports.KindButton.GHOST:
             classes.push(ghost.root);

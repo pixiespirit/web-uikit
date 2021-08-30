@@ -30,7 +30,5 @@ export const SizeButton: Record<SizeButtonKey, SizeButtonType> = {
 export enum KindButton {
   PRIMARY,
   SECONDARY,
-  TERTIARY,
-  TEXT_ONLY,
   GHOST
 }

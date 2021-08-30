@@ -136,46 +136,6 @@ body {
   border: 1px solid #f1f5f9;
 }
 
-.tertiary-module_root__1C2yS {
-  color: var(--color-gray-600);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-gray-400);
-}
-
-.tertiary-module_root__1C2yS:hover,
-.tertiary-module_root__1C2yS:active {
-  background-color: var(--color-gray-100);
-  border-color: var(--color-gray-600);
-}
-
-.tertiary-module_root__1C2yS:disabled {
-  color: var(--color-gray-400);
-  border-color: var(--color-gray-400);
-  background-color: var(--color-white);
-}
-
-.text-only-module_root__1-CcK {
-  color: var(--color-info);
-  border: solid 1px transparent;
-  background-color: transparent;
-
-  /**
-    Text only looks ugly if padding left-right
-    are too wide
-     */
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.text-only-module_root__1-CcK:hover,
-.text-only-module_root__1-CcK:active {
-  text-decoration: underline;
-}
-
-.text-only-module_root__1-CcK:disabled {
-  color: #b4daff;
-}
-
 .ghost-module_root__NtMkj {
   color: var(--color-gray-700);
   border: solid 1px transparent;

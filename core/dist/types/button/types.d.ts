@@ -8,7 +8,5 @@ export declare const SizeButton: Record<SizeButtonKey, SizeButtonType>;
 export declare enum KindButton {
     PRIMARY = 0,
     SECONDARY = 1,
-    TERTIARY = 2,
-    TEXT_ONLY = 3,
-    GHOST = 4
+    GHOST = 2
 }
