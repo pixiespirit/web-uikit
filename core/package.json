@@ -1,6 +1,6 @@
 {
   "name": "@pixiepkg/core",
-  "version": "0.0.12",
+  "version": "2.0.0",
   "description": "Pixie web core UI components",
   "main": "cjs.js",
   "module": "esm.js",
@@ -9,7 +9,14 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn rollup",
-    "rollup": "rollup --config"
+    "rollup": "rollup --config",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": {
+      "patterns": ["src/**/*"],
+      "extensions": "css, ts, tsx, module.css"
+    }
   },
   "peerDependencies": {
     "react": ">=16",
@@ -22,6 +29,7 @@
     "@types/react-dom": "^17.0.6",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "autoprefixer": "^10.2.6",
+    "npm-watch": "^0.11.0",
     "postcss": "^8.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

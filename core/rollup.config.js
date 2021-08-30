@@ -1,6 +1,6 @@
 import cssPrefix from 'autoprefixer';
 import copy from 'rollup-plugin-copy';
-import del from 'rollup-plugin-delete';
+// import del from 'rollup-plugin-delete';
 import postcss from 'rollup-plugin-postcss';
 import typescript from 'rollup-plugin-typescript2';
 
@@ -28,14 +28,16 @@ const bundleMain = {
     '@pixiepkg/icon'
   ],
   plugins: [
-    del({ targets: 'dist' }),
+    // del({ targets: 'dist' }),
     copy({ targets: [{ src: 'font', dest: 'dist' }] }),
+    copy({ targets: [{ src: 'src/theme', dest: 'dist' }] }),
     postcss(postcssOptions),
     typescript({
       typescript: require('ttypescript'),
       useTsconfigDeclarationDir: true
     }),
-    copy({ targets: [{ src: 'package.json', dest: 'dist' }] })
+    copy({ targets: [{ src: 'package.json', dest: 'dist' }] }),
+
   ]
 };
 

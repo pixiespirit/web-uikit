@@ -32,12 +32,18 @@
 
 .input:hover {
   cursor: pointer;
+  border-color: var(--color-gray-500);
 }
 
 .input:focus {
   outline: none;
-  background-color: var(--color-white);
-  border-color: var(--color-gray-500);
+  border-color: var(--color-blue-500);
+  box-shadow: 0 0 0 3px rgba(117, 200, 255, 0.5);
+}
+
+.input:invalid{
+  border-color: var(--color-red-500);
+  box-shadow: none
 }
 
 .input:disabled {

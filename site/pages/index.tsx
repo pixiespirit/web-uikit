@@ -1,16 +1,6 @@
 import Head from 'next/head';
 import React, { CSSProperties } from 'react';
-import { GalleryAvatar } from '../components/avatar';
-import { GalleryButton } from '../components/button';
-import { GalleryCheckbox } from '../components/check-box';
-import { GalleryInput } from '../components/input';
-import { GalleryRadio } from '../components/radio';
-import { GallerySeparator } from '../components/separator';
-import { GalleryTag } from '../components/tag';
-import { GalleryToggle } from '../components/toggle';
-import { GalleryTypographyIntro } from '../components/typography';
-import {Input, InputGroup, InputLeftIcon, InputRightIcon} from "../../core/dist";
-import {ImagePicture2Outline} from "@pixiepkg/icon";
+import {Input} from "../../core/dist";
 
 
 const style: CSSProperties = {
@@ -40,15 +30,15 @@ export default function Home() {
             <Input placeholder={"placeholder ne haha"} />
           </div>
           <div className="mb-4">
-            <Input placeholder={"Invalid"} required/>
+            <Input placeholder={"Invalid"} />
           </div>
-          <div className="mb-4">
-            <InputGroup>
-              {/*<InputRightIcon children={<span>haha</span>}/>*/}
-              <Input placeholder={"Invalid"} required/>
-              <InputLeftIcon children={<ImagePicture2Outline size={24} display={"block"} />}/>
-            </InputGroup>
-          </div>
+          {/*<div className="mb-4">*/}
+          {/*  <InputGroup>*/}
+          {/*    /!*<InputRightIcon children={<span>haha</span>}/>*!/*/}
+          {/*    <Input placeholder={"Invalid"} />*/}
+          {/*    <InputLeftIcon children={<ImagePicture2Outline size={24} display={"block"} />}/>*/}
+          {/*  </InputGroup>*/}
+          {/*</div>*/}
 
         </div>
         {/*<GalleryTypographyIntro />*/}
