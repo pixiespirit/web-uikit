@@ -1,7 +1,25 @@
-import {WeakValidationMap, ValidationMap, PropsWithChildren, ReactElement} from "react";
-import {ChangeEvent, CSSProperties, ReactChild} from "react";
+import {
+  WeakValidationMap,
+  ValidationMap,
+  PropsWithChildren,
+  ReactElement
+} from 'react';
+import { ChangeEvent, CSSProperties, ReactChild } from 'react';
 
-export type InputType = "email" | "number" | "hidden" | "text" | "password" | "file" | "submit" | "reset" | "month" | "image" | "checkbox"  | "search" | "radio"
+export type InputType =
+  | 'email'
+  | 'number'
+  | 'hidden'
+  | 'text'
+  | 'password'
+  | 'file'
+  | 'submit'
+  | 'reset'
+  | 'month'
+  | 'image'
+  | 'checkbox'
+  | 'search'
+  | 'radio';
 export interface InputBaseProps {
   children?: ReactChild;
   className?: string;
@@ -16,9 +34,7 @@ export interface InputBaseProps {
   value?: string;
 }
 
-
-
-interface FunctionComponent<P = {}> {
+interface FunctionComponent<P = Record<string, unknown>> {
   (props: PropsWithChildren<P>, context?: any): ReactElement<any, any> | null;
   propTypes?: WeakValidationMap<P>;
   contextTypes?: ValidationMap<any>;
@@ -27,4 +43,4 @@ interface FunctionComponent<P = {}> {
   id?: string;
 }
 
-export type SFC<P = {}> = FunctionComponent<P>;
+export type SFC<P = Record<string, any>> = FunctionComponent<P>;

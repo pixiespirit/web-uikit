@@ -29,7 +29,7 @@ export const toCalendarMatrix = (
     return [];
   }
 
-  let calendar: Array<Date | undefined> = [];
+  const calendar: Array<Date | undefined> = [];
 
   // We will have slots which is belonged to the previous month
   // Then, the calendar should be offsetted by that slots with undefined

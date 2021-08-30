@@ -65,7 +65,7 @@ export function addDomEvent(
   target: EventTarget,
   eventName: string,
   handler: EventListener,
-  options?: AddEventListenerOptions,
+  options?: AddEventListenerOptions
 ) {
   target.addEventListener(eventName, handler, options);
   return () => {
@@ -78,7 +78,7 @@ export function addDomEvent(
  * @param event keyboard event
  */
 export function normalizeEventKey(
-  event: Pick<KeyboardEvent, 'key' | 'keyCode'>,
+  event: Pick<KeyboardEvent, 'key' | 'keyCode'>
 ) {
   const { key, keyCode } = event;
 
@@ -91,7 +91,7 @@ export function normalizeEventKey(
 }
 
 export function getRelatedTarget(
-  event: Pick<FocusEvent, 'relatedTarget' | 'target' | 'currentTarget'>,
+  event: Pick<FocusEvent, 'relatedTarget' | 'target' | 'currentTarget'>
 ) {
   const target = (event.target ?? event.currentTarget) as HTMLElement;
   const activeElement = getActiveElement(target);

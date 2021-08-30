@@ -18,10 +18,10 @@ export const InputElement: SFC<InputElementProps> = forwardRef(
       s.centerItem,
       s[attr],
       className,
-      props?.onClick ? s.cursorPointer : '',
+      props?.onClick ? s.cursorPointer : ''
     );
     return <div className={_className} ref={ref} {...rest} />;
-  },
+  }
 );
 
 InputElement.id = 'InputElement';
@@ -29,7 +29,7 @@ InputElement.id = 'InputElement';
 export const InputLeftIcon: SFC<InputElementProps> = forwardRef(
   (props, ref: ForwardedRef<HTMLDivElement>) => {
     return <InputElement ref={ref} placement="left" {...props} />;
-  },
+  }
 );
 
 InputLeftIcon.id = 'InputLeftIcon';
@@ -37,7 +37,7 @@ InputLeftIcon.id = 'InputLeftIcon';
 export const InputRightIcon: SFC<InputElementProps> = forwardRef(
   (props, ref: ForwardedRef<HTMLDivElement>) => {
     return <InputElement ref={ref} placement="right" {...props} />;
-  },
+  }
 );
 
 InputRightIcon.id = 'InputRightIcon';

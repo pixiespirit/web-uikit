@@ -1,12 +1,15 @@
 module.exports = {
   env: {
+    node: true,
     browser: true,
-    es2021: true
+    amd: true
   },
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended'
-    // 'plugin:prettier/recommended'
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -16,13 +19,14 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'unused-imports'],
   rules: {
     // eslint currently not detect props typing definitions
     // as a props validator
     // https://github.com/yannickcr/eslint-plugin-react/issues/2353
     'react/prop-types': 'off',
-
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     // TODO: Turn it on again and fix errors
     'react/display-name': 'off',
 

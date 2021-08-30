@@ -23,7 +23,7 @@ export const InputGroup: SFC<InputGroupProps> = forwardRef(
           16;
         groupStyles.style = {
           paddingLeft: imageSize * 2,
-          ...child.props.style,
+          ...child.props.style
         };
       }
       if (child.type.id === 'InputRightIcon') {
@@ -33,7 +33,7 @@ export const InputGroup: SFC<InputGroupProps> = forwardRef(
           16;
         groupStyles.style = {
           paddingRight: imageSize * 2,
-          ...child.props.style,
+          ...child.props.style
         };
       }
     });
@@ -43,7 +43,7 @@ export const InputGroup: SFC<InputGroupProps> = forwardRef(
         ? cloneElement(child, child.props)
         : cloneElement(child, {
             ...groupStyles,
-            ...child.props,
+            ...child.props
           });
     });
     // console.log(clones)
@@ -53,7 +53,7 @@ export const InputGroup: SFC<InputGroupProps> = forwardRef(
         {clones}
       </div>
     );
-  },
+  }
 );
 
 InputGroup.id = 'InputGroup';
