@@ -1,15 +1,15 @@
 .display1,
 .display2 {
-  font-family: var(--font-sans);
-  font-weight: normal;
+    font-family: var(--font-sans);
+    font-weight: normal;
 }
 
 .display1 {
-  font-size: 64px;
-  line-height: 72px;
+    font-size: 64px;
+    line-height: 72px;
 }
 
 .display2 {
-  font-size: 56px;
-  line-height: 64px;
+    font-size: 56px;
+    line-height: 64px;
 }

@@ -22,17 +22,17 @@
     padding: 0 var(--space-4);
 }
 
-.insetEnd{
-    right:0;
+.insetEnd {
+    right: 0;
 }
 
-.insetStart{
-    left:0;
+.insetStart {
+    left: 0;
 }
 
 .absolute {
     position: absolute;
-    top:0;
+    top: 0;
 }
 
 .cursorPointer {
