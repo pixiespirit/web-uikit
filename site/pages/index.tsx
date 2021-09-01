@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import React, { CSSProperties } from 'react';
 import { ButtonDemo } from '../components/button-demo';
+import { GalleryCheckbox } from '../components/check-box';
 import { InputDemo } from '../components/input-demo';
+import { GalleryToggle } from '../components/toggle';
 
 const style: CSSProperties = {
   maxWidth: 1170,
@@ -29,9 +31,9 @@ export default function Home() {
         {/*<GalleryTypographyIntro />*/}
         {/*<GalleryButton />*/}
         {/*<GalleryTag />*/}
-        {/*<GalleryCheckbox />*/}
+        <GalleryCheckbox />
         {/*<GalleryRadio />*/}
-        {/*<GalleryToggle />*/}
+        <GalleryToggle />
         {/*<GalleryInput />*/}
         {/*<GalleryAvatar />*/}
         {/*<GallerySeparator />*/}

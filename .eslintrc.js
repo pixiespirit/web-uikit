@@ -39,6 +39,7 @@ module.exports = {
     // Eslint false positive: Consider enum as unused variables
     // https://github.com/typescript-eslint/typescript-eslint/issues/2621
     'no-unused-vars': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
 
     // https://reactjs.org/docs/hooks-rules.html
