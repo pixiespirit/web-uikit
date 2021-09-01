@@ -387,68 +387,83 @@ body {
   flex-grow: 1;
 }
 
-.checkbox-module_container__29JTK {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
+.checkbox-module_checkbox__riFEF {
+    display: flex;
+    align-items: center;
 }
 
-.checkbox-module_input__mpeQc {
-  margin: 0;
-  width: 24px;
-  height: 24px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-radius: 4px;
-  border: 1px solid var(--color-gray-400);
-  background-color: var(--color-white);
+.checkbox-module_checkbox__riFEF.checkbox-module_disabled__DRbX8 {
+    pointer-events: none;
 }
 
-input:checked {
-  border-color: var(--color-primary);
-  background-color: var(--color-primary);
+.checkbox-module_checkbox__riFEF .checkbox-module_wrapper__yEast {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid var(--color-gray-400);
+    transition: all 0.3s linear;
+    position: relative;
+    height: var(--checkbox-size);
+    width: var(--checkbox-size);
+    min-width: var(--checkbox-size);
+    min-height: var(--checkbox-size);
+    cursor: pointer;
 }
 
-input:disabled {
-  cursor: default;
-  border-color: var(--color-gray-300);
-  background-color: var(--color-white);
+.checkbox-module_checkbox__riFEF.checkbox-module_disabled__DRbX8 .checkbox-module_wrapper__yEast {
+    cursor: default;
+    pointer-events: none;
+    border: 1px solid var(--color-gray-200);
+    background-color: var(--color-gray-50);
 }
 
-input:disabled:checked {
-  border-color: var(--color-brand-04);
-  background-color: var(--color-brand-04);
+.checkbox-module_checkbox__riFEF:not(.checkbox-module_disabled__DRbX8) .checkbox-module_wrapper__yEast:hover {
+    border: 1px solid var(--color-brand-500);
 }
 
-.checkbox-module_label__3zaA5 {
-  margin-left: 8px;
-  color: var(--color-gray-600);
+.checkbox-module_checkbox__riFEF:not(.checkbox-module_disabled__DRbX8).checkbox-module_checked__3Quep .checkbox-module_wrapper__yEast {
+    background-color: var(--color-brand-500);
+    border: 1px solid var(--color-brand-500);
 }
 
-.checkbox-module_input__mpeQc:disabled ~ .checkbox-module_label__3zaA5 {
-  color: var(--color-gray-400);
+.checkbox-module_checkbox__riFEF .checkbox-module_iconWrapper__Y4s5Q {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
 }
 
-.checkbox-module_checkIcon__340sY {
-  display: block;
+.checkbox-module_checkbox__riFEF .checkbox-module_checkIcon__340sY {
+    flex-shrink: 0;
+    display: block;
+    overflow: hidden;
+    transition: all 0.15s linear;
+    color: var(--color-white);
 }
 
-.checkbox-module_checkboxCheck__1wUb7 {
-  position: absolute;
-  opacity: 0;
-  top: 4px;
-  left: 4px;
-
-  /* Check icon style */
-  font-size: 16px;
-  color: var(--color-primary);
+.checkbox-module_checkbox__riFEF.checkbox-module_disabled__DRbX8 .checkbox-module_wrapper__yEast .checkbox-module_checkIcon__340sY {
+    color: var(--color-gray-400);
 }
 
-.checkbox-module_input__mpeQc:checked ~ .checkbox-module_checkboxCheck__1wUb7 {
-  opacity: 1;
+.checkbox-module_checkbox__riFEF:not(.checkbox-module_checked__3Quep) .checkbox-module_checkIcon__340sY {
+    height: 0;
+    width: 0;
+}
+.checkbox-module_checkbox__riFEF .checkbox-module_label__3zaA5 {
+    margin-left: 0.5rem;
+    font-weight: 400;
+    color: var(--color-gray-800);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.checkbox-module_checkbox__riFEF.checkbox-module_disabled__DRbX8 .checkbox-module_label__3zaA5 {
+    color: var(--color-gray-400);
 }
 
 .index-module_inputWrapper__3I3PY {
@@ -872,49 +887,56 @@ input::placeholder {
   line-height: 20px;
 }
 
-.toggle-module_switch__3D1Y5 .toggle-module_input__324KM {
-  position: absolute;
-  opacity: 0;
+.toggle-module_toggle__1yX7l {
+    display: flex;
+    align-items: center;
 }
 
-.toggle-module_switch__3D1Y5 {
-  display: inline-block;
-  width: 42px;
-  height: 24px;
-  padding: 2px;
-
-  background: #bdb9a6;
-  border-radius: 24px;
+.toggle-module_toggle__1yX7l.toggle-module_disabled__1B2DR {
+    pointer-events: none;
 }
 
-/* the circle */
-.toggle-module_switch__3D1Y5 .toggle-module_circle__263_u {
-  height: 20px;
-  width: 20px;
-
-  border-radius: 24px;
-  background: #fff;
-  transition: all 300ms;
+.toggle-module_toggle__1yX7l .toggle-module_wrapper__1z64e {
+    display: block;
+    width: var(--toggle-width);
+    height: var(--toggle-height);
+    background-color: var(--color-gray-300);
+    border-radius: 1000px;
+    position: relative;
+    transition: all 0.15s linear;
+    cursor: pointer;
 }
 
-.toggle-module_switch__3D1Y5 input:checked + .toggle-module_circle__263_u {
-  transform: translate3d(18px, 0, 0);
+.toggle-module_toggle__1yX7l.toggle-module_checked__35_YE .toggle-module_wrapper__1z64e {
+    background-color: var(--color-brand-500);
 }
 
-.toggle-module_on__2EKt0 {
-  background-color: var(--color-brand-02);
+.toggle-module_toggle__1yX7l .toggle-module_wrapper__1z64e::after {
+    --padding: calc((var(--toggle-height) - var(--toggle-size)) / 2);
+
+    content: '';
+    position: absolute;
+    background-color: var(--color-white);
+
+    width: var(--toggle-size);
+    border-radius: 1000px;
+    top: var(--padding);
+    bottom: var(--padding);
+    left: var(--padding);
+    transition: all 0.15s linear;
 }
 
-.toggle-module_off__3J-Iz {
-  background-color: var(--color-gray-300);
+.toggle-module_toggle__1yX7l.toggle-module_disabled__1B2DR .toggle-module_wrapper__1z64e {
+    background-color: var(--color-brand-100);
 }
 
-.toggle-module_disabledOn__2ZL_1 {
-  background-color: var(--color-brand-04);
+.toggle-module_toggle__1yX7l.toggle-module_checked__35_YE .toggle-module_wrapper__1z64e::after {
+    left: calc(100% - 2px - var(--toggle-size));
 }
 
-.toggle-module_disabledOff__29rqM {
-  background-color: var(--color-gray-200);
+.toggle-module_toggle__1yX7l .toggle-module_label__3d3S0 {
+    margin-left: 0.5rem;
+    font-size: var(--toggle-height);
 }
 
 /* Body is deprecated since version 0.0.12 and will be deleted in 0.1.0 */

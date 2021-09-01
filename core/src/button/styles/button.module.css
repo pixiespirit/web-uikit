@@ -1,49 +1,49 @@
 .button {
-  display: flex;
-  cursor: pointer;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
 
-  /* Enforce width in case of link */
-  width: fit-content;
+    /* Enforce width in case of link */
+    width: fit-content;
 }
 
 .button:disabled {
-  cursor: auto;
-  pointer-events: none;
+    cursor: auto;
+    pointer-events: none;
 }
 
 .inline {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 .text {
-  display: flex;
-  flex: 0 0 auto;
-  font-family: var(--font-sans);
+    display: flex;
+    flex: 0 0 auto;
+    font-family: var(--font-sans);
 }
 
 .textGrow {
-  flex-grow: 1;
-  justify-content: center;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .fullWidth {
-  width: 100%;
+    width: 100%;
 }
 
 .icon {
-  flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
 /* force the icon display be block to align vertically */
 .icon > * {
-  display: block !important;
+    display: block !important;
 }
 
 .rounded {
-  border-radius: 9999px;
+    border-radius: 9999px;
 }

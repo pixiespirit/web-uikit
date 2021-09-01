@@ -1,17 +1,17 @@
 .root {
-  color: var(--color-white);
-  border: solid 1px transparent;
-  background-color: var(--color-brand-500);
+    color: var(--color-white);
+    border: solid 1px transparent;
+    background-color: var(--color-brand-500);
 }
 
 .root:hover {
-  background-color: var(--color-brand-600);
+    background-color: var(--color-brand-600);
 }
 
 .root:active {
-  background-color: var(--color-brand-700);
+    background-color: var(--color-brand-700);
 }
 
 .root:disabled {
-  background-color: var(--color-brand-200);
+    background-color: var(--color-brand-200);
 }

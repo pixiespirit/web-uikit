@@ -46,8 +46,10 @@ select, input {
     appearance: none;
 }
 
-* {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 a {

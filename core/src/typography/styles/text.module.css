@@ -1,34 +1,34 @@
 .medium {
-  font-weight: 500 !important;
+    font-weight: 500 !important;
 }
 
 .semiBold {
-  font-weight: 600 !important;
+    font-weight: 600 !important;
 }
 
 .bold {
-  font-weight: 700 !important;
+    font-weight: 700 !important;
 }
 
 .extraBold {
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 }
 
 .italic {
-  font-style: italic !important;
+    font-style: italic !important;
 }
 
 .underline {
-  text-decoration: underline !important;
+    text-decoration: underline !important;
 }
 
 .ellipsis {
-  /*
+    /*
     text-overflow only works with overflow and white-space
     https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
     TODO: do another solution for ellipsis a paragraph
    */
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
 }

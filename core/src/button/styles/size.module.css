@@ -1,23 +1,23 @@
 .small {
-  height: 32px;
-  font-size: 12px;
-  padding: 8px 12px;
+    height: 32px;
+    font-size: 12px;
+    padding: 8px 12px;
 }
 
 .medium {
-  height: 40px;
-  font-size: 14px;
-  padding: 8px 16px;
+    height: 40px;
+    font-size: 14px;
+    padding: 8px 16px;
 }
 
 .large {
-  height: 48px;
-  font-size: 16px;
-  padding: 10px 24px;
+    height: 48px;
+    font-size: 16px;
+    padding: 10px 24px;
 }
 
 .xlarge {
-  height: 56px;
-  font-size: 18px;
-  padding: 12px 32px;
+    height: 56px;
+    font-size: 18px;
+    padding: 12px 32px;
 }

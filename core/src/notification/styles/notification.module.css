@@ -1,21 +1,21 @@
 .notification {
-  display: block;
-  padding: 12px 16px;
-  color: var(--color-white);
+    display: block;
+    padding: 12px 16px;
+    color: var(--color-white);
 }
 
 .default {
-  background-color: var(--color-info);
+    background-color: var(--color-info);
 }
 
 .positive {
-  background-color: var(--color-success);
+    background-color: var(--color-success);
 }
 
 .warning {
-  background-color: var(--color-warning);
+    background-color: var(--color-warning);
 }
 
 .negative {
-  background-color: var(--color-error);
+    background-color: var(--color-error);
 }

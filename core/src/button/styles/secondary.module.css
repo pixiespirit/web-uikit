@@ -1,21 +1,21 @@
 .root {
-  color: var(--color-gray-700);
-  background-color: var(--color-white);
-  border: 1px solid #cbd5e0;
+    color: var(--color-gray-700);
+    background-color: var(--color-white);
+    border: 1px solid #cbd5e0;
 }
 
 .root:hover {
-  background-color: var(--color-gray-50);
-  border: 1px solid #c3cdd8;
+    background-color: var(--color-gray-50);
+    border: 1px solid #c3cdd8;
 }
 
 .root:active {
-  background-color: var(--color-gray-100);
-  border: 1px solid #c3cdd8;
+    background-color: var(--color-gray-100);
+    border: 1px solid #c3cdd8;
 }
 
 .root:disabled {
-  color: var(--color-gray-400);
-  background-color: var(--color-white);
-  border: 1px solid #f1f5f9;
+    color: var(--color-gray-400);
+    background-color: var(--color-white);
+    border: 1px solid #f1f5f9;
 }
