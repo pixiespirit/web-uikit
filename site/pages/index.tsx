@@ -3,6 +3,7 @@ import React, { CSSProperties } from 'react';
 import { ButtonDemo } from '../components/button-demo';
 import { GalleryCheckbox } from '../components/check-box';
 import { InputDemo } from '../components/input-demo';
+import TextArea from '../components/text-area';
 import { GalleryToggle } from '../components/toggle';
 
 const style: CSSProperties = {
@@ -25,6 +26,7 @@ export default function Home() {
             <main style={style}>
                 <InputDemo />
                 <ButtonDemo />
+                <TextArea />
                 {/*<GalleryTypographyIntro />*/}
                 {/*<GalleryButton />*/}
                 {/*<GalleryTag />*/}
