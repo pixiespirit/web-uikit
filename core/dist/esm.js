@@ -5,7 +5,7 @@ import chunks from 'lodash.chunk';
 import { ArrowLeftOutline, ArrowRightOutline, ArrowDownOutline, ArrowUpOutline } from '@pixiepkg/icon';
 import MultiRef from 'react-multi-ref';
 
-var s$l = {"avatar":"avatar-module_avatar__1alsZ","circle":"avatar-module_circle__1nRyS","fullWidth":"avatar-module_fullWidth__1-oD0"};
+var s$m = {"avatar":"avatar-module_avatar__1alsZ","circle":"avatar-module_circle__1nRyS","fullWidth":"avatar-module_fullWidth__1-oD0"};
 
 var SizeAvatar;
 (function (SizeAvatar) {
@@ -18,11 +18,11 @@ const sizes = {
     [SizeAvatar.MEDIUM]: { width: 88, height: 88 }
 };
 const getClass$6 = (props) => {
-    const classes = [s$l.avatar];
+    const classes = [s$m.avatar];
     if (props.circle)
-        classes.push(s$l.circle);
+        classes.push(s$m.circle);
     if (props.fullWidth)
-        classes.push(s$l.fullWidth);
+        classes.push(s$m.fullWidth);
     return classes.join(' ');
 };
 const Avatar = (props) => {
@@ -63,7 +63,7 @@ var KindButton;
     KindButton[KindButton["GHOST"] = 2] = "GHOST";
 })(KindButton || (KindButton = {}));
 
-var s$k = {"button":"button-module_button__2jxPE","inline":"button-module_inline__1oO8m","text":"button-module_text__1w9dx","textGrow":"button-module_textGrow__35Fjt","fullWidth":"button-module_fullWidth__2l01R","icon":"button-module_icon__1dp83","rounded":"button-module_rounded__3TFQm"};
+var s$l = {"button":"button-module_button__2jxPE","inline":"button-module_inline__1oO8m","text":"button-module_text__1w9dx","textGrow":"button-module_textGrow__35Fjt","fullWidth":"button-module_fullWidth__2l01R","icon":"button-module_icon__1dp83","rounded":"button-module_rounded__3TFQm"};
 
 var primary$1 = {"root":"primary-module_root__3YAse"};
 
@@ -71,17 +71,17 @@ var secondary = {"root":"secondary-module_root__17LoW"};
 
 var ghost = {"root":"ghost-module_root__NtMkj"};
 
-var s$j = {"px":"div-module_px___1W_8","grow":"div-module_grow__3F4-W"};
+var s$k = {"px":"div-module_px___1W_8","grow":"div-module_grow__3F4-W"};
 
-const DivPx = ({ size }) => (jsx("span", { className: s$j.px, style: { width: size, height: size } }, void 0));
-const DivGrow = () => jsx("span", { className: s$j.grow }, void 0);
+const DivPx = ({ size }) => (jsx("span", { className: s$k.px, style: { width: size, height: size } }, void 0));
+const DivGrow = () => jsx("span", { className: s$k.grow }, void 0);
 
 const getClass$5 = (props) => {
     var _a;
     /**
      * Default button styles
      */
-    const classes = [s$k.button];
+    const classes = [s$l.button];
     const btnSize = (_a = props.size) !== null && _a !== void 0 ? _a : SizeButton.MEDIUM;
     classes.push(btnSize.root);
     /**
@@ -101,11 +101,11 @@ const getClass$5 = (props) => {
             break;
     }
     if (props.inline)
-        classes.push(s$k.inline);
+        classes.push(s$l.inline);
     if (props.fullWidth)
-        classes.push(s$k.fullWidth);
+        classes.push(s$l.fullWidth);
     if (props.rounded)
-        classes.push(s$k.rounded);
+        classes.push(s$l.rounded);
     if (props.className)
         classes.push(props.className);
     return classes.join(' ');
@@ -113,11 +113,11 @@ const getClass$5 = (props) => {
 const ButtonChildren = (props) => {
     var _a;
     const btnSize = (_a = props.size) !== null && _a !== void 0 ? _a : SizeButton.MEDIUM;
-    return (jsxs(React.Fragment, { children: [props.leftIcon && jsx("span", Object.assign({ className: s$k.icon }, { children: props.leftIcon }), void 0),
+    return (jsxs(React.Fragment, { children: [props.leftIcon && jsx("span", Object.assign({ className: s$l.icon }, { children: props.leftIcon }), void 0),
             props.leftIcon && !props.stickIconAtPrefix && props.children && (jsx(DivPx, { size: btnSize.iconMargin }, void 0)),
-            props.children && (jsx("span", Object.assign({ className: classnames(s$k.text, props.stickIconAtPrefix && s$k.textGrow) }, { children: props.children }), void 0)),
+            props.children && (jsx("span", Object.assign({ className: classnames(s$l.text, props.stickIconAtPrefix && s$l.textGrow) }, { children: props.children }), void 0)),
             props.rightIcon && !props.stickIconAtPrefix && props.children && (jsx(DivPx, { size: btnSize.iconMargin }, void 0)),
-            props.rightIcon && jsx("span", Object.assign({ className: s$k.icon }, { children: props.rightIcon }), void 0)] }, void 0));
+            props.rightIcon && jsx("span", Object.assign({ className: s$l.icon }, { children: props.rightIcon }), void 0)] }, void 0));
 };
 const Button = (props) => {
     var _a;
@@ -129,7 +129,7 @@ const Button = (props) => {
     return (jsx("button", Object.assign({}, common, { style: props.style, onClick: props.onClick, onFocus: props.onFocus, onBlur: props.onBlur, disabled: props.disabled, type: (_a = props.type) !== null && _a !== void 0 ? _a : 'button' }), void 0));
 };
 
-var s$i = {"wrapper":"calendar-module_wrapper__39BWy","dateSelector":"calendar-module_dateSelector__3WAD1","header":"calendar-module_header__1kDrW","body":"calendar-module_body__1jJiK","cell":"calendar-module_cell__311Z7","badge":"calendar-module_badge__1zQGa","active":"calendar-module_active__3ow8I","disabled":"calendar-module_disabled__Op6MF","break":"calendar-module_break__uo0cN","collapseContainer":"calendar-module_collapseContainer__3mu4x","collapseButton":"calendar-module_collapseButton__3J4pM"};
+var s$j = {"wrapper":"calendar-module_wrapper__39BWy","dateSelector":"calendar-module_dateSelector__3WAD1","header":"calendar-module_header__1kDrW","body":"calendar-module_body__1jJiK","cell":"calendar-module_cell__311Z7","badge":"calendar-module_badge__1zQGa","active":"calendar-module_active__3ow8I","disabled":"calendar-module_disabled__Op6MF","break":"calendar-module_break__uo0cN","collapseContainer":"calendar-module_collapseContainer__3mu4x","collapseButton":"calendar-module_collapseButton__3J4pM"};
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -158,26 +158,26 @@ function __rest(s, e) {
     return t;
 }
 
-var s$h = {"label1":"label-module_label1__13mcZ","label2":"label-module_label2__3l3Vz","label3":"label-module_label3__2xVXZ","label4":"label-module_label4__OQjVx","label5":"label-module_label5__395jJ","label6":"label-module_label6__iU0FC"};
+var s$i = {"label1":"label-module_label1__13mcZ","label2":"label-module_label2__3l3Vz","label3":"label-module_label3__2xVXZ","label4":"label-module_label4__OQjVx","label5":"label-module_label5__395jJ","label6":"label-module_label6__iU0FC"};
 
-var s$g = {"medium":"text-module_medium__3YvzP","semiBold":"text-module_semiBold__3QFdj","bold":"text-module_bold__26FIk","extraBold":"text-module_extraBold__3NESg","italic":"text-module_italic__2--OO","underline":"text-module_underline__E-n_c","ellipsis":"text-module_ellipsis__3mPpX"};
+var s$h = {"medium":"text-module_medium__3YvzP","semiBold":"text-module_semiBold__3QFdj","bold":"text-module_bold__26FIk","extraBold":"text-module_extraBold__3NESg","italic":"text-module_italic__2--OO","underline":"text-module_underline__E-n_c","ellipsis":"text-module_ellipsis__3mPpX"};
 
 const getClass$4 = (props) => {
     const classes = [];
     if (props.medium)
-        classes.push(s$g.medium);
+        classes.push(s$h.medium);
     if (props.semiBold)
-        classes.push(s$g.semiBold);
+        classes.push(s$h.semiBold);
     if (props.bold)
-        classes.push(s$g.bold);
+        classes.push(s$h.bold);
     if (props.extraBold)
-        classes.push(s$g.extraBold);
+        classes.push(s$h.extraBold);
     if (props.italic)
-        classes.push(s$g.italic);
+        classes.push(s$h.italic);
     if (props.underline)
-        classes.push(s$g.underline);
+        classes.push(s$h.underline);
     if (props.ellipsis)
-        classes.push(s$g.ellipsis);
+        classes.push(s$h.ellipsis);
     if (props.className)
         classes.push(props.className);
     return classes.join(' ');
@@ -204,19 +204,19 @@ const Text = (props) => {
 
 const Label1 = (_a) => {
     var { className, as } = _a, props = __rest(_a, ["className", "as"]);
-    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$h.label1, className].join(' ') }, props, { children: props.children }), void 0));
+    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$i.label1, className].join(' ') }, props, { children: props.children }), void 0));
 };
 const Label2 = (_a) => {
     var { className, as } = _a, props = __rest(_a, ["className", "as"]);
-    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$h.label2, className].join(' ') }, props, { children: props.children }), void 0));
+    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$i.label2, className].join(' ') }, props, { children: props.children }), void 0));
 };
 const Label3 = (_a) => {
     var { className, as } = _a, props = __rest(_a, ["className", "as"]);
-    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$h.label3, className].join(' ') }, props, { children: props.children }), void 0));
+    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$i.label3, className].join(' ') }, props, { children: props.children }), void 0));
 };
 const Label4 = (_a) => {
     var { className, as } = _a, props = __rest(_a, ["className", "as"]);
-    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$h.label4, className].join(' ') }, props, { children: props.children }), void 0));
+    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$i.label4, className].join(' ') }, props, { children: props.children }), void 0));
 };
 /**
  *
@@ -224,7 +224,7 @@ const Label4 = (_a) => {
  */
 const Label5 = (_a) => {
     var { className, as } = _a, props = __rest(_a, ["className", "as"]);
-    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$h.label5, className].join(' ') }, props, { children: props.children }), void 0));
+    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$i.label5, className].join(' ') }, props, { children: props.children }), void 0));
 };
 /**
  *
@@ -232,7 +232,7 @@ const Label5 = (_a) => {
  */
 const Label6 = (_a) => {
     var { className, as } = _a, props = __rest(_a, ["className", "as"]);
-    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$h.label6, className].join(' ') }, props, { children: props.children }), void 0));
+    return (jsx(Text, Object.assign({ as: as || 'p', className: [s$i.label6, className].join(' ') }, props, { children: props.children }), void 0));
 };
 
 const tests = {
@@ -331,7 +331,7 @@ const toCalendarMatrix = (dates) => {
 
 const getClass$3 = (props) => {
     var _a;
-    const classes = [s$i.wrapper];
+    const classes = [s$j.wrapper];
     if ((_a = props.classOverrides) === null || _a === void 0 ? void 0 : _a.container) {
         classes.push(props.classOverrides.container);
     }
@@ -339,18 +339,18 @@ const getClass$3 = (props) => {
 };
 const getCellClass = (props, selectedDate, calendarDate) => {
     var _a;
-    const classes = [s$i.cell];
+    const classes = [s$j.cell];
     if ((_a = props.classOverrides) === null || _a === void 0 ? void 0 : _a.calendarCell) {
         classes.push(props.classOverrides.calendarCell);
     }
     if (props.disablePastDates && calendarDate) {
         const today = new Date();
         if (isBefore(today, calendarDate)) {
-            classes.push(s$i.disabled);
+            classes.push(s$j.disabled);
         }
     }
     if (!!calendarDate && isSameDate(selectedDate, calendarDate)) {
-        classes.push(s$i.active);
+        classes.push(s$j.active);
     }
     return classes.join(' ');
 };
@@ -389,73 +389,73 @@ const Calendar = (props) => {
             (_a = props.setDate) === null || _a === void 0 ? void 0 : _a.call(props, cell);
         }
     };
-    return (jsxs("div", Object.assign({ className: getClass$3(props) }, { children: [jsxs("div", Object.assign({ className: s$i.dateSelector }, { children: [!collapse && (jsx("div", Object.assign({ className: "cursor-pointer", onClick: onGoToPreviousMonth }, { children: jsx(ArrowLeftOutline, {}, void 0) }), void 0)),
+    return (jsxs("div", Object.assign({ className: getClass$3(props) }, { children: [jsxs("div", Object.assign({ className: s$j.dateSelector }, { children: [!collapse && (jsx("div", Object.assign({ className: "cursor-pointer", onClick: onGoToPreviousMonth }, { children: jsx(ArrowLeftOutline, {}, void 0) }), void 0)),
                     jsx("div", Object.assign({ className: "w-2/3 text-center" }, { children: jsxs(Label1, Object.assign({ semiBold: true }, { children: [toMonthString(timeController.getMonth()), ' ',
                                 timeController.getFullYear()] }), void 0) }), void 0),
                     !collapse && (jsx("div", Object.assign({ className: "cursor-pointer", onClick: onGoToNextMonth }, { children: jsx(ArrowRightOutline, {}, void 0) }), void 0))] }), void 0),
-            jsxs("div", Object.assign({ className: s$i.header }, { children: [jsx("div", Object.assign({ className: s$i.cell }, { children: "CN" }), void 0),
-                    jsx("div", Object.assign({ className: s$i.cell }, { children: "T2" }), void 0),
-                    jsx("div", Object.assign({ className: s$i.cell }, { children: "T3" }), void 0),
-                    jsx("div", Object.assign({ className: s$i.cell }, { children: "T4" }), void 0),
-                    jsx("div", Object.assign({ className: s$i.cell }, { children: "T5" }), void 0),
-                    jsx("div", Object.assign({ className: s$i.cell }, { children: "T6" }), void 0),
-                    jsx("div", Object.assign({ className: s$i.cell }, { children: "T7" }), void 0)] }), void 0),
-            jsx("div", Object.assign({ className: s$i.body }, { children: calendar.map((row, rowIdx) => {
+            jsxs("div", Object.assign({ className: s$j.header }, { children: [jsx("div", Object.assign({ className: s$j.cell }, { children: "CN" }), void 0),
+                    jsx("div", Object.assign({ className: s$j.cell }, { children: "T2" }), void 0),
+                    jsx("div", Object.assign({ className: s$j.cell }, { children: "T3" }), void 0),
+                    jsx("div", Object.assign({ className: s$j.cell }, { children: "T4" }), void 0),
+                    jsx("div", Object.assign({ className: s$j.cell }, { children: "T5" }), void 0),
+                    jsx("div", Object.assign({ className: s$j.cell }, { children: "T6" }), void 0),
+                    jsx("div", Object.assign({ className: s$j.cell }, { children: "T7" }), void 0)] }), void 0),
+            jsx("div", Object.assign({ className: s$j.body }, { children: calendar.map((row, rowIdx) => {
                     return (jsxs(React.Fragment, { children: [row.map((cell, cellIdx) => {
                                 return (jsxs("div", Object.assign({ className: getCellClass(props, selectedDate, cell), onClick: () => onCellClick(cell) }, { children: [cell && cell.getDate(),
-                                        cell && includesDate(props.highlightDates, cell) && (jsx("span", { className: s$i.badge }, void 0))] }), rowIdx * 10 + cellIdx));
+                                        cell && includesDate(props.highlightDates, cell) && (jsx("span", { className: s$j.badge }, void 0))] }), rowIdx * 10 + cellIdx));
                             }),
-                            jsx("div", { className: s$i.break }, void 0)] }, rowIdx));
+                            jsx("div", { className: s$j.break }, void 0)] }, rowIdx));
                 }) }), void 0),
-            props.showCollapseButton && (jsx("div", Object.assign({ className: s$i.collapseContainer }, { children: jsxs("div", Object.assign({ className: s$i.collapseButton, onClick: () => setCollapse(!collapse) }, { children: [collapse && jsx(ArrowDownOutline, {}, void 0),
+            props.showCollapseButton && (jsx("div", Object.assign({ className: s$j.collapseContainer }, { children: jsxs("div", Object.assign({ className: s$j.collapseButton, onClick: () => setCollapse(!collapse) }, { children: [collapse && jsx(ArrowDownOutline, {}, void 0),
                         !collapse && jsx(ArrowUpOutline, {}, void 0)] }), void 0) }), void 0))] }), void 0));
 };
 
-var s$f = {"container":"card-module_container__1SDiH","title":"card-module_title__nM7eN","body":"card-module_body__1skG8"};
+var s$g = {"container":"card-module_container__1SDiH","title":"card-module_title__nM7eN","body":"card-module_body__1skG8"};
 
 const getClass$2 = (props) => {
-    const classes = [s$f.container];
+    const classes = [s$g.container];
     if (props.className)
         classes.push(props.className);
     return classes.join(' ');
 };
 const Card = (props) => {
-    return (jsxs("div", Object.assign({ style: props.style, className: getClass$2(props) }, { children: [(jsx("div", Object.assign({ className: s$f.title }, { children: jsx(Label1, Object.assign({ semiBold: true }, { children: props.title }), void 0) }), void 0)),
+    return (jsxs("div", Object.assign({ style: props.style, className: getClass$2(props) }, { children: [(jsx("div", Object.assign({ className: s$g.title }, { children: jsx(Label1, Object.assign({ semiBold: true }, { children: props.title }), void 0) }), void 0)),
+            jsx("div", Object.assign({ className: s$g.body }, { children: props.children }), void 0)] }), void 0));
+};
+
+var s$f = {"card":"card-thumbnail-module_card__3vb55","thumbnailWrapper":"card-thumbnail-module_thumbnailWrapper__3ad8j","thumbnail":"card-thumbnail-module_thumbnail__1XuD4","fullHeight":"card-thumbnail-module_fullHeight__13pj0","body":"card-thumbnail-module_body__1IeVr"};
+
+const CardThumbnail = (props) => {
+    const containerClasses = [s$f.card];
+    if (props.fullHeight)
+        containerClasses.push(s$f.fullHeight);
+    return (jsxs("div", Object.assign({ className: containerClasses.join(' ') }, { children: [jsx("div", Object.assign({ className: s$f.thumbnailWrapper, style: { height: props.thumbnailHeight } }, { children: jsx("img", { className: s$f.thumbnail, src: props.thumbnail, alt: props.thumbnailAlt }, void 0) }), void 0),
             jsx("div", Object.assign({ className: s$f.body }, { children: props.children }), void 0)] }), void 0));
 };
 
-var s$e = {"card":"card-thumbnail-module_card__3vb55","thumbnailWrapper":"card-thumbnail-module_thumbnailWrapper__3ad8j","thumbnail":"card-thumbnail-module_thumbnail__1XuD4","fullHeight":"card-thumbnail-module_fullHeight__13pj0","body":"card-thumbnail-module_body__1IeVr"};
-
-const CardThumbnail = (props) => {
-    const containerClasses = [s$e.card];
-    if (props.fullHeight)
-        containerClasses.push(s$e.fullHeight);
-    return (jsxs("div", Object.assign({ className: containerClasses.join(' ') }, { children: [jsx("div", Object.assign({ className: s$e.thumbnailWrapper, style: { height: props.thumbnailHeight } }, { children: jsx("img", { className: s$e.thumbnail, src: props.thumbnail, alt: props.thumbnailAlt }, void 0) }), void 0),
-            jsx("div", Object.assign({ className: s$e.body }, { children: props.children }), void 0)] }), void 0));
-};
-
-var s$d = {"container":"checkbox-module_container__29JTK","input":"checkbox-module_input__mpeQc","label":"checkbox-module_label__3zaA5","checkIcon":"checkbox-module_checkIcon__340sY","checkboxCheck":"checkbox-module_checkboxCheck__1wUb7"};
+var s$e = {"container":"checkbox-module_container__29JTK","input":"checkbox-module_input__mpeQc","label":"checkbox-module_label__3zaA5","checkIcon":"checkbox-module_checkIcon__340sY","checkboxCheck":"checkbox-module_checkboxCheck__1wUb7"};
 
 const CheckIcon = () => {
-    return (jsx("svg", Object.assign({ className: s$d.checkIcon, width: "1em", height: "1em", viewBox: "0 0 14 10", fill: "none", xmlns: "http://www.w3.org/2000/svg" }, { children: jsx("path", { fill: "white", d: "M12.4739 0.346983C12.6545 0.15247 12.9557 0.132996 13.1598 0.302625L13.588 0.658342C13.8106 0.843311 13.8302 1.17809 13.6306 1.38771L5.82127 9.58933C5.63644 9.78344 5.33143 9.79728 5.12978 9.62071L0.494688 5.5622C0.28929 5.38235 0.266125 5.071 0.442649 4.86273L0.841462 4.39221C1.02346 4.17749 1.34677 4.15525 1.55646 4.34304L5.34481 7.73586C5.42604 7.80862 5.55059 7.80288 5.6248 7.72297L12.4739 0.346983Z" }, void 0) }), void 0));
+    return (jsx("svg", Object.assign({ className: s$e.checkIcon, width: "1em", height: "1em", viewBox: "0 0 14 10", fill: "none", xmlns: "http://www.w3.org/2000/svg" }, { children: jsx("path", { fill: "white", d: "M12.4739 0.346983C12.6545 0.15247 12.9557 0.132996 13.1598 0.302625L13.588 0.658342C13.8106 0.843311 13.8302 1.17809 13.6306 1.38771L5.82127 9.58933C5.63644 9.78344 5.33143 9.79728 5.12978 9.62071L0.494688 5.5622C0.28929 5.38235 0.266125 5.071 0.442649 4.86273L0.841462 4.39221C1.02346 4.17749 1.34677 4.15525 1.55646 4.34304L5.34481 7.73586C5.42604 7.80862 5.55059 7.80288 5.6248 7.72297L12.4739 0.346983Z" }, void 0) }), void 0));
 };
 const Checkbox = (props) => {
-    return (jsxs("label", Object.assign({ className: s$d.container }, { children: [jsx("input", { type: "checkbox", className: s$d.input, disabled: props.disabled, 
+    return (jsxs("label", Object.assign({ className: s$e.container }, { children: [jsx("input", { type: "checkbox", className: s$e.input, disabled: props.disabled, 
                 // Uncontrolled
                 defaultChecked: props.defaultChecked, 
                 // Controlled
                 checked: props.checked, onChange: (e) => { var _a; return (_a = props.setChecked) === null || _a === void 0 ? void 0 : _a.call(props, e.target.checked); } }, void 0),
-            jsx("span", Object.assign({ className: s$d.checkboxCheck }, { children: jsx(CheckIcon, {}, void 0) }), void 0),
-            jsx(Label3, Object.assign({ medium: true, className: s$d.label }, { children: props.children }), void 0)] }), void 0));
+            jsx("span", Object.assign({ className: s$e.checkboxCheck }, { children: jsx(CheckIcon, {}, void 0) }), void 0),
+            jsx(Label3, Object.assign({ medium: true, className: s$e.label }, { children: props.children }), void 0)] }), void 0));
 };
 
-var input = {"inputWrapper":"index-module_inputWrapper__3I3PY","input":"index-module_input__26b_8","sm":"index-module_sm__38m91","lg":"index-module_lg__YJJ-d","label":"index-module_label__2SpLP"};
+var s$d = {"inputWrapper":"index-module_inputWrapper__3I3PY","input":"index-module_input__26b_8","sm":"index-module_sm__38m91","lg":"index-module_lg__YJJ-d","label":"index-module_label__2SpLP"};
 
 const cx = (...classNames) => classNames.filter(Boolean).join(' ');
 
 const Input = forwardRef((_a, ref) => {
     var { sizes = 'md' } = _a, props = __rest(_a, ["sizes"]);
-    const _className = cx(input.input, props.className, input[sizes]);
+    const _className = cx(s$d.input, props.className, s$d[sizes]);
     return jsx("input", Object.assign({ ref: ref, className: _className }, props), void 0);
 });
 Input.id = 'Input';
@@ -724,21 +724,21 @@ const Tag = (props) => {
     return (jsx("span", { style: props.style, className: getClass(props), children: tagChildren }, void 0));
 };
 
-var s$4 = {"textarea":"index-module_textarea__6k8_M"};
+var s$4 = {"textareaWrapper":"index-module_textareaWrapper__3yuIs","textarea":"index-module_textarea__3h7dd","invalid":"index-module_invalid__3p6SY","caption":"index-module_caption__3kQIR","readonly":"index-module_readonly__RWnwC","disabled":"index-module_disabled__SX75T","label":"index-module_label__IAsOX","requiredLabel":"index-module_requiredLabel__elj1e"};
 
-const Textarea = (props) => {
-    return (jsxs("div", Object.assign({ style: props.style, className: input.inputWrapper }, { children: [jsx("textarea", { ref: props.forwardedRef, 
+const Textarea = forwardRef((props, ref) => {
+    return (jsxs("div", Object.assign({ ref: ref, style: props.style, className: classnames(s$4.textareaWrapper, props.disabled && s$4.disabled, props.readonly && s$4.readonly, props.invalid && s$4.invalid) }, { children: [jsxs("div", Object.assign({ style: { display: 'flex' } }, { children: [jsx("div", Object.assign({ className: s$4.label }, { children: props.label }), void 0),
+                    props.required && jsx("div", Object.assign({ className: s$4.requiredLabel }, { children: "*" }), void 0)] }), void 0),
+            jsx("textarea", { 
                 // Value
                 defaultValue: props.defaultValue, value: props.value, onChange: (event) => {
                     var _a;
                     (_a = props.setValue) === null || _a === void 0 ? void 0 : _a.call(props, event.currentTarget.value);
                 }, 
-                // Event handlers
-                onBlur: props.onBlur, onFocus: props.onFocus, onKeyDown: props.onKeyDown, onKeyPress: props.onKeyPress, onKeyUp: props.onKeyUp, 
                 // Properties
-                id: props.id, className: [input.input, s$4.textarea].join(' '), readOnly: props.readOnly, disabled: props.disabled, placeholder: " ", autoFocus: props.autoFocus, "aria-label": props['aria-label'], "aria-labelledby": props['aria-labelledby'], maxLength: props.maxLength, minLength: props.minLength, required: props.required, autoComplete: props.autoComplete, cols: props.cols, rows: props.rows, form: props.form, name: props.name, spellCheck: props.spellCheck, wrap: props.wrap }, void 0),
-            jsx("label", Object.assign({ className: input.label }, { children: props.label }), void 0)] }), void 0));
-};
+                id: props.id, className: [s$4.textarea, props.className].join(' '), readOnly: props.readOnly, disabled: props.disabled, placeholder: props.placeholder, autoFocus: props.autoFocus, "aria-label": props['aria-label'], "aria-labelledby": props['aria-labelledby'], maxLength: props.maxLength, minLength: props.minLength, required: props.required, autoComplete: props.autoComplete, cols: props.cols, rows: props.rows, form: props.form, name: props.name, spellCheck: props.spellCheck, wrap: props.wrap }, void 0),
+            jsx("div", Object.assign({ className: s$4.caption }, { children: props.caption }), void 0)] }), void 0));
+});
 
 var s$3 = {"switch":"toggle-module_switch__3D1Y5","input":"toggle-module_input__324KM","circle":"toggle-module_circle__263_u","on":"toggle-module_on__2EKt0","off":"toggle-module_off__3J-Iz","disabledOn":"toggle-module_disabledOn__2ZL_1","disabledOff":"toggle-module_disabledOff__29rqM"};
 

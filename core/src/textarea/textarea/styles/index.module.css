@@ -1,0 +1,104 @@
+.textareaWrapper {
+  width: 100%;
+  position: relative;
+  cursor: text;
+}
+
+.textarea {
+  display: inline-block;
+  padding: 8px 16px;
+  width: 100%;
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+
+  color: var(--color-gray-700);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-gray-400);
+  background-color: var(--color-white);
+  transition: all 0.2s ease;
+}
+
+.textarea:hover {
+  cursor: text;
+  border-color: var(--color-gray-500);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-blue-500);
+  box-shadow: 0 0 0 3px rgba(117, 200, 255, 0.5);
+}
+
+.textarea::placeholder {
+  color: var(--color-gray-400);
+  font-weight: 500;
+}
+
+.textarea:focus {
+  color: var(--color-gray-700);
+}
+
+.invalid .textarea {
+  box-shadow: none;
+  border-color: var(--color-red-400);
+}
+/* .invalid > .textarea::-webkit-resizer {
+  color: var(--color-red-400);
+} */
+.invalid .caption {
+  color: var(--color-red-500);
+}
+
+.readonly .textarea {
+  box-shadow: none;
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-500);
+  border-color: var(--color-gray-200);
+}
+
+.disabled .textarea {
+  background-color: var(--color-gray-50);
+  border-color: var(--color-gray-200);
+  color: var(--color-gray-400);
+}
+.disabled .textarea:hover {
+  border-color: var(--color-gray-200);
+}
+.disabled .label {
+  color: var(--color-gray-400);
+}
+.disabled .caption {
+  color: var(--color-gray-300);
+}
+
+.label {
+  margin-bottom: 8px;
+  color: var(--color-gray-700);
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.requiredLabel {
+  margin-left: 4px;
+  color: var(--color-red-500);
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.caption {
+  color: var(--color-gray-500);
+
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}

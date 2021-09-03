@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React, { CSSProperties } from 'react';
 import { ButtonDemo } from '../components/button-demo';
 import { InputDemo } from '../components/input-demo';
+import TextArea from '../components/text-area';
 
 const style: CSSProperties = {
   maxWidth: 1170,
@@ -26,6 +27,7 @@ export default function Home() {
       <main style={style}>
         <InputDemo />
         <ButtonDemo />
+        <TextArea />
         {/*<GalleryTypographyIntro />*/}
         {/*<GalleryButton />*/}
         {/*<GalleryTag />*/}
