@@ -1,6 +1,6 @@
 export enum KindNotification {
-  POSITIVE,
-  WARNING,
-  NEGATIVE,
-  DEFAULT
+    POSITIVE,
+    WARNING,
+    NEGATIVE,
+    DEFAULT
 }

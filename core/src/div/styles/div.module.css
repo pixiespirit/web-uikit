@@ -1,9 +1,9 @@
 .px {
-  display: block;
-  flex: 0 0 auto;
+    display: block;
+    flex: 0 0 auto;
 }
 
 .grow {
-  display: block;
-  flex: 1 0 0;
+    display: block;
+    flex: 1 0 0;
 }

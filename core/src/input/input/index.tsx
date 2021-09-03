@@ -6,15 +6,13 @@ import { SFC } from '@/input/types';
 export type TInputSize = 'sm' | 'md' | 'lg';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  sizes?: TInputSize;
+    sizes?: TInputSize;
 }
 
-export const Input: SFC<InputProps> = forwardRef(
-  ({ sizes = 'md', ...props }, ref: ForwardedRef<HTMLInputElement>) => {
+export const Input: SFC<InputProps> = forwardRef(({ sizes = 'md', ...props }, ref: ForwardedRef<HTMLInputElement>) => {
     const _className = cx(s.input, props.className, s[sizes]);
 
     return <input ref={ref} className={_className} {...props} />;
-  }
-);
+});
 
 Input.id = 'Input';

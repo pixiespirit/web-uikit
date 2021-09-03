@@ -1,17 +1,28 @@
-import { H3, Toggle } from '@pixiepkg/core';
+import { H3, Toggle } from '../../core/dist';
 import React, { useState } from 'react';
 import { container, row } from './_shared-styles';
 
 export const GalleryToggle = (): JSX.Element => {
-  const [checked, setChecked] = useState<boolean>(false);
-  const [checkex, setCheckex] = useState<boolean>(false);
-  return (
-    <div style={container}>
-      <H3 bold>Toggles</H3>
-      <div style={row}>
-        <Toggle checked={checked} setChecked={setChecked} />
-        <Toggle checked={checkex} setChecked={setCheckex} disabled />
-      </div>
-    </div>
-  );
+    const [checked, setChecked] = useState<boolean>(false);
+    const [checkex, setCheckex] = useState<boolean>(false);
+    return (
+        <div style={container}>
+            <H3 bold>Toggles</H3>
+            <div style={row}>
+                <Toggle checked={checked} onChecked={setChecked}>
+                    Toggle
+                </Toggle>
+
+                <Toggle size="large" checked={checked} onChecked={setChecked}>
+                    Toggle
+                </Toggle>
+                <Toggle onChecked={setCheckex} checked={checkex} disabled>
+                    disabled
+                </Toggle>
+                <Toggle checked={true} onChecked={setCheckex} disabled>
+                    checked disabled
+                </Toggle>
+            </div>
+        </div>
+    );
 };

@@ -2,8 +2,8 @@
 @import 'theme/theme.css';
 
 body {
-  font-family: var(--font-sans);
-  color: var(--color-black);
-  line-height: 1.5;
-  background-color: var(--color-white);
+    font-family: var(--font-sans);
+    color: var(--color-black);
+    line-height: 1.5;
+    background-color: var(--color-white);
 }

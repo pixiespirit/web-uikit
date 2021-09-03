@@ -1,11 +1,15 @@
-import React, { CSSProperties } from 'react';
-export interface CheckboxProps {
+/// <reference types="react" />
+export declare type CheckboxProps = {
+    id?: string;
     checked?: boolean;
+    style?: React.CSSProperties;
     disabled?: boolean;
-    defaultChecked?: boolean;
-    setChecked?: (checked: boolean) => void;
-    style?: CSSProperties;
+    tabIndex?: number;
     children?: React.ReactNode;
-}
-export declare const CheckIcon: React.FC;
-export declare const Checkbox: React.FC<CheckboxProps>;
+    className?: string;
+    size?: 'small' | 'large';
+    name?: string;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChecked?: (checked: boolean) => void;
+};
+export declare const Checkbox: import("react").ForwardRefExoticComponent<CheckboxProps & import("react").RefAttributes<HTMLInputElement>>;
