@@ -1,6 +1,6 @@
 import { ForwardedRef, forwardRef } from 'react';
 import { SFC, TextareaProps } from '@/textarea/types';
-import s from '@/textarea/textarea/styles/index.module.css';
+import s from '@/textarea/styles/index.module.css';
 import classNames from 'classnames';
 
 export const Textarea: SFC<TextareaProps> = forwardRef((props, ref: ForwardedRef<HTMLInputElement>) => {
@@ -17,7 +17,7 @@ export const Textarea: SFC<TextareaProps> = forwardRef((props, ref: ForwardedRef
         >
             <div style={{ display: 'flex' }}>
                 <div className={s.label}>{props.label}</div>
-                {props.required && <div className={s.requiredLabel}>*</div>}
+                {props.required && props.label && <div className={s.requiredLabel}>*</div>}
             </div>
 
             <textarea
