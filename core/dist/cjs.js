@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var jsxRuntime = require('react/jsx-runtime');
 var React = require('react');
-var classnames = require('classnames');
+var classNames = require('classnames');
 var chunks = require('lodash.chunk');
 var icon = require('@pixiepkg/icon');
 var MultiRef = require('react-multi-ref');
@@ -12,7 +12,7 @@ var MultiRef = require('react-multi-ref');
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
-var classnames__default = /*#__PURE__*/_interopDefaultLegacy(classnames);
+var classNames__default = /*#__PURE__*/_interopDefaultLegacy(classNames);
 var chunks__default = /*#__PURE__*/_interopDefaultLegacy(chunks);
 var MultiRef__default = /*#__PURE__*/_interopDefaultLegacy(MultiRef);
 
@@ -44,7 +44,7 @@ const Avatar = (props) => {
             width: (_a = props.width) !== null && _a !== void 0 ? _a : sizes[exports.SizeAvatar.MEDIUM].width,
             height: (_b = props.height) !== null && _b !== void 0 ? _b : sizes[exports.SizeAvatar.MEDIUM].height
         };
-    return (jsxRuntime.jsx("img", { src: props.src, alt: props.alt, width: size.width, height: size.height, className: getClass$6(props) }, void 0));
+    return jsxRuntime.jsx("img", { src: props.src, alt: props.alt, width: size.width, height: size.height, className: getClass$6(props) }, void 0);
 };
 
 var size = {"small":"size-module_small__2GPk0","medium":"size-module_medium__mDAQ6","large":"size-module_large__2p056","xlarge":"size-module_xlarge__2i7wT"};
@@ -125,9 +125,9 @@ const ButtonChildren = (props) => {
     var _a;
     const btnSize = (_a = props.size) !== null && _a !== void 0 ? _a : SizeButton.MEDIUM;
     return (jsxRuntime.jsxs(React__default['default'].Fragment, { children: [props.leftIcon && jsxRuntime.jsx("span", Object.assign({ className: s$i.icon }, { children: props.leftIcon }), void 0),
-            props.leftIcon && !props.stickIconAtPrefix && props.children && (jsxRuntime.jsx(DivPx, { size: btnSize.iconMargin }, void 0)),
-            props.children && (jsxRuntime.jsx("span", Object.assign({ className: classnames__default['default'](s$i.text, props.stickIconAtPrefix && s$i.textGrow) }, { children: props.children }), void 0)),
-            props.rightIcon && !props.stickIconAtPrefix && props.children && (jsxRuntime.jsx(DivPx, { size: btnSize.iconMargin }, void 0)),
+            props.leftIcon && !props.stickIconAtPrefix && props.children && jsxRuntime.jsx(DivPx, { size: btnSize.iconMargin }, void 0),
+            props.children && (jsxRuntime.jsx("span", Object.assign({ className: classNames__default['default'](s$i.text, props.stickIconAtPrefix && s$i.textGrow) }, { children: props.children }), void 0)),
+            props.rightIcon && !props.stickIconAtPrefix && props.children && jsxRuntime.jsx(DivPx, { size: btnSize.iconMargin }, void 0),
             props.rightIcon && jsxRuntime.jsx("span", Object.assign({ className: s$i.icon }, { children: props.rightIcon }), void 0)] }, void 0));
 };
 const Button = (props) => {
@@ -247,14 +247,8 @@ const Label6 = (_a) => {
 };
 
 const tests = {
-    date: [
-        (date) => 1 <= date && date <= 31,
-        'invalid date, it should be in range [1, 31]'
-    ],
-    month: [
-        (month) => 0 <= month && month <= 11,
-        'invalid month, it should be in range [0, 11]'
-    ],
+    date: [(date) => 1 <= date && date <= 31, 'invalid date, it should be in range [1, 31]'],
+    month: [(month) => 0 <= month && month <= 11, 'invalid month, it should be in range [0, 11]'],
     year: [(year) => year > 0, 'invalid year, it should be greater than zero']
 };
 const validate = (test, n) => {
@@ -314,8 +308,7 @@ const getAllDateOfMonth = (date) => {
     return dates;
 };
 const includesDate = (dates, date) => {
-    return (!!dates &&
-        dates.some((shouldBeHighlight) => isSameDate(shouldBeHighlight, date)));
+    return !!dates && dates.some((shouldBeHighlight) => isSameDate(shouldBeHighlight, date));
 };
 const toCalendarMatrix = (dates) => {
     if (dates.length === 0) {
@@ -401,8 +394,7 @@ const Calendar = (props) => {
         }
     };
     return (jsxRuntime.jsxs("div", Object.assign({ className: getClass$3(props) }, { children: [jsxRuntime.jsxs("div", Object.assign({ className: s$g.dateSelector }, { children: [!collapse && (jsxRuntime.jsx("div", Object.assign({ className: "cursor-pointer", onClick: onGoToPreviousMonth }, { children: jsxRuntime.jsx(icon.ArrowLeftOutline, {}, void 0) }), void 0)),
-                    jsxRuntime.jsx("div", Object.assign({ className: "w-2/3 text-center" }, { children: jsxRuntime.jsxs(Label1, Object.assign({ semiBold: true }, { children: [toMonthString(timeController.getMonth()), ' ',
-                                timeController.getFullYear()] }), void 0) }), void 0),
+                    jsxRuntime.jsx("div", Object.assign({ className: "w-2/3 text-center" }, { children: jsxRuntime.jsxs(Label1, Object.assign({ semiBold: true }, { children: [toMonthString(timeController.getMonth()), " ", timeController.getFullYear()] }), void 0) }), void 0),
                     !collapse && (jsxRuntime.jsx("div", Object.assign({ className: "cursor-pointer", onClick: onGoToNextMonth }, { children: jsxRuntime.jsx(icon.ArrowRightOutline, {}, void 0) }), void 0))] }), void 0),
             jsxRuntime.jsxs("div", Object.assign({ className: s$g.header }, { children: [jsxRuntime.jsx("div", Object.assign({ className: s$g.cell }, { children: "CN" }), void 0),
                     jsxRuntime.jsx("div", Object.assign({ className: s$g.cell }, { children: "T2" }), void 0),
@@ -445,17 +437,17 @@ const CardThumbnail = (props) => {
             jsxRuntime.jsx("div", Object.assign({ className: s$c.body }, { children: props.children }), void 0)] }), void 0));
 };
 
-var styles$1 = {"checkbox":"checkbox-module_checkbox__riFEF","disabled":"checkbox-module_disabled__DRbX8","wrapper":"checkbox-module_wrapper__yEast","checked":"checkbox-module_checked__3Quep","iconWrapper":"checkbox-module_iconWrapper__Y4s5Q","checkIcon":"checkbox-module_checkIcon__340sY","label":"checkbox-module_label__3zaA5"};
+var styles$2 = {"checkbox":"checkbox-module_checkbox__riFEF","disabled":"checkbox-module_disabled__DRbX8","wrapper":"checkbox-module_wrapper__yEast","checked":"checkbox-module_checked__3Quep","iconWrapper":"checkbox-module_iconWrapper__Y4s5Q","checkIcon":"checkbox-module_checkIcon__340sY","label":"checkbox-module_label__3zaA5"};
 
 const InternalCheckbox = (props, ref) => {
     const _size = props.size === 'large' ? 20 : 16;
-    return (jsxRuntime.jsxs("label", Object.assign({ className: classnames__default['default'](styles$1.checkbox, {
-            [styles$1.disabled]: props.disabled,
-            [styles$1.checked]: props.checked
-        }) }, { children: [jsxRuntime.jsx("span", Object.assign({ tabIndex: props.tabIndex, className: classnames__default['default'](props.className, styles$1.wrapper), style: Object.assign(Object.assign({}, props.style), { 
+    return (jsxRuntime.jsxs("label", Object.assign({ className: classNames__default['default'](styles$2.checkbox, {
+            [styles$2.disabled]: props.disabled,
+            [styles$2.checked]: props.checked
+        }) }, { children: [jsxRuntime.jsx("span", Object.assign({ tabIndex: props.tabIndex, className: classNames__default['default'](props.className, styles$2.wrapper), style: Object.assign(Object.assign({}, props.style), { 
                     //   @ts-ignore
-                    '--checkbox-size': `${_size}px` }) }, { children: jsxRuntime.jsx("span", Object.assign({ className: styles$1.iconWrapper }, { children: jsxRuntime.jsx(CheckIcon, {}, void 0) }), void 0) }), void 0),
-            jsxRuntime.jsx("span", Object.assign({ className: styles$1.label }, { children: props.children }), void 0),
+                    '--checkbox-size': `${_size}px` }) }, { children: jsxRuntime.jsx("span", Object.assign({ className: styles$2.iconWrapper }, { children: jsxRuntime.jsx(CheckIcon, {}, void 0) }), void 0) }), void 0),
+            jsxRuntime.jsx("span", Object.assign({ className: styles$2.label }, { children: props.children }), void 0),
             jsxRuntime.jsx("input", { ref: ref, id: props.id, name: props.name, type: "checkbox", disabled: props.disabled, checked: props.checked, onChange: (e) => {
                     var _a, _b;
                     (_a = props.onChange) === null || _a === void 0 ? void 0 : _a.call(props, e);
@@ -464,7 +456,7 @@ const InternalCheckbox = (props, ref) => {
 };
 const Checkbox = React.forwardRef(InternalCheckbox);
 const CheckIcon = () => {
-    return (jsxRuntime.jsx("svg", Object.assign({ className: styles$1.checkIcon, width: "12", height: "10", viewBox: "0 0 12 10", fill: "none", xmlns: "http://www.w3.org/2000/svg" }, { children: jsxRuntime.jsx("path", { d: "M8.9375 1.375L3.6875 6.625L1.0625 4", stroke: "currentColor", strokeWidth: "1.3", strokeLinecap: "round", strokeLinejoin: "round" }, void 0) }), void 0));
+    return (jsxRuntime.jsx("svg", Object.assign({ className: styles$2.checkIcon, width: "12", height: "10", viewBox: "0 0 12 10", fill: "none", xmlns: "http://www.w3.org/2000/svg" }, { children: jsxRuntime.jsx("path", { d: "M8.9375 1.375L3.6875 6.625L1.0625 4", stroke: "currentColor", strokeWidth: "1.3", strokeLinecap: "round", strokeLinejoin: "round" }, void 0) }), void 0));
 };
 
 var input = {"inputWrapper":"index-module_inputWrapper__3I3PY","input":"index-module_input__26b_8","sm":"index-module_sm__38m91","lg":"index-module_lg__YJJ-d","label":"index-module_label__2SpLP"};
@@ -504,7 +496,7 @@ const InputGroup = React.forwardRef((props, ref) => {
             ? React.cloneElement(child, child.props)
             : React.cloneElement(child, Object.assign(Object.assign({}, groupStyles), child.props));
     });
-    // console.log(clones)
+    console.log(clones);
     return (jsxRuntime.jsx("div", Object.assign({ className: _className, ref: ref }, { children: clones }), void 0));
 });
 InputGroup.id = 'InputGroup';
@@ -656,7 +648,7 @@ const PinCode = (props) => {
     React.useEffect(() => {
         var _a, _b;
         // parse to correct init values
-        const newValues = values.map((v) => isNumberString(v) && v.length === 1 ? v : '');
+        const newValues = values.map((v) => (isNumberString(v) && v.length === 1 ? v : ''));
         setValues(newValues);
         // auto focus
         if (autofocus && newValues.length > 0) {
@@ -677,9 +669,9 @@ const PinCode = (props) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (jsxRuntime.jsx("div", Object.assign({ className: s$7.pinCodeContainer }, { children: jsxRuntime.jsxs("div", { children: [jsxRuntime.jsx("div", Object.assign({ className: s$7.pinCodeWrapper }, { children: values.map((value, i) => {
-                        return (jsxRuntime.jsx("input", { value: value, onChange: (e) => handleOnChange(e.currentTarget.value, i), className: classnames__default['default'](s$7.input, error && s$7.inputError, s$7[size || exports.SizePinCode.DEFAULT]), type: "text", ref: _inputRefs.ref(i), onKeyDown: (e) => handleKeyDown(e, i), inputMode: "numeric", autoComplete: "one-time-code", onPaste: () => handlePaste(i), required: true }, `pin-code-${i}`));
+                        return (jsxRuntime.jsx("input", { value: value, onChange: (e) => handleOnChange(e.currentTarget.value, i), className: classNames__default['default'](s$7.input, error && s$7.inputError, s$7[size || exports.SizePinCode.DEFAULT]), type: "text", ref: _inputRefs.ref(i), onKeyDown: (e) => handleKeyDown(e, i), inputMode: "numeric", autoComplete: "one-time-code", onPaste: () => handlePaste(i), required: true }, `pin-code-${i}`));
                     }) }), void 0),
-                jsxRuntime.jsx("p", Object.assign({ className: classnames__default['default'](s$7.errorMessage, !error && s$7.errorHidden) }, { children: errorMessage }), void 0)] }, void 0) }), void 0));
+                jsxRuntime.jsx("p", Object.assign({ className: classNames__default['default'](s$7.errorMessage, !error && s$7.errorHidden) }, { children: errorMessage }), void 0)] }, void 0) }), void 0));
 };
 
 var s$6 = {"container":"styles-module_container__xgVHI","input":"styles-module_input__bVpd5","label":"styles-module_label__3WPnN","dotIcon":"styles-module_dotIcon__mVuaW","checkboxDot":"styles-module_checkboxDot__2CG-M"};
@@ -738,8 +730,8 @@ const getClass = (props) => {
     return classes.join(' ');
 };
 const Tag = (props) => {
-    const tagChildren = typeof props.children === 'string' ? (jsxRuntime.jsx(Label4, { medium: true, children: props.children }, void 0)) : (props.children);
-    return (jsxRuntime.jsx("span", { style: props.style, className: getClass(props), children: tagChildren }, void 0));
+    const tagChildren = typeof props.children === 'string' ? jsxRuntime.jsx(Label4, { medium: true, children: props.children }, void 0) : props.children;
+    return jsxRuntime.jsx("span", { style: props.style, className: getClass(props), children: tagChildren }, void 0);
 };
 
 var s$3 = {"textarea":"index-module_textarea__6k8_M"};
@@ -758,19 +750,19 @@ const Textarea = (props) => {
             jsxRuntime.jsx("label", Object.assign({ className: input.label }, { children: props.label }), void 0)] }), void 0));
 };
 
-var styles = {"toggle":"toggle-module_toggle__1yX7l","disabled":"toggle-module_disabled__1B2DR","wrapper":"toggle-module_wrapper__1z64e","checked":"toggle-module_checked__35_YE","label":"toggle-module_label__3d3S0"};
+var styles$1 = {"toggle":"toggle-module_toggle__1yX7l","disabled":"toggle-module_disabled__1B2DR","wrapper":"toggle-module_wrapper__1z64e","checked":"toggle-module_checked__35_YE","label":"toggle-module_label__3d3S0"};
 
 const InternalToggle = (props, ref) => {
     const _height = props.size === 'large' ? 24 : 16;
     const _width = props.size === 'large' ? 42 : 28;
     const _side = props.size === 'large' ? 20 : 12;
-    return (jsxRuntime.jsxs("label", Object.assign({ className: classnames__default['default'](styles.toggle, {
-            [styles.checked]: props.checked,
-            [styles.disabled]: props.disabled
+    return (jsxRuntime.jsxs("label", Object.assign({ className: classNames__default['default'](styles$1.toggle, {
+            [styles$1.checked]: props.checked,
+            [styles$1.disabled]: props.disabled
         }) }, { children: [jsxRuntime.jsx("span", { style: Object.assign(Object.assign({}, props.style), { 
                     // @ts-ignore
-                    '--toggle-height': `${_height}px`, '--toggle-width': `${_width}px`, '--toggle-size': `${_side}px` }), className: classnames__default['default'](styles.wrapper, props.className) }, void 0),
-            jsxRuntime.jsx("span", Object.assign({ className: styles.label }, { children: props.children }), void 0),
+                    '--toggle-height': `${_height}px`, '--toggle-width': `${_width}px`, '--toggle-size': `${_side}px` }), className: classNames__default['default'](styles$1.wrapper, props.className) }, void 0),
+            jsxRuntime.jsx("span", Object.assign({ className: styles$1.label }, { children: props.children }), void 0),
             jsxRuntime.jsx("input", { ref: ref, id: props.id, disabled: props.disabled, name: props.name, type: "checkbox", checked: props.checked, onChange: (e) => {
                     var _a, _b;
                     (_a = props.onChecked) === null || _a === void 0 ? void 0 : _a.call(props, e.target.checked);
@@ -778,6 +770,21 @@ const InternalToggle = (props, ref) => {
                 } }, void 0)] }), void 0));
 };
 const Toggle = React__default['default'].forwardRef(InternalToggle);
+
+var styles = {"input":"TextBox-module_input__1BMQU","disabled":"TextBox-module_disabled__15NZ-","invalid":"TextBox-module_invalid__323Ck","small":"TextBox-module_small__2yM-7","medium":"TextBox-module_medium__EzPN0","large":"TextBox-module_large__1eHl6","addon":"TextBox-module_addon__2D4gk","addonBefore":"TextBox-module_addonBefore__3DuWr","addonAfter":"TextBox-module_addonAfter__eFwI3","iconBefore":"TextBox-module_iconBefore__1Q1ve","iconAfter":"TextBox-module_iconAfter__18W4H"};
+
+const InternalTextBox = (_a, ref) => {
+    var { className, size = 'medium', invalid, iconAfter, iconBefore, addonAfter, addonBefore, disabled } = _a, props = __rest(_a, ["className", "size", "invalid", "iconAfter", "iconBefore", "addonAfter", "addonBefore", "disabled"]);
+    return (jsxRuntime.jsxs("div", Object.assign({ className: classNames__default['default'](styles.input, styles[size], {
+            [styles.invalid]: invalid,
+            [styles.disabled]: disabled
+        }) }, { children: [addonBefore && jsxRuntime.jsx("div", Object.assign({ className: classNames__default['default'](styles.addonBefore, styles.addon) }, { children: addonBefore }), void 0),
+            iconBefore && jsxRuntime.jsx("div", Object.assign({ className: styles.iconBefore }, { children: iconBefore }), void 0),
+            jsxRuntime.jsx("input", Object.assign({ type: "text", ref: ref }, props, { disabled: disabled }), void 0),
+            iconAfter && jsxRuntime.jsx("div", Object.assign({ className: styles.iconAfter }, { children: iconAfter }), void 0),
+            addonAfter && jsxRuntime.jsx("div", Object.assign({ className: classNames__default['default'](styles.addonAfter, styles.addon) }, { children: addonAfter }), void 0)] }), void 0));
+};
+const Textbox = React.forwardRef(InternalTextBox);
 
 var s$2 = {"body1":"body-module_body1__3NKS3","body2":"body-module_body2__1C8x_","body3":"body-module_body3__wV1bu","body4":"body-module_body4__3c1VH","body5":"body-module_body5__2SpBD","body6":"body-module_body6__1HzSI"};
 
@@ -911,4 +918,5 @@ exports.SizeButton = SizeButton;
 exports.Tag = Tag;
 exports.Text = Text;
 exports.Textarea = Textarea;
+exports.Textbox = Textbox;
 exports.Toggle = Toggle;

@@ -15,6 +15,7 @@ export * from "./separator";
 export * from "./tag";
 export * from "./textarea";
 export * from "./toggle";
+export * from "./text-box";
 export * from "./typography";
 export * from "./typography/body";
 export * from "./typography/display";

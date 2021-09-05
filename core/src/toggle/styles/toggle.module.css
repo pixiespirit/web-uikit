@@ -48,7 +48,7 @@
 .toggle .label {
     margin-left: 0.5rem;
     font-size: var(--toggle-height);
-    color: var(--color-brand-600);
+    color: var(--color-gray-600);
 }
 
 .toggle.disabled .label {
