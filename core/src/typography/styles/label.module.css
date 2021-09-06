@@ -5,22 +5,22 @@
 .label5,
 .label6 {
     font-family: var(--font-sans);
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .label1 {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 32px;
 }
 
 .label2 {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 28px;
 }
 
 .label3 {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 24px;
 }
 
 .label4 {

@@ -1,21 +1,21 @@
-import { Display1, Display2, H1, H2, H3, H4, H5, H6, Label1, Label2, Label3, Label4 } from '@pixiepkg/core';
 import React, { CSSProperties } from 'react';
+import {
+    H3,
+    Display1,
+    Display2,
+    H1,
+    H2,
+    H4,
+    H5,
+    H6,
+    Label1,
+    Label2,
+    Label3,
+    Body1,
+    Body2,
+    Body3
+} from '../../core/dist';
 import { container } from './_shared-styles';
-import Link from 'next/link';
-
-export const GalleryTypographyIntro = (): JSX.Element => {
-    return (
-        <div style={container}>
-            <H3 bold>Typography</H3>
-            <Label1>
-                Check it out at{' '}
-                <Link href="/typography">
-                    <a style={{ color: 'var(--color-info-main)' }}>Typography.</a>
-                </Link>
-            </Label1>
-        </div>
-    );
-};
 
 const gridContainer: CSSProperties = {
     display: 'grid',
@@ -23,7 +23,7 @@ const gridContainer: CSSProperties = {
     rowGap: 20
 };
 
-export const GalleryTypography = (): JSX.Element => {
+export const TypographyDemo = (): JSX.Element => {
     return (
         <div style={container}>
             <H3 bold>Typography</H3>
@@ -60,21 +60,17 @@ export const GalleryTypography = (): JSX.Element => {
                 <H6 bold>Heading 06</H6>
                 <H6 extraBold>Heading 06</H6>
 
-                <Label1 semiBold>Label 01</Label1>
-                <Label1 medium>Label 01</Label1>
-                <Label1>Paragraph 01</Label1>
+                <Label1>Label 01</Label1>
+                <Body1 medium>Body 01</Body1>
+                <Body1>Body 01</Body1>
 
                 <Label2 semiBold>Label 02</Label2>
-                <Label2 medium>Label 02</Label2>
-                <Label2>Paragraph 02</Label2>
+                <Body2 medium>Body 02</Body2>
+                <Body2>Body 02</Body2>
 
-                <Label3 semiBold>Label 03</Label3>
-                <Label3 medium>Label 03</Label3>
-                <Label3>Paragraph 03</Label3>
-
-                <Label4 semiBold>Label 04</Label4>
-                <Label4 medium>Label 04</Label4>
-                <Label4>Paragraph 04</Label4>
+                <Label3>Label 03</Label3>
+                <Body3 medium>Body 03</Body3>
+                <Body3>Body 03</Body3>
             </div>
         </div>
     );

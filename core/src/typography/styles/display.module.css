@@ -5,11 +5,12 @@
 }
 
 .display1 {
-    font-size: 64px;
+    font-size: 52px;
     line-height: 72px;
 }
 
 .display2 {
-    font-size: 56px;
+    font-size: 44px;
     line-height: 64px;
+    letter-spacing: -0.015em;
 }

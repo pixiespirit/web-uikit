@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React, { CSSProperties } from 'react';
-import { GalleryTypography } from '../components/typography';
+import { TypographyDemo } from '../components/typography-demo';
 
 const style: CSSProperties = {
     display: 'flex',
@@ -19,7 +19,7 @@ export default function Home() {
             </Head>
 
             <main style={style}>
-                <GalleryTypography />
+                <TypographyDemo />
             </main>
         </div>
     );
