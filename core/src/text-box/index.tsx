@@ -19,7 +19,6 @@ type TextboxProps = HTMLAttributes<HTMLInputElement> &
 
 const InternalTextBox: ForwardRefRenderFunction<HTMLInputElement, TextboxProps> = (
     {
-        className,
         size = 'medium',
         invalid,
         iconLeft,
