@@ -39,7 +39,7 @@ export const InputGroup: SFC<InputGroupProps> = forwardRef((props, ref: Forwarde
                   ...child.props
               });
     });
-    // console.log(clones)
+    console.log(clones);
 
     return (
         <div className={_className} ref={ref}>
