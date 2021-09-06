@@ -42,19 +42,23 @@ export const InputDemo = () => {
             <H3>Text box</H3>
 
             <div className="mb-4">
-                <Textbox size="small" placeholder="hello" addonBefore="http://" addonAfter=".com.vn" />
+                <Textbox size="small" placeholder="hello" addonLeft="http://" addonRight={<p>.com</p>} />
             </div>
 
             <div className="mb-4">
                 <Textbox
-                    iconBefore={<ImagePicture2Outline size={24} display={'block'} />}
+                    iconLeft={<ImagePicture2Outline size={24} display={'block'} />}
                     defaultValue="disabled"
                     disabled
                 />
             </div>
 
             <div className="mb-4">
-                <Textbox size="large" iconAfter={<ImagePicture2Outline size={24} display={'block'} />} />
+                <Textbox
+                    size="large"
+                    iconRight={<ImagePicture2Outline size={24} display={'block'} />}
+                    onClickRightIcon={() => alert('pressed')}
+                />
             </div>
 
             <div className="mb-4">

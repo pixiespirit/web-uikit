@@ -6,15 +6,33 @@ type TextboxProps = HTMLAttributes<HTMLInputElement> &
     Partial<{
         size: 'small' | 'medium' | 'large';
         invalid: boolean;
-        addonBefore: JSX.Element | string;
-        addonAfter: JSX.Element | string;
-        iconBefore: JSX.Element | string;
-        iconAfter: JSX.Element | string;
+        addonLeft: JSX.Element | string;
+        addonRight: JSX.Element | string;
+        iconLeft: JSX.Element | string;
+        iconRight: JSX.Element | string;
         disabled?: boolean;
+        onClickLeftIcon?: (event: React.MouseEvent<HTMLElement>) => void;
+        onClickRightIcon?: (event: React.MouseEvent<HTMLElement>) => void;
+        onClickLeftAddon?: (event: React.MouseEvent<HTMLElement>) => void;
+        onClickRightAddon?: (event: React.MouseEvent<HTMLElement>) => void;
     }>;
 
 const InternalTextBox: ForwardRefRenderFunction<HTMLInputElement, TextboxProps> = (
-    { className, size = 'medium', invalid, iconAfter, iconBefore, addonAfter, addonBefore, disabled, ...props },
+    {
+        className,
+        size = 'medium',
+        invalid,
+        iconLeft,
+        iconRight,
+        addonLeft,
+        addonRight,
+        disabled,
+        onClickLeftIcon,
+        onClickRightIcon,
+        onClickLeftAddon,
+        onClickRightAddon,
+        ...props
+    },
     ref
 ) => {
     return (
@@ -24,11 +42,36 @@ const InternalTextBox: ForwardRefRenderFunction<HTMLInputElement, TextboxProps> 
                 [styles.disabled]: disabled
             })}
         >
-            {addonBefore && <div className={classNames(styles.addonBefore, styles.addon)}>{addonBefore}</div>}
-            {iconBefore && <div className={styles.iconBefore}>{iconBefore}</div>}
+            {addonLeft && (
+                <div
+                    className={classNames(styles.addonBefore, styles.addon, onClickLeftAddon && styles.pointer)}
+                    onClick={onClickLeftAddon}
+                >
+                    {addonLeft}
+                </div>
+            )}
+            {iconLeft && (
+                <div
+                    className={[styles.iconBefore, onClickLeftIcon && styles.pointer].join(' ')}
+                    onClick={onClickLeftIcon}
+                >
+                    {iconLeft}
+                </div>
+            )}
             <input type="text" ref={ref} {...props} disabled={disabled} />
-            {iconAfter && <div className={styles.iconAfter}>{iconAfter}</div>}
-            {addonAfter && <div className={classNames(styles.addonAfter, styles.addon)}>{addonAfter}</div>}
+            {iconRight && (
+                <div
+                    className={[styles.iconAfter, onClickRightIcon && styles.pointer].join(' ')}
+                    onClick={onClickRightIcon}
+                >
+                    {iconRight}
+                </div>
+            )}
+            {addonRight && (
+                <div className={classNames(styles.addonAfter, styles.addon)} onClick={onClickRightAddon}>
+                    {addonRight}
+                </div>
+            )}
         </div>
     );
 };

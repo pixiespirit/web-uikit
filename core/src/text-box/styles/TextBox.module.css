@@ -92,3 +92,7 @@
 .input .iconAfter {
     padding-right: 1em;
 }
+
+.pointer {
+    cursor: pointer;
+}
