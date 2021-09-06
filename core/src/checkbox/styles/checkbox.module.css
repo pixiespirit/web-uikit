@@ -1,61 +1,75 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
+.checkbox {
+    display: flex;
+    align-items: center;
 }
 
-.input {
-  margin: 0;
-  width: 24px;
-  height: 24px;
-  appearance: none;
-  border-radius: 4px;
-  border: 1px solid var(--color-gray-400);
-  background-color: var(--color-white);
+.checkbox.disabled {
+    pointer-events: none;
 }
 
-input:checked {
-  border-color: var(--color-primary);
-  background-color: var(--color-primary);
+.checkbox .wrapper {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid var(--color-gray-400);
+    transition: all 0.3s linear;
+    position: relative;
+    height: var(--checkbox-size);
+    width: var(--checkbox-size);
+    min-width: var(--checkbox-size);
+    min-height: var(--checkbox-size);
+    cursor: pointer;
 }
 
-input:disabled {
-  cursor: default;
-  border-color: var(--color-gray-300);
-  background-color: var(--color-white);
+.checkbox.disabled .wrapper {
+    cursor: default;
+    pointer-events: none;
+    border: 1px solid var(--color-gray-200);
+    background-color: var(--color-gray-50);
 }
 
-input:disabled:checked {
-  border-color: var(--color-brand-04);
-  background-color: var(--color-brand-04);
+.checkbox:not(.disabled) .wrapper:hover {
+    border: 1px solid var(--color-brand-500);
 }
 
-.label {
-  margin-left: 8px;
-  color: var(--color-gray-600);
+.checkbox:not(.disabled).checked .wrapper {
+    background-color: var(--color-brand-500);
+    border: 1px solid var(--color-brand-500);
 }
 
-.input:disabled ~ .label {
-  color: var(--color-gray-400);
+.checkbox .iconWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
 }
 
-.checkIcon {
-  display: block;
+.checkbox .checkIcon {
+    flex-shrink: 0;
+    display: block;
+    overflow: hidden;
+    transition: all 0.15s linear;
+    color: var(--color-white);
 }
 
-.checkboxCheck {
-  position: absolute;
-  opacity: 0;
-  top: 4px;
-  left: 4px;
-
-  /* Check icon style */
-  font-size: 16px;
-  color: var(--color-primary);
+.checkbox.disabled .wrapper .checkIcon {
+    color: var(--color-gray-400);
 }
 
-.input:checked ~ .checkboxCheck {
-  opacity: 1;
+.checkbox:not(.checked) .checkIcon {
+    height: 0;
+    width: 0;
+}
+.checkbox .label {
+    margin-left: 0.5rem;
+    font-weight: 400;
+    color: var(--color-gray-800);
+    user-select: none;
+}
+
+.checkbox.disabled .label {
+    color: var(--color-gray-400);
 }

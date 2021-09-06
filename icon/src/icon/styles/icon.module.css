@@ -1,11 +1,11 @@
 .icon > svg {
-  display: block;
+    display: block;
 }
 
 .block {
-  display: block;
+    display: block;
 }
 
 .inlineBlock {
-  display: inline-block;
+    display: inline-block;
 }

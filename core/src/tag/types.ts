@@ -1,4 +1,4 @@
 export enum KindTag {
-  PRIMARY,
-  WARNING
+    PRIMARY,
+    WARNING
 }

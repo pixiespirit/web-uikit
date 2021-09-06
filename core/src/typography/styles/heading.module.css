@@ -4,36 +4,36 @@
 .heading4,
 .heading5,
 .heading6 {
-  font-family: var(--font-sans);
-  font-weight: normal;
+    font-family: var(--font-sans);
+    font-weight: normal;
 }
 
 .heading1 {
-  font-size: 40px;
-  line-height: 48px;
+    font-size: 40px;
+    line-height: 56px;
 }
 
 .heading2 {
-  font-size: 36px;
-  line-height: 44px;
+    font-size: 36px;
+    line-height: 52px;
 }
 
 .heading3 {
-  font-size: 28px;
-  line-height: 36px;
+    font-size: 28px;
+    line-height: 40px;
 }
 
 .heading4 {
-  font-size: 24px;
-  line-height: 32px;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 .heading5 {
-  font-size: 20px;
-  line-height: 28px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .heading6 {
-  font-size: 18px;
-  line-height: 22px;
+    font-size: 18px;
+    line-height: 28px;
 }

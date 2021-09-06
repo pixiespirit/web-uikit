@@ -1,14 +1,14 @@
 .container {
-  display: block;
-  background-color: var(--color-white);
+    display: block;
+    background-color: var(--color-white);
 }
 
 .title {
-  margin: 0;
-  display: block;
-  padding: 10px 16px 0 16px;
+    margin: 0;
+    display: block;
+    padding: 10px 16px 0 16px;
 }
 
 .body {
-  padding: 5px 16px 16px 16px;
+    padding: 5px 16px 16px 16px;
 }

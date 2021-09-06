@@ -1,103 +1,103 @@
 .wrapper {
-  display: block;
+    display: block;
 }
 
 .dateSelector {
-  display: flex;
-  width: 100%;
-  padding: 12px 0;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
+    display: flex;
+    width: 100%;
+    padding: 12px 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
-  /* Fonts */
-  font-size: 13px;
-  font-weight: 400;
-  color: var(--color-gray-400);
-  font-family: var(--font-sans);
+    /* Fonts */
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-gray-400);
+    font-family: var(--font-sans);
 }
 
 .body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
-  /* Fonts */
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-gray-600);
-  font-family: var(--font-sans);
+    /* Fonts */
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray-600);
+    font-family: var(--font-sans);
 }
 
 .cell {
-  position: relative;
+    position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  width: 37px;
-  height: 37px;
-  text-align: center;
+    width: 37px;
+    height: 37px;
+    text-align: center;
 
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .cell:focus {
-  outline: none;
+    outline: none;
 }
 
 .badge {
-  position: absolute;
-  top: -2px;
-  right: 0;
-  width: 6px;
-  height: 6px;
-  background-color: var(--color-primary);
-  border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
 }
 
 .active {
-  color: var(--color-white);
-  background-color: var(--color-gray-600);
+    color: var(--color-white);
+    background-color: var(--color-gray-600);
 }
 
 .disabled {
-  pointer-events: none;
-  color: var(--color-gray-400);
+    pointer-events: none;
+    color: var(--color-gray-400);
 }
 
 .break {
-  height: 0;
-  flex-basis: 100%;
+    height: 0;
+    flex-basis: 100%;
 }
 
 .collapseContainer {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .collapseButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 24px;
-  width: 48px;
-  border: 1px solid var(--color-gray-300);
-  border-radius: 16px;
-  box-shadow: var(--shadow-1);
-  color: var(--color-gray-600);
-  font-size: 20px;
-  background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 24px;
+    width: 48px;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 16px;
+    box-shadow: var(--shadow-1);
+    color: var(--color-gray-600);
+    font-size: 20px;
+    background-color: var(--color-white);
 }

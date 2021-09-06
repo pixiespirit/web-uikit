@@ -1,85 +1,53 @@
-import React, { CSSProperties } from 'react';
-import input from '@/input/styles/index.module.css';
+import { ForwardedRef, forwardRef } from 'react';
+import { SFC, TextareaProps } from '@/textarea/types';
 import s from '@/textarea/styles/index.module.css';
+import classNames from 'classnames';
 
-export interface TextareaProps {
-  defaultValue?: string | number;
-  forwardedRef?: React.ForwardedRef<HTMLInputElement>;
-  value?: string;
-  setValue?: (value: string) => void;
+export const Textarea: SFC<TextareaProps> = forwardRef((props, ref: ForwardedRef<HTMLInputElement>) => {
+    return (
+        <div
+            ref={ref}
+            style={props.style}
+            className={classNames(
+                s.textareaWrapper,
+                props.disabled && s.disabled,
+                props.readonly && s.readonly,
+                props.invalid && s.invalid
+            )}
+        >
+            <div style={{ display: 'flex' }}>
+                <div className={s.label}>{props.label}</div>
+                {props.required && props.label && <div className={s.requiredLabel}>*</div>}
+            </div>
 
-  // Attributes
-  id?: string;
-  readOnly?: boolean;
-  label?: string;
-  autoComplete?: string;
-  autoFocus?: boolean;
-  cols?: number;
-  rows?: number;
-  disabled?: boolean;
-  form?: string;
-  'aria-label'?: string;
-  'aria-labelledby'?: string;
-  maxLength?: number;
-  minLength?: number;
-  name?: string;
-  required?: boolean;
-  //placeholder?: string;
-  readonly?: boolean;
-  spellCheck?: boolean;
-  wrap?: string;
-
-  // Events
-  onBlur?: React.FocusEventHandler<HTMLTextAreaElement>;
-  onFocus?: React.FocusEventHandler<HTMLTextAreaElement>;
-  onKeyPress?: React.KeyboardEventHandler<HTMLTextAreaElement>;
-  onKeyUp?: React.KeyboardEventHandler<HTMLTextAreaElement>;
-  onKeyDown?: React.KeyboardEventHandler<HTMLTextAreaElement>;
-  onClick?: React.KeyboardEventHandler<HTMLTextAreaElement>;
-
-  // Styling
-  className?: string;
-  style?: CSSProperties;
-}
-
-export const Textarea: React.FC<TextareaProps> = (props) => {
-  return (
-    <div style={props.style} className={input.inputWrapper}>
-      <textarea
-        ref={props.forwardedRef as any}
-        // Value
-        defaultValue={props.defaultValue}
-        value={props.value}
-        onChange={(event) => {
-          props.setValue?.(event.currentTarget.value);
-        }}
-        // Event handlers
-        onBlur={props.onBlur}
-        onFocus={props.onFocus}
-        onKeyDown={props.onKeyDown}
-        onKeyPress={props.onKeyPress}
-        onKeyUp={props.onKeyUp}
-        // Properties
-        id={props.id}
-        className={[input.input, s.textarea].join(' ')}
-        readOnly={props.readOnly}
-        disabled={props.disabled}
-        placeholder=" "
-        autoFocus={props.autoFocus}
-        aria-label={props['aria-label']}
-        aria-labelledby={props['aria-labelledby']}
-        maxLength={props.maxLength}
-        minLength={props.minLength}
-        required={props.required}
-        autoComplete={props.autoComplete}
-        cols={props.cols}
-        rows={props.rows}
-        form={props.form}
-        name={props.name}
-        spellCheck={props.spellCheck}
-        wrap={props.wrap}
-      />
-      <label className={input.label}>{props.label}</label>
-    </div>
-  );
-};
+            <textarea
+                // Value
+                defaultValue={props.defaultValue}
+                value={props.value}
+                onChange={(event) => {
+                    props.setValue?.(event.currentTarget.value);
+                }}
+                // Properties
+                id={props.id}
+                className={[s.textarea, props.className].join(' ')}
+                readOnly={props.readOnly}
+                disabled={props.disabled}
+                placeholder={props.placeholder}
+                autoFocus={props.autoFocus}
+                aria-label={props['aria-label']}
+                aria-labelledby={props['aria-labelledby']}
+                maxLength={props.maxLength}
+                minLength={props.minLength}
+                required={props.required}
+                autoComplete={props.autoComplete}
+                cols={props.cols}
+                rows={props.rows}
+                form={props.form}
+                name={props.name}
+                spellCheck={props.spellCheck}
+                wrap={props.wrap}
+            />
+            <div className={s.caption}>{props.caption}</div>
+        </div>
+    );
+});

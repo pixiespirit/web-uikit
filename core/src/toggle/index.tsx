@@ -1,40 +1,59 @@
 import classnames from 'classnames';
 import React from 'react';
-import s from '@/toggle/styles/toggle.module.css';
+import styles from './styles/toggle.module.css';
 
-export interface ToggleProps {
-  name?: string;
-  disabled?: boolean;
-  checked: boolean;
-  setChecked: (checked: boolean) => void;
-  defaultChecked?: boolean;
-}
+type ToggleProps = {
+    id?: string;
+    checked?: boolean;
+    style?: React.CSSProperties;
+    disabled?: boolean;
+    tabIndex?: number;
+    children?: React.ReactNode;
+    className?: string;
+    size?: 'small' | 'large';
+    name?: string;
 
-const getColorClass = (props: ToggleProps) => {
-  if (props.disabled) {
-    if (props.checked) return s.disabledOn;
-
-    return s.disabledOff;
-  } else {
-    if (props.checked) return s.on;
-
-    return s.off;
-  }
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChecked?: (checked: boolean) => void;
 };
 
-export const Toggle = (props: ToggleProps) => {
-  return (
-    <label className={classnames(s.switch, getColorClass(props))}>
-      <input
-        type="checkbox"
-        className={s.input}
-        name={props.name}
-        checked={props.checked}
-        onChange={(e) => props.setChecked(e.target.checked)}
-        defaultChecked={props.defaultChecked}
-        disabled={props.disabled}
-      />
-      <div className={s.circle} />
-    </label>
-  );
+const InternalToggle: React.ForwardRefRenderFunction<HTMLInputElement, ToggleProps> = (props, ref) => {
+    const _height = props.size === 'large' ? 24 : 16;
+    const _width = props.size === 'large' ? 42 : 28;
+    const _side = props.size === 'large' ? 20 : 12;
+
+    return (
+        <label
+            className={classnames(styles.toggle, {
+                [styles.checked]: props.checked,
+                [styles.disabled]: props.disabled
+            })}
+        >
+            <span
+                style={{
+                    ...props.style,
+                    // @ts-ignore
+                    '--toggle-height': `${_height}px`,
+                    '--toggle-width': `${_width}px`,
+                    '--toggle-size': `${_side}px`
+                }}
+                className={classnames(styles.wrapper, props.className)}
+            ></span>
+            <span className={styles.label}>{props.children}</span>
+            <input
+                ref={ref}
+                id={props.id}
+                disabled={props.disabled}
+                name={props.name}
+                type="checkbox"
+                checked={props.checked}
+                onChange={(e) => {
+                    props.onChecked?.(e.target.checked);
+                    props.onChange?.(e);
+                }}
+            />
+        </label>
+    );
 };
+
+export const Toggle = React.forwardRef(InternalToggle);

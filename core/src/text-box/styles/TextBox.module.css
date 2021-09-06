@@ -1,0 +1,98 @@
+.input {
+    border: 1px solid var(--color-gray-500);
+    display: flex;
+    align-items: center;
+    color: var(--color-gray-700);
+}
+
+.input.disabled {
+    pointer-events: none;
+    background-color: var(--color-gray-50);
+    color: var(--color-gray-400);
+}
+
+.input:focus-within:not(.invalid) {
+    box-shadow: 0px 0px 0px 3px rgba(117, 200, 255, 0.5);
+    border-color: var(--color-blue-500);
+}
+
+.input.invalid {
+    border-color: var(--color-red-400);
+}
+
+.input.small {
+    min-height: 32px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.input.medium {
+    min-height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.input.large {
+    min-height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.input input {
+    border: none;
+    width: 100%;
+    border-radius: 0;
+    padding: 0 1em;
+    font-size: inherit;
+    background-color: transparent;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+.input input:placeholder-shown {
+}
+
+.input .addon {
+    color: var(--color-gray-700);
+    border: inherit;
+    background-color: var(--color-gray-100);
+    min-height: 100%;
+    align-self: stretch;
+
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input .addonBefore {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+
+    margin: -1px 0 -1px -1px; /* border width */
+    border-right: 1px solid var(--color-gray-300);
+}
+
+.input .addonAfter {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+    margin: -1px -1px -1px 0; /* border width */
+    border-left: 1px solid var(--color-gray-300);
+}
+
+.input .iconBefore {
+    padding-left: 1em;
+}
+.input .iconAfter {
+    padding-right: 1em;
+}
+
+.pointer {
+    cursor: pointer;
+}
