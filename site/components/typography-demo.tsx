@@ -25,7 +25,7 @@ const gridContainer: CSSProperties = {
 
 export const TypographyDemo = (): JSX.Element => {
     return (
-        <div style={container}>
+        <div style={{ ...container, padding: 16 }}>
             <H3 bold>Typography</H3>
             <div style={gridContainer}>
                 <Display1 semiBold>Display 01</Display1>
