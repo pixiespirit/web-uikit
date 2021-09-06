@@ -2,7 +2,7 @@ import { H3, Toggle } from '../../core/dist';
 import React, { useState } from 'react';
 import { container, row } from './_shared-styles';
 
-export const GalleryToggle = (): JSX.Element => {
+export const ToggleDemo = (): JSX.Element => {
     const [checked, setChecked] = useState<boolean>(false);
     const [checkex, setCheckex] = useState<boolean>(false);
     return (

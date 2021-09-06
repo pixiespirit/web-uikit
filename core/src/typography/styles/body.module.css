@@ -1,5 +1,3 @@
-/* Body is deprecated since version 0.0.12 and will be deleted in 0.1.0 */
-
 .body1,
 .body2,
 .body3,
@@ -7,26 +5,26 @@
 .body5,
 .body6 {
     font-family: var(--font-sans);
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .body1 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 .body2 {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .body3 {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .body4 {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 16px;
 }
 

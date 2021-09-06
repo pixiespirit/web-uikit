@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Textarea } from '../../core/dist';
 
-export default function TextArea() {
+export const TextAreaDemo = () => {
     return (
         <div className="wrapper">
             <h2 className="title">Text area</h2>
@@ -12,4 +12,4 @@ export default function TextArea() {
             <Textarea label="Label" required caption="This is caption" value="Value of textarea" />
         </div>
     );
-}
+};
