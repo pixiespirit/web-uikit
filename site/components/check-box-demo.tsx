@@ -2,7 +2,7 @@ import { Checkbox, H3 } from '../../core/dist';
 import React, { useRef, useState } from 'react';
 import { container, row } from './_shared-styles';
 
-export const GalleryCheckbox = (): JSX.Element => {
+export const CheckBoxDemo = (): JSX.Element => {
     const [checked, setChecked] = useState(false);
     const ref = useRef<HTMLInputElement>(null);
 

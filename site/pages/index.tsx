@@ -1,10 +1,27 @@
 import Head from 'next/head';
 import React, { CSSProperties } from 'react';
+import { H3, Label1 } from '../../core/dist';
 import { ButtonDemo } from '../components/button-demo';
-import { GalleryCheckbox } from '../components/check-box';
+import { CheckBoxDemo } from '../components/check-box-demo';
 import { InputDemo } from '../components/input-demo';
-import { GalleryToggle } from '../components/toggle';
+import { TextAreaDemo } from '../components/text-area-demo';
+import { ToggleDemo } from '../components/toggle-demo';
+import { container } from '../components/_shared-styles';
+import Link from 'next/link';
 
+export const TypographyIntro = (): JSX.Element => {
+    return (
+        <div style={container}>
+            <H3 bold>Typography</H3>
+            <Label1>
+                Check it out at{' '}
+                <Link href="/typography">
+                    <a style={{ color: 'blue' }}>Typography.</a>
+                </Link>
+            </Label1>
+        </div>
+    );
+};
 const style: CSSProperties = {
     maxWidth: 1170,
     margin: '2rem auto',
@@ -23,14 +40,15 @@ export default function Home() {
             </Head>
 
             <main style={style}>
+                <TypographyIntro />
                 <InputDemo />
                 <ButtonDemo />
-                {/*<GalleryTypographyIntro />*/}
+                <TextAreaDemo />
+                <CheckBoxDemo />
+                <ToggleDemo />
                 {/*<GalleryButton />*/}
                 {/*<GalleryTag />*/}
-                <GalleryCheckbox />
                 {/*<GalleryRadio />*/}
-                <GalleryToggle />
                 {/*<GalleryInput />*/}
                 {/*<GalleryAvatar />*/}
                 {/*<GallerySeparator />*/}
