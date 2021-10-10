@@ -2,6 +2,7 @@ import React, { CSSProperties } from 'react';
 import { KindButton, SizeButton, SizeButtonType } from '@/button/types';
 import s from '@/button/styles/button.module.css';
 import primary from '@/button/styles/primary.module.css';
+import brand from '@/button/styles/brand.module.css';
 import secondary from '@/button/styles/secondary.module.css';
 import ghost from '@/button/styles/ghost.module.css';
 import { DivPx } from '@/div';
@@ -50,6 +51,9 @@ const getClass = (props: ButtonProps): string => {
             break;
         case KindButton.GHOST:
             classes.push(ghost.root);
+            break;
+        case KindButton.BRAND:
+            classes.push(brand.root);
             break;
         case KindButton.PRIMARY:
         default:
