@@ -29,6 +29,7 @@ export const SizeButton: Record<SizeButtonKey, SizeButtonType> = {
 
 export enum KindButton {
     PRIMARY,
+    BRAND,
     SECONDARY,
     GHOST
 }
