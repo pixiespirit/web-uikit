@@ -1,0 +1,38 @@
+{
+    "name": "@pixiepkg/icon",
+    "version": "0.0.15",
+    "description": "Pixie icon sets for UI Kit",
+    "repository": "https://github.com/pixiespirit/web-uikit.git",
+    "license": "MIT",
+    "main": "cjs.js",
+    "module": "esm.js",
+    "types": "types/index.d.ts",
+    "scripts": {
+        "build": "./scripts/build.sh",
+        "rollup": "rollup --config",
+        "build:icon": "yarn icon:clean && yarn icon:build",
+        "icon:build": "svgr --out-dir ./src/icons ./src/svg-transformed",
+        "icon:clean": "rm -f ./src/icons/*"
+    },
+    "peerDependencies": {
+        "react": ">=16",
+        "react-dom": ">=16"
+    },
+    "devDependencies": {
+        "@svgr/cli": "^5.5.0",
+        "@types/node": "^15.12.2",
+        "@types/react": "^17.0.11",
+        "@zerollup/ts-transform-paths": "^1.7.18",
+        "autoprefixer": "^10.2.6",
+        "postcss": "^8.3.0",
+        "react": "^17.0.2",
+        "rollup": "^2.51.1",
+        "rollup-plugin-copy": "^3.4.0",
+        "rollup-plugin-delete": "^2.0.0",
+        "rollup-plugin-postcss": "^4.0.0",
+        "rollup-plugin-typescript2": "^0.30.0",
+        "ts-node": "^10.0.0",
+        "ttypescript": "^1.5.12",
+        "typescript": "^4.3.2"
+    }
+}
