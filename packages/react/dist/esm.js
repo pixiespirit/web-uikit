@@ -119,7 +119,7 @@ const getClass$5 = (props) => {
 const ButtonChildren = (props) => {
     var _a;
     const btnSize = (_a = props.size) !== null && _a !== void 0 ? _a : SizeButton.MEDIUM;
-    return (jsxs(React.Fragment, { children: [props.leftIcon && jsx("span", Object.assign({ className: s$j.icon }, { children: props.leftIcon }), void 0), props.leftIcon && !props.stickIconAtPrefix && props.children && jsx(DivPx, { size: btnSize.iconMargin }, void 0), props.children && (jsx("span", Object.assign({ className: classNames(s$j.text, props.stickIconAtPrefix && s$j.textGrow) }, { children: props.children }), void 0)), props.rightIcon && !props.stickIconAtPrefix && props.children && jsx(DivPx, { size: btnSize.iconMargin }, void 0), props.rightIcon && jsx("span", Object.assign({ className: s$j.icon }, { children: props.rightIcon }), void 0)] }, void 0));
+    return (jsxs(React.Fragment, { children: [props.leftIcon && jsx("span", Object.assign({ className: s$j.icon }, { children: props.leftIcon }), void 0), props.leftIcon && !props.stickIconAtPrefix && props.children && jsx(DivPx, { size: btnSize.iconMargin }, void 0), props.children && (jsx("span", Object.assign({ className: classNames(s$j.text, props.stickIconAtPrefix && s$j.textGrow) }, { children: props.children }), void 0)), props.rightIcon && !props.stickIconAtPrefix && props.children && jsx(DivPx, { size: btnSize.iconMargin }, void 0), props.rightIcon && jsx("span", Object.assign({ className: s$j.icon }, { children: props.rightIcon }), void 0), jsx("div", { children: "OFJSFOJDOSI" }, void 0)] }, void 0));
 };
 const Button = (props) => {
     var _a;
