@@ -80,7 +80,6 @@ const ButtonChildren: React.FC<ButtonProps> = (props) => {
             )}
             {props.rightIcon && !props.stickIconAtPrefix && props.children && <DivPx size={btnSize.iconMargin} />}
             {props.rightIcon && <span className={s.icon}>{props.rightIcon}</span>}
-            <div>OFJSFOJDOSI</div>
         </React.Fragment>
     );
 };

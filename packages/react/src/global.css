@@ -1,5 +1,5 @@
-@import 'font/font.css';
-@import 'theme/theme.css';
+@import './font/font.css';
+@import './theme/theme.css';
 
 body {
     font-family: var(--font-sans);

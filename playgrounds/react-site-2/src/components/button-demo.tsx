@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Button, KindButton, SizeButton } from "@pixiepkg/react";
+import IconSVG from "./icons/react-outlined.svg";
 
 export function ButtonDemo() {
   return (
@@ -37,22 +37,8 @@ export function ButtonDemo() {
           kind={KindButton.PRIMARY}
           size={SizeButton.XLARGE}
           rounded
-          leftIcon={
-            <img
-              src="/icons/react-outlined.svg"
-              alt="fd"
-              width={20}
-              height={20}
-            />
-          }
-          rightIcon={
-            <img
-              src="/icons/react-outlined.svg"
-              alt="fd"
-              width={20}
-              height={20}
-            />
-          }
+          leftIcon={<img src={IconSVG} alt="fd" width={20} height={20} />}
+          rightIcon={<img src={IconSVG} alt="fd" width={20} height={20} />}
         >
           Text
         </Button>
@@ -61,22 +47,8 @@ export function ButtonDemo() {
           size={SizeButton.LARGE}
           rounded
           className="ml-4"
-          leftIcon={
-            <img
-              src="/icons/react-outlined.svg"
-              alt="fd"
-              width={20}
-              height={20}
-            />
-          }
-          rightIcon={
-            <img
-              src="/icons/react-outlined.svg"
-              alt="fd"
-              width={20}
-              height={20}
-            />
-          }
+          leftIcon={<img src={IconSVG} alt="fd" width={20} height={20} />}
+          rightIcon={<img src={IconSVG} alt="fd" width={20} height={20} />}
         >
           Text
         </Button>
@@ -85,22 +57,8 @@ export function ButtonDemo() {
           size={SizeButton.MEDIUM}
           rounded
           className="ml-4"
-          leftIcon={
-            <img
-              src="/icons/react-outlined.svg"
-              alt="fd"
-              width={16}
-              height={16}
-            />
-          }
-          rightIcon={
-            <img
-              src="/icons/react-outlined.svg"
-              alt="fd"
-              width={16}
-              height={16}
-            />
-          }
+          leftIcon={<img src={IconSVG} alt="fd" width={16} height={16} />}
+          rightIcon={<img src={IconSVG} alt="fd" width={16} height={16} />}
         >
           Text
         </Button>
@@ -109,22 +67,8 @@ export function ButtonDemo() {
           size={SizeButton.SMALL}
           rounded
           className="ml-4"
-          leftIcon={
-            <img
-              src="/icons/react-outlined.svg"
-              alt="fd"
-              width={16}
-              height={16}
-            />
-          }
-          rightIcon={
-            <img
-              src="/icons/react-outlined.svg"
-              alt="fd"
-              width={16}
-              height={16}
-            />
-          }
+          leftIcon={<img src={IconSVG} alt="fd" width={16} height={16} />}
+          rightIcon={<img src={IconSVG} alt="fd" width={16} height={16} />}
         >
           Text
         </Button>
