@@ -11,6 +11,17 @@ yarn
 yarn run dev
 ```
 
+For windows, 2 terminals
+
+```
+yarn
+yarn run watch
+```
+
+```
+yarn run demo
+```
+
 Publish packages, only for the one get access to npm pixiepkg
 
 ```
