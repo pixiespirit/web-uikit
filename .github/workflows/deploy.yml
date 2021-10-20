@@ -29,6 +29,10 @@ jobs:
       - name: Build all
         run: yarn build
 
+      - name: Build react site
+        working-directory: ./demo/react-site
+        run: yarn build
+
       - name: Deploy production
         if: ${{ github.ref == 'refs/heads/master' }}
         working-directory: ./demo/react-site/build
