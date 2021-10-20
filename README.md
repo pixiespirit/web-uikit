@@ -29,14 +29,14 @@ npm config set access public
 yarn run publish
 ```
 
-## @pixiepkg/core
+## @pixiepkg/react
 
 Pixie web core UI components
 
 ### Install
 
 ```
-yarn add @pixiepkg/core
+yarn add @pixiepkg/react
 ```
 
 ## @pixiepkg/icon
