@@ -29,15 +29,14 @@ jobs:
       - name: Build all
         run: yarn build
 
-      - name: Build react site
-        run: yarn build:demo
-
       - name: Deploy production
-        if: ${{ github.ref == 'refs/heads/master' }}
-        working-directory: ./demo/react-site/build
+        if: ${{ github.ref == 'refs/heads/main' }}
+        working-directory: ./demo/react-site
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
+          yarn build:demo
+          cd build
           DEPLOYMENT_URL=$(vercel --token $VERCEL_TOKEN --confirm --no-clipboard --prod)
           echo "::set-output name=deployment_url::$DEPLOYMENT_URL"
       - name: Deploy preview
