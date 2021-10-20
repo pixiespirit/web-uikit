@@ -30,8 +30,7 @@ jobs:
         run: yarn build
 
       - name: Build react site
-        working-directory: ./demo/react-site
-        run: yarn build
+        run: yarn build:demo
 
       - name: Deploy production
         if: ${{ github.ref == 'refs/heads/master' }}
