@@ -8,7 +8,7 @@
   "module": "dist/esm.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
-    "dev": "yarn rollup --watch",
+    "watch": "yarn rollup --watch",
     "build": "./scripts/build.sh",
     "rollup": "rollup --config",
     "build:icon": "yarn icon:clean && yarn icon:build",

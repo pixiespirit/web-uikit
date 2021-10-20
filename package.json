@@ -4,19 +4,22 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^6.3.0",
     "lerna": "^4.0.0"
   },
   "private": true,
   "workspaces": {
     "packages": [
       "packages/*",
-      "playgrounds/*"
+      "demo/*"
     ]
   },
   "scripts": {
-    "build": "yarn lerna run build",
-    "dev": "yarn lerna run dev",
+    "watch": "yarn lerna run watch",
     "demo": "yarn lerna run demo",
+    "dev": "concurrently \"yarn run watch\" \"sleep 5 && yarn run demo\"",
+    "build": "yarn lerna run build",
+    "build:demo": "yarn lerna run build:demo",
     "test": "yarn lerna run test",
     "publish": "yarn build && yarn lerna publish",
     "commit": "yarn git-cz",
