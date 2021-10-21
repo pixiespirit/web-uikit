@@ -7,6 +7,9 @@
   "main": "dist/cjs.js",
   "module": "dist/esm.js",
   "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "watch": "yarn rollup --watch",
     "build": "./scripts/build.sh",

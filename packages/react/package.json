@@ -7,6 +7,9 @@
     "types": "dist/types/index.d.ts",
     "repository": "https://github.com/pixiespirit/web-uikit.git",
     "license": "MIT",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "rollup -c",
         "dev": "yarn build --watch"
