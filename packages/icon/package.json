@@ -16,7 +16,8 @@
     "rollup": "rollup --config",
     "build:icon": "yarn icon:clean && yarn icon:build",
     "icon:build": "svgr --out-dir ./src/icons ./src/svg-transformed",
-    "icon:clean": "rm -f ./src/icons/*"
+    "icon:clean": "rm -f ./src/icons/*",
+    "prepublishOnly": "cp -r ./dist/* ."
   },
   "peerDependencies": {
     "react": ">=16",
