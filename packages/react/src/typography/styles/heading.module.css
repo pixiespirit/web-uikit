@@ -6,6 +6,7 @@
 .heading6 {
     font-family: var(--font-sans);
     font-weight: normal;
+    color: var(--color-gray-800);
 }
 
 .heading1 {

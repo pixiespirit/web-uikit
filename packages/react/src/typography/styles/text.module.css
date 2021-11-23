@@ -1,3 +1,7 @@
+.default {
+    color: var(--color-gray-700);
+}
+
 .medium {
     font-weight: 500 !important;
 }

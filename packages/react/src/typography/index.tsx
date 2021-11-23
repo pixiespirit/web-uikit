@@ -27,6 +27,7 @@ export interface TextProps {
 
 const getClass = (props: TextProps): string => {
     const classes = [];
+    classes.push(s.default);
     if (props.medium) classes.push(s.medium);
     if (props.semiBold) classes.push(s.semiBold);
     if (props.bold) classes.push(s.bold);

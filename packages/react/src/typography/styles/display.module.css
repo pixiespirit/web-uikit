@@ -2,6 +2,7 @@
 .display2 {
     font-family: var(--font-sans);
     font-weight: normal;
+    color: var(--color-gray-800);
 }
 
 .display1 {
