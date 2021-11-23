@@ -12,8 +12,7 @@
     ],
     "scripts": {
         "build": "rollup -c",
-        "dev": "yarn build --watch",
-        "prepublishOnly": "cp -r ./dist/* ."
+        "watch": "yarn build --watch"
     },
     "watch": {
         "build": {
