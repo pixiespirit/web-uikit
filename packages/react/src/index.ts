@@ -2,8 +2,6 @@ import './global.css';
 
 export * from '@/avatar';
 export * from '@/button';
-export * from '@/card';
-export * from '@/card-thumbnail';
 export * from '@/checkbox';
 export * from '@/div';
 export * from '@/modal';
