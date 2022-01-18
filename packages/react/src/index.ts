@@ -6,7 +6,6 @@ export * from '@/card';
 export * from '@/card-thumbnail';
 export * from '@/checkbox';
 export * from '@/div';
-export * from '@/input';
 export * from '@/modal';
 export * from '@/notification';
 export * from '@/pin-code';
