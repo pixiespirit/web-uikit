@@ -21,6 +21,7 @@ export const Textarea: SFC<TextareaProps> = forwardRef((props, ref: ForwardedRef
             </div>
 
             <textarea
+                {...props.textareaProps}
                 // Value
                 defaultValue={props.defaultValue}
                 value={props.value}

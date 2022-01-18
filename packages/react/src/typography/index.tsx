@@ -60,10 +60,10 @@ const textChildren = (props: TextProps) => {
 };
 
 export const Text: React.FC<TextProps> = (props) => {
-    const Tag = props.as as keyof JSX.IntrinsicElements;
+    const TagTypo = props.as as keyof JSX.IntrinsicElements;
     return (
-        <Tag style={getStyles(props)} className={getClass(props)}>
+        <TagTypo style={getStyles(props)} className={getClass(props)}>
             {textChildren(props)}
-        </Tag>
+        </TagTypo>
     );
 };

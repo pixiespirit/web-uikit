@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { forwardRef } from 'react';
 import styles from './styles/checkbox.module.css';
 
-export type CheckboxProps = {
+export interface CheckboxProps {
     id?: string;
     checked?: boolean;
     style?: React.CSSProperties;
@@ -15,13 +15,16 @@ export type CheckboxProps = {
 
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onChecked?: (checked: boolean) => void;
-};
+    inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
+    labelProps?: React.LabelHTMLAttributes<HTMLLabelElement>;
+}
 
 const InternalCheckbox: React.ForwardRefRenderFunction<HTMLInputElement, CheckboxProps> = (props, ref) => {
     const _size = props.size === 'large' ? 20 : 16;
 
     return (
         <label
+            {...props.labelProps}
             className={classNames(styles.checkbox, {
                 [styles.disabled]: props.disabled,
                 [styles.checked]: props.checked
@@ -44,6 +47,7 @@ const InternalCheckbox: React.ForwardRefRenderFunction<HTMLInputElement, Checkbo
             <span className={styles.label}>{props.children}</span>
 
             <input
+                {...props.inputProps}
                 ref={ref}
                 id={props.id}
                 name={props.name}

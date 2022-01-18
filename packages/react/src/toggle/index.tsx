@@ -15,6 +15,8 @@ type ToggleProps = {
 
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onChecked?: (checked: boolean) => void;
+    inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
+    labelProps?: React.LabelHTMLAttributes<HTMLLabelElement>;
 };
 
 const InternalToggle: React.ForwardRefRenderFunction<HTMLInputElement, ToggleProps> = (props, ref) => {
@@ -24,6 +26,7 @@ const InternalToggle: React.ForwardRefRenderFunction<HTMLInputElement, TogglePro
 
     return (
         <label
+            {...props.labelProps}
             className={classnames(styles.toggle, {
                 [styles.checked]: props.checked,
                 [styles.disabled]: props.disabled
@@ -41,6 +44,7 @@ const InternalToggle: React.ForwardRefRenderFunction<HTMLInputElement, TogglePro
             ></span>
             <span className={styles.label}>{props.children}</span>
             <input
+                {...props.inputProps}
                 ref={ref}
                 id={props.id}
                 disabled={props.disabled}

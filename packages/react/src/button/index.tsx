@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { ButtonHTMLAttributes, CSSProperties } from 'react';
 import { KindButton, SizeButton, SizeButtonType } from '@/button/types';
 import s from '@/button/styles/button.module.css';
 import primary from '@/button/styles/primary.module.css';
@@ -30,6 +30,8 @@ export interface ButtonProps {
 
     className?: string;
     style?: CSSProperties;
+
+    buttonProps?: ButtonHTMLAttributes<HTMLButtonElement>;
 }
 
 const getClass = (props: ButtonProps): string => {
@@ -86,6 +88,7 @@ const ButtonChildren: React.FC<ButtonProps> = (props) => {
 
 export const Button: React.FC<ButtonProps> = (props) => {
     const common = {
+        ...props.buttonProps,
         className: getClass(props),
         ref: props.forwardedRef as any,
         children: <ButtonChildren {...props} />

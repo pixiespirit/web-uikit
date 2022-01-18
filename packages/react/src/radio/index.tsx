@@ -11,6 +11,8 @@ export interface RadioProps {
     checked?: boolean;
     defaultChecked?: boolean;
     forwardedRef?: ForwardedRef<HTMLInputElement>;
+    inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
+    labelProps?: React.LabelHTMLAttributes<HTMLLabelElement>;
 }
 
 export const DotIcon: React.FC = () => {
@@ -32,8 +34,9 @@ export const DotIcon: React.FC = () => {
 
 export const Radio: React.FC<RadioProps> = (props) => {
     return (
-        <label className={s.container}>
+        <label className={s.container} {...props.labelProps}>
             <input
+                {...props.inputProps}
                 type="radio"
                 className={s.input}
                 name={props.name}

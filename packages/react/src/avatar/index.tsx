@@ -2,7 +2,7 @@ import React from 'react';
 import s from '@/avatar/styles/avatar.module.css';
 import { SizeAvatar } from '@/avatar/types';
 
-export interface AvatarProps {
+export interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
     src: string;
     alt?: string;
     /**
@@ -41,7 +41,16 @@ export const Avatar: React.FC<AvatarProps> = (props) => {
               height: props.height ?? sizes[SizeAvatar.MEDIUM].height
           };
 
-    return <img src={props.src} alt={props.alt} width={size.width} height={size.height} className={getClass(props)} />;
+    return (
+        <img
+            {...props}
+            src={props.src}
+            alt={props.alt}
+            width={size.width}
+            height={size.height}
+            className={getClass(props)}
+        />
+    );
 };
 
 export * from '@/avatar/types';

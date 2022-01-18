@@ -37,6 +37,7 @@ export interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
     // Styling
     className?: string;
     style?: CSSProperties;
+    textareaProps?: React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 }
 
 interface FunctionComponent<P = Record<string, unknown>> {
