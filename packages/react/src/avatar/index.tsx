@@ -2,7 +2,7 @@ import React from 'react';
 import s from '@/avatar/styles/avatar.module.css';
 import { SizeAvatar } from '@/avatar/types';
 
-export interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface AvatarProps {
     src: string;
     alt?: string;
     /**
@@ -14,6 +14,8 @@ export interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
     size?: SizeAvatar;
     circle?: boolean;
     fullWidth?: boolean;
+
+    imageProps?: React.ImgHTMLAttributes<HTMLImageElement>;
 }
 
 interface Size {
@@ -43,7 +45,7 @@ export const Avatar: React.FC<AvatarProps> = (props) => {
 
     return (
         <img
-            {...props}
+            {...props.imageProps}
             src={props.src}
             alt={props.alt}
             width={size.width}

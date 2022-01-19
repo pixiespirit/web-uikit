@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     color: var(--color-gray-700);
+    background-color: white;
 }
 
 .input.disabled {
