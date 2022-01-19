@@ -7,6 +7,32 @@ export function ButtonDemo() {
     <div className="wrapper">
       <h2 className="title">Button</h2>
       <div className="row">
+        <Button kind={KindButton.BRAND} size={SizeButton.XLARGE}>
+          Text
+        </Button>
+        <Button
+          kind={KindButton.BRAND}
+          size={SizeButton.LARGE}
+          className="ml-4"
+        >
+          Text
+        </Button>
+        <Button
+          kind={KindButton.BRAND}
+          size={SizeButton.MEDIUM}
+          className="ml-4"
+        >
+          Text
+        </Button>
+        <Button
+          kind={KindButton.BRAND}
+          size={SizeButton.SMALL}
+          className="ml-4"
+        >
+          Text
+        </Button>
+      </div>
+      <div className="row">
         <Button kind={KindButton.PRIMARY} size={SizeButton.XLARGE}>
           Text
         </Button>
