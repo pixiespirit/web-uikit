@@ -1,25 +1,25 @@
 import classNames from 'classnames';
-import React, { forwardRef, ForwardRefRenderFunction, HTMLAttributes } from 'react';
+import React, { forwardRef, ForwardRefRenderFunction, InputHTMLAttributes } from 'react';
 import styles from './styles/TextBox.module.css';
 
-type TextboxProps = HTMLAttributes<HTMLInputElement> &
-    Partial<{
-        size: 'small' | 'medium' | 'large';
-        invalid: boolean;
-        addonLeft: JSX.Element | string;
-        addonRight: JSX.Element | string;
-        iconLeft: JSX.Element | string;
-        iconRight: JSX.Element | string;
-        disabled?: boolean;
-        onClickLeftIcon?: (event: React.MouseEvent<HTMLElement>) => void;
-        onClickRightIcon?: (event: React.MouseEvent<HTMLElement>) => void;
-        onClickLeftAddon?: (event: React.MouseEvent<HTMLElement>) => void;
-        onClickRightAddon?: (event: React.MouseEvent<HTMLElement>) => void;
-        inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
+type TextboxProps = Partial<{
+    size: 'small' | 'medium' | 'large';
+    invalid: boolean;
+    addonLeft: JSX.Element | string;
+    addonRight: JSX.Element | string;
+    iconLeft: JSX.Element | string;
+    iconRight: JSX.Element | string;
+    disabled?: boolean;
+    onClickLeftIcon?: (event: React.MouseEvent<HTMLElement>) => void;
+    onClickRightIcon?: (event: React.MouseEvent<HTMLElement>) => void;
+    onClickLeftAddon?: (event: React.MouseEvent<HTMLElement>) => void;
+    onClickRightAddon?: (event: React.MouseEvent<HTMLElement>) => void;
+    inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
 
-        value?: string;
-        onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-    }>;
+    value?: string;
+    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}> &
+    InputHTMLAttributes<HTMLInputElement>;
 
 const InternalTextBox: ForwardRefRenderFunction<HTMLInputElement, TextboxProps> = (
     {
@@ -64,6 +64,7 @@ const InternalTextBox: ForwardRefRenderFunction<HTMLInputElement, TextboxProps> 
                 </div>
             )}
             <input
+                {...props}
                 {...props.inputProps}
                 type="text"
                 ref={ref}

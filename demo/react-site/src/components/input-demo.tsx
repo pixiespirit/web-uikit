@@ -26,6 +26,15 @@ export const InputDemo = () => {
 
       <div className="mb-4">
         <Textbox
+          value="read only"
+          iconLeft={<ImagePicture2Outline size={24} display={"block"} />}
+          defaultValue="disabled"
+          readOnly
+        />
+      </div>
+
+      <div className="mb-4">
+        <Textbox
           size="large"
           iconRight={<ImagePicture2Outline size={24} display={"block"} />}
           onClickRightIcon={() => alert("pressed")}
