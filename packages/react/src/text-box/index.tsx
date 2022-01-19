@@ -16,6 +16,9 @@ type TextboxProps = HTMLAttributes<HTMLInputElement> &
         onClickLeftAddon?: (event: React.MouseEvent<HTMLElement>) => void;
         onClickRightAddon?: (event: React.MouseEvent<HTMLElement>) => void;
         inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
+
+        value?: string;
+        onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
     }>;
 
 const InternalTextBox: ForwardRefRenderFunction<HTMLInputElement, TextboxProps> = (
@@ -31,6 +34,8 @@ const InternalTextBox: ForwardRefRenderFunction<HTMLInputElement, TextboxProps> 
         onClickRightIcon,
         onClickLeftAddon,
         onClickRightAddon,
+        value,
+        onChange,
         ...props
     },
     ref
@@ -58,7 +63,15 @@ const InternalTextBox: ForwardRefRenderFunction<HTMLInputElement, TextboxProps> 
                     {iconLeft}
                 </div>
             )}
-            <input {...props.inputProps} type="text" ref={ref} {...props} disabled={disabled} />
+            <input
+                {...props.inputProps}
+                type="text"
+                ref={ref}
+                {...props}
+                disabled={disabled}
+                value={value}
+                onChange={onChange}
+            />
             {iconRight && (
                 <div
                     className={[styles.iconAfter, onClickRightIcon && styles.pointer].join(' ')}
