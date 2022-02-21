@@ -10,6 +10,7 @@ import { ToggleDemo } from "./components/toggle-demo";
 import { TypographyDemo } from "./components/typography-demo";
 import { Label2 } from "@pixiepkg/react";
 import { PixieSolid } from "@pixiepkg/icon";
+import { PinCodeDemo } from "./components/pincode-demo";
 
 const style: CSSProperties = {
   maxWidth: 1170,
@@ -36,6 +37,7 @@ function App() {
       <TextAreaDemo />
       <CheckBoxDemo />
       <ToggleDemo />
+      <PinCodeDemo />
       <div>
         <Label2>{"©️ 2021 Pixie - All Rights Reserved."}</Label2>
       </div>
