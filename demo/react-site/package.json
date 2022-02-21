@@ -1,6 +1,6 @@
 {
   "name": "react-site",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
