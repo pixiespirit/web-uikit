@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-next-line -->
 <p align="center">
-  <a href="https://mui.com/" rel="noopener" target="_blank"><img width="150" src="https://gotpixie.com/images/favicon.svg" alt="MUI logo"></a>
+  <a href="https://pixie-coreui.vercel.app/" rel="noopener" target="_blank"><img width="150" src="https://gotpixie.com/images/favicon.svg" alt="MUI logo"></a>
 </p>
 
 # Web UIKit
