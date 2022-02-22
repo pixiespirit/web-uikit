@@ -1,6 +1,6 @@
 {
     "name": "@pixiepkg/react",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "description": "Pixie web core UI react components",
     "main": "dist/cjs.js",
     "module": "dist/esm.js",
