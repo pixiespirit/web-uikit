@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.9](https://github.com/pixiespirit/web-uikit/compare/v0.4.8...v0.4.9) (2022-02-22)
+
+**Note:** Version bump only for package @pixiepkg/core
+
+
+
+
+
 ## [0.4.8](https://github.com/pixiespirit/web-uikit/compare/v0.4.7...v0.4.8) (2022-02-22)
 
 **Note:** Version bump only for package @pixiepkg/core
