@@ -24,7 +24,7 @@
     "build": "yarn lerna run build",
     "build:demo": "yarn lerna run build:demo",
     "test": "yarn lerna run test",
-    "publish": "yarn build && yarn lerna publish",
+    "publish": "yarn build && yarn lerna publish from-git --yes --no-verify-access",
     "commit": "yarn git-cz",
     "test:chromatic": "yarn lerna run test:chromatic",
     "build:storybook": "yarn build && yarn lerna run build-storybook",
