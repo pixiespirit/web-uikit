@@ -5,7 +5,7 @@
 
 # Web UIKit
 
-The core UIKit for Pixie web applications.
+The core UIKit for [Pixie](https://gotpixie.com/) web applications.
 
 ## Demo
 
