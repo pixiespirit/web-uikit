@@ -13,6 +13,7 @@
   "scripts": {
     "watch": "yarn rollup --watch",
     "build": "./scripts/build.sh",
+    "prepublish": "yarn build",
     "rollup": "rollup --config",
     "build:icon": "yarn icon:clean && yarn icon:build",
     "icon:build": "svgr --out-dir ./src/icons ./src/svg-transformed",

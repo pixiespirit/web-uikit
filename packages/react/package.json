@@ -12,6 +12,7 @@
     ],
     "scripts": {
         "build": "rollup -c",
+        "prepublish": "yarn build",
         "watch": "yarn build --watch"
     },
     "watch": {
