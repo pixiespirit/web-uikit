@@ -3,3 +3,7 @@ dist/
 svg-transformed/
 .DS_Store
 src/icons/
+types/
+bundle.css
+cjs.js
+esm.js
