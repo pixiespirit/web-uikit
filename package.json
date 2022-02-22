@@ -27,7 +27,7 @@
     "build:storybook": "yarn build && yarn lerna run build-storybook",
     "versionup": "lerna version --conventional-commits --no-git-tag-version",
     "bootstrap": "npx lerna bootstrap",
-    "publish:ci": "lerna publish from-package --yes",
+    "publish:ci": "lerna publish from-package --yes --no-verify-access",
     "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'"
   }
 }
