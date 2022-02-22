@@ -24,6 +24,9 @@
     "react": ">=16",
     "react-dom": ">=16"
   },
+  "publishConfig": {
+    "@pixiespirit:registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "@svgr/cli": "^5.5.0",
     "@types/node": "^15.12.2",
