@@ -76,7 +76,7 @@
 .input:valid:not(:focus) {
     background: var(--color-brand-600);
     border: 1px solid var(--color-brand-600);
-    color: white;
+    color: var(--color-white);
     box-sizing: border-box;
     border-radius: 8px;
 }
