@@ -14,9 +14,6 @@
       "demo/*"
     ]
   },
-  "publishConfig": {
-    "@pixiespirit:registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "watch": "yarn lerna run watch",
     "demo": "yarn lerna run demo",
