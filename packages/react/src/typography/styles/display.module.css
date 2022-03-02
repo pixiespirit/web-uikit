@@ -6,12 +6,12 @@
 }
 
 .display1 {
-    font-size: 3.25rem;
+    font-size: 3.25em;
     line-height: 4.5rem;
 }
 
 .display2 {
-    font-size: 2.75rem;
+    font-size: 2.75em;
     line-height: 4rem;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.015rem;
 }

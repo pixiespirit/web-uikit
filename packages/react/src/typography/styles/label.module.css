@@ -9,33 +9,33 @@
 }
 
 .label1 {
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: 1.125em;
+    line-height: 2em;
 }
 
 .label2 {
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-size: 1em;
+    line-height: 1.75em;
 }
 
 .label3 {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+    font-size: 0.875em;
+    line-height: 1.5em;
 }
 
 .label4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 0.75em;
+    line-height: 1em;
 }
 
 /* Label5 is deprecated since version 0.0.12 and will be deleted in 0.1.0 */
 .label5 {
-    font-size: 0.6875rem;
-    line-height: 1rem;
+    font-size: 0.6875em;
+    line-height: 1em;
 }
 
 /* Label6 is deprecated since version 0.0.12 and will be deleted in 0.1.0 */
 .label6 {
-    font-size: 0.625rem;
-    line-height: 1rem;
+    font-size: 0.625em;
+    line-height: 1em;
 }
