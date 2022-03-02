@@ -9,31 +9,31 @@
 }
 
 .body1 {
-    font-size: 1.125em;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 .body2 {
-    font-size: 1em;
-    line-height: 1.75rem;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .body3 {
-    font-size: 0.875em;
-    line-height: 1.5rem;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .body4 {
-    font-size: 0.75em;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .body5 {
-    font-size: 0.625em;
-    line-height: 1rem;
+    font-size: 10px;
+    line-height: 16px;
 }
 
 .body6 {
-    font-size: 0.563em;
-    line-height: 0.75rem;
+    font-size: 9px;
+    line-height: 12px;
 }
