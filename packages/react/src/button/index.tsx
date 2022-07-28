@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, CSSProperties } from 'react';
+import React, { ButtonHTMLAttributes, CSSProperties, useEffect, useRef } from 'react';
 import { KindButton, SizeButton, SizeButtonType } from '@/button/types';
 import s from '@/button/styles/button.module.css';
 import primary from '@/button/styles/primary.module.css';
@@ -7,6 +7,7 @@ import secondary from '@/button/styles/secondary.module.css';
 import ghost from '@/button/styles/ghost.module.css';
 import { DivPx } from '@/div';
 import classNames from 'classnames';
+import Spinner from '@/spinner';
 
 export interface ButtonProps {
     children?: React.ReactNode;
@@ -14,6 +15,7 @@ export interface ButtonProps {
 
     type?: 'submit' | 'button' | 'reset';
     disabled?: boolean;
+    loading?: boolean;
     onClick?: React.MouseEventHandler;
     onFocus?: React.FocusEventHandler;
     onBlur?: React.FocusEventHandler;
@@ -87,23 +89,45 @@ const ButtonChildren: React.FC<ButtonProps> = (props) => {
 };
 
 export const Button: React.FC<ButtonProps> = (props) => {
+    const spineerType = props.kind && [KindButton.GHOST, KindButton.SECONDARY].includes(props.kind) ? 'dark' : 'light';
+
+    const containerRef = useRef<HTMLDivElement>(null);
+    const [conatinerWidth, setContainerWidth] = React.useState<number>();
+
     const common = {
         ...props.buttonProps,
         className: getClass(props),
         ref: props.forwardedRef as any,
-        children: <ButtonChildren {...props} />
+        children: props.loading ? (
+            <Spinner size={props.size?.x_key || 'MEDIUM'} type={spineerType} />
+        ) : (
+            <ButtonChildren {...props} />
+        )
     };
 
+    const style = { ...props.style };
+    if (conatinerWidth) {
+        style.width = `${conatinerWidth}px`;
+    }
+
+    useEffect(() => {
+        if (!props.loading) {
+            setContainerWidth(containerRef.current?.offsetWidth);
+        }
+    }, [props.loading]);
+
     return (
-        <button
-            {...common}
-            style={props.style}
-            onClick={props.onClick}
-            onFocus={props.onFocus}
-            onBlur={props.onBlur}
-            disabled={props.disabled}
-            type={props.type ?? 'button'}
-        />
+        <div ref={containerRef}>
+            <button
+                {...common}
+                style={style}
+                onClick={props.onClick}
+                onFocus={props.onFocus}
+                onBlur={props.onBlur}
+                disabled={props.loading || props.disabled}
+                type={props.type ?? 'button'}
+            />
+        </div>
     );
 };
 

@@ -3,6 +3,14 @@ import { Button, KindButton, SizeButton } from "@pixiepkg/react";
 import IconSVG from "./icons/react-outlined.svg";
 
 export function ButtonDemo() {
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 2000);
+  }, [loading])
+
   return (
     <div className="wrapper">
       <h2 className="title">Button</h2>
@@ -27,6 +35,14 @@ export function ButtonDemo() {
         <Button
           kind={KindButton.BRAND}
           size={SizeButton.SMALL}
+          className="ml-4"
+        >
+          Text
+        </Button>
+        <Button
+          kind={KindButton.BRAND}
+          size={SizeButton.SMALL}
+          loading={loading}
           className="ml-4"
         >
           Text
