@@ -61,6 +61,7 @@ const getClass = (props: ButtonProps): string => {
             break;
         case KindButton.PRIMARY:
         default:
+            classes.push(primary.root);
             break;
     }
 
