@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/pixiespirit/web-uikit/compare/v0.4.22...v0.5.0) (2023-04-27)
+
+
+### Features
+
+* back to transparent mode by default ([4d23e78](https://github.com/pixiespirit/web-uikit/commit/4d23e780225db0183d4020335265f9af993feb38))
+
+
+
+
+
 ## [0.4.22](https://github.com/pixiespirit/web-uikit/compare/v0.4.21...v0.4.22) (2023-04-27)
 
 **Note:** Version bump only for package @pixiepkg/react
