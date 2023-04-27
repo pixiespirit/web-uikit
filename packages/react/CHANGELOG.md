@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.22](https://github.com/pixiespirit/web-uikit/compare/v0.4.21...v0.4.22) (2023-04-27)
+
+**Note:** Version bump only for package @pixiepkg/react
+
+
+
+
+
 ## [0.4.21](https://github.com/pixiespirit/web-uikit/compare/v0.4.20...v0.4.21) (2023-04-27)
 
 **Note:** Version bump only for package @pixiepkg/react
