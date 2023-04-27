@@ -92,7 +92,6 @@ export const Button: React.FC<ButtonProps> = (props) => {
     const spineerType = props.kind && [KindButton.GHOST, KindButton.SECONDARY].includes(props.kind) ? 'dark' : 'light';
 
     const containerRef = useRef<HTMLDivElement>(null);
-    const [conatinerWidth, setContainerWidth] = React.useState<number>();
 
     const common = {
         ...props.buttonProps,
@@ -106,15 +105,6 @@ export const Button: React.FC<ButtonProps> = (props) => {
     };
 
     const style = { ...props.style };
-    if (conatinerWidth) {
-        style.width = `${conatinerWidth}px`;
-    }
-
-    useEffect(() => {
-        if (!props.loading) {
-            setContainerWidth(containerRef.current?.offsetWidth);
-        }
-    }, [props.loading]);
 
     return (
         <div ref={containerRef}>
