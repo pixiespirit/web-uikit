@@ -1,7 +1,6 @@
 .root {
     color: var(--color-gray-700);
     border: solid 1px transparent;
-    background-color: transparent;
 }
 
 .root:hover {
