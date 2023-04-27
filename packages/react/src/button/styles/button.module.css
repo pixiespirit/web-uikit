@@ -6,6 +6,7 @@
     justify-content: center;
     text-decoration: none;
     border-radius: 10px;
+    background-color: transparent;
 
     /* Enforce width in case of link */
     width: fit-content;
