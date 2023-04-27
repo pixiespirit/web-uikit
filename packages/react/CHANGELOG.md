@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.20](https://github.com/pixiespirit/web-uikit/compare/v0.4.19...v0.4.20) (2023-04-27)
+
+
+### Bug Fixes
+
+* remove button transparent background ([d19db67](https://github.com/pixiespirit/web-uikit/commit/d19db673c94c14f8833bd8c523113054e85bf7cd))
+
+
+
+
+
 ## [0.4.19](https://github.com/pixiespirit/web-uikit/compare/v0.4.18...v0.4.19) (2022-03-02)
 
 **Note:** Version bump only for package @pixiepkg/react
